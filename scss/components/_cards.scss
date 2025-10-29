@@ -1,0 +1,218 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+// ======================================
+// COMPONENT : BOX CARD PRODUCTS
+// ======================================
+
+.box {
+  background: #f6f6f6;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.box-icon {
+  display: grid;
+  place-items: center;
+  color: $primary;
+
+  img {
+    width: 30px; // ou la taille que tu veux
+    height: 30px;
+    object-fit: contain; // pour garder les proportions
+  }
+}
+
+.box-label {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 16px;
+  padding-top: 16px;
+  font-weight: 500;
+  color: #555;
+}
+
+.box-title {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  font-size: 14px;
+  letter-spacing: 0.125em;
+  color: #555;
+  text-transform: uppercase;
+}
+
+.box-image {
+  width: 100%;
+  aspect-ratio: 4 / 3; // ✅ ratio horizontal classique
+  border-radius: 18px 0 18px 0;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; // garde la bonne proportion
+    display: block;
+  }
+}
+
+.studio-button {
+  position: absolute;
+  bottom: 16px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  background: $secondary;
+  color: white;
+  padding: 8px 10px;
+  border-radius: 50px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  transition: 0.35s ease all;
+  overflow: hidden;
+  max-width: 40px;
+}
+
+.studio-button-icon {
+  position: relative;
+  top: 1px;
+}
+
+.studio-button-label {
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding: 0 8px;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: 0.25s ease all;
+}
+
+.box:hover {
+  .studio-button {
+    max-width: 100%;
+  }
+  .studio-button-label {
+    opacity: 1;
+    transform: translateX(0);
+    transition: 0.25s 0.1s ease-in opacity,
+      0.15s 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275) transform;
+  }
+}
+// ======================================
+// COLLECTION PRODUCT CARDS
+// ======================================
+.product-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.product-card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card-image {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.product-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+}
+
+.product-collection {
+  font-size: 14px;
+  color: #999;
+  margin: 0;
+}
+
+// ======================================
+// ====== COMMITMENT CARDS INDEX =======
+// ======================================
+
+.commitment-card {
+  text-align: center;
+  padding: 1.2rem;
+  border-radius: 10px;
+  background-color: rgb(247, 247, 247);
+  filter: drop-shadow(2px 1px 2px rgba(0, 0, 0, 0.4));
+
+  &__icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+
+    img {
+      width: 70%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    font-weight: 100;
+    text-align: left;
+  }
+
+  &__description {
+    color: #666;
+    line-height: 1.2;
+    text-align: left;
+  }
+}
+
+// ======================================
+// ====== RESPONSIVE DESIGN =============
+// ======================================
+
+@media (max-width: 768px) {
+  .box {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .box-title {
+    writing-mode: horizontal-tb;
+    text-orientation: initial;
+    justify-content: center;
+    font-size: 18px;
+  }
+
+  .box-image {
+    width: 100%;
+    height: auto;
+  }
+}
