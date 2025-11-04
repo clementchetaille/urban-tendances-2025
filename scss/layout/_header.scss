@@ -1,0 +1,72 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.header {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1000;
+}
+
+.nav {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.arrow-down {
+  font-size: 0.5rem;
+  margin-left: 0rem;
+  transition: transform 0.3s ease;
+}
+
+.nav_item_with_mega:hover .arrow-down {
+  transform: rotate(180deg);
+}
+
+.nav_logo img {
+  height: 40px;
+}
+
+.nav_links {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+  align-items: center;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.nav_links a {
+  color: #333; /* Couleur par défaut */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.nav_links a:hover {
+  color: #c59d5f; /* Changez cette couleur selon vos besoins */
+}
+
+.nav_icon {
+  width: 20px;
+  height: 20px;
+}
+
+.nav_burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.nav_burger span {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  transition: 0.3s;
+}

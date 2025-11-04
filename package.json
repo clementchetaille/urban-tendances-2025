@@ -1,0 +1,22 @@
+{
+  "name": "urban-tendances-2025",
+  "version": "1.0.0",
+  "description": "Site catalogue Urban Tendances",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss/style.scss css/styles.css",
+    "dev": "node generate.js",
+    "dev:watch": "nodemon --watch src --ext html,json --exec 'node generate.js'",
+    "start": "concurrently \"npm run sass\" \"npm run dev:watch\"",
+    "build": "NODE_ENV=production node generate.js",
+    "build:win": "set NODE_ENV=production&& node generate.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.93.2",
+    "nodemon": "^3.0.0",
+    "concurrently": "^8.0.0"
+  }
+}

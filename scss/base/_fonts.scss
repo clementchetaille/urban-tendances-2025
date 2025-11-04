@@ -1,0 +1,33 @@
+/* _fonts.scss */
+
+@font-face {
+  font-family: "Ease";
+  src: url("../assets/fonts/EaseVariable.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noi";
+  src: url("../assets/fonts/NoiVariableFlexTrialGX.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alpino";
+  src: url("../assets/fonts/Alpino-Variable.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AlpinoRegular";
+  src: url("../assets/fonts/Alpino-Regular.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}

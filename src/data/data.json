@@ -1,0 +1,1478 @@
+{
+  "collections": {
+    "thal-s": {
+      "name": "Thal S",
+      "description": "Fascinée par les mystères de l'égypte ancienne.",
+      "symbole": "assets/icons/02-THALS-min-e1761124111961.png",
+      "products": {
+        "assises": [
+          {
+            "name": "Banc en bois",
+            "pageTitle": "Assises",
+            "description": "Parmi d’autres pièces de la collection THAL S, Urban Tendances vous propose une déclinaison des assises avec un design plus épuré. Ces assises, composées de lames de bois, reprennent la forme originale de la collection sans découpe de motifs en acier.<br> Le banc THAL S Bois existe en 2 versions qui se distinguent par le nombre de lames.",
+            "images": [
+              "assets/images/nos-creations/thals/thal-s-bois-min.png",
+              "assets/images/nos-creations/thals/thal-s-bois-2-min.png",
+              "assets/images/nos-creations/thals/thal-s-bois-4-min.png"
+            ],
+            "materials": [
+              "Acier (S235, galvanisé, Corten, inox)",
+              "Bois (résineux ou exotique)"
+            ],
+            "finitions": [
+              "Thermoalquage RAL au choix",
+              "Electropolissage de l’inox",
+              "Corten naturel, ciré ou vernis",
+              "Bois traité à l’huile végétale ou lasuré"
+            ],
+            "dimensions": "L 1800 mm l 845 mm H 964 mm"
+          },
+          {
+            "name": "Banc en acier",
+            "description": "Les assises THAL S, disponibles en fauteuil et en banc sont l’âme de cette collection. Leur gracieuse structure très arrondies rappelle les dunes entourant les pyramides, elles-mêmes représentées par les motifs triangulaires découpés avec précision dans l’acier ciré. Cet envoûtant modèle peut aussi bien s’adapter à un environnement urbain qu’un intérieur chic. Ces assises embrassent l’esthétisme et le symbolisme des pyramides, une des plus vieilles constructions humaines encore intact.",
+            "images": [
+              "assets/images/nos-creations/thals/photo-AN-pour-site-min.jpg",
+              "assets/images/nos-creations/thals/Thal-S-Banc-2-min.png",
+              "assets/images/nos-creations/thals/Thal-S-Banc-3-min.png"
+            ],
+            "materials": ["Acier (S235, galvanisé, Corten, inox)"],
+            "finitions": [
+              "Thermoalquage RAL au choix",
+              "Electropolissage de l’inox",
+              "Corten naturel, ciré ou vernis"
+            ],
+            "dimensions": "L 1700 mm l 700 mm H 830 mm"
+          },
+          {
+            "name": "Fauteuil en bois",
+            "description": "Parmi d’autres pièces de la collection THAL S, Urban Tendances vous propose une déclinaison des assises avec un design plus épuré. Ces assises, composées de lames de bois, reprennent la forme originale de la collection sans découpe de motifs en acier.",
+            "images": [
+              "assets/images/nos-creations/thals/thal-s-bois-3-min.png",
+              "assets/images/nos-creations/thals/thal-s-bois-4-min.png"
+            ],
+            "materials": ["Acier (S235, galvanisé, Corten, inox)", "Bois"],
+            "finitions": [
+              "Thermoalquage RAL au choix",
+              "Electropolissage de l’inox",
+              "Corten naturel, ciré ou vernis",
+              "Bois traité à l’huile végétale ou lasuré"
+            ],
+            "dimensions": "L 1800 mm l 845 mm H 964 mm"
+          },
+          {
+            "name": "Fauteuil en acier",
+            "description": "Les assises THAL S, disponibles en fauteuil et en banc sont l’âme de cette collection. Leur gracieuse structure très arrondies rappelle les dunes entourant les pyramides, elles-mêmes représentées par les motifs triangulaires découpés avec précision dans l’acier ciré. Cet envoûtant modèle peut aussi bien s’adapter à un environnement urbain qu’un intérieur chic. Ces assises embrassent l’esthétisme et le symbolisme des pyramides, une des plus vieilles constructions humaines encore intact.",
+            "images": [
+              "assets/images/nos-creations/thals/Thal-S-Fauteuil-4-min.png",
+              "assets/images/nos-creations/thals/Thal-S-Fauteuil-3-min.png",
+              "assets/images/nos-creations/thals/Thal-S-Fauteuil-2-min.png"
+            ],
+            "materials": ["Acier (S235, galvanisé, Corten, inox)"],
+            "finitions": [
+              "Thermoalquage RAL au choix",
+              "Electropolissage de l’inox",
+              "Corten naturel, ciré ou vernis"
+            ],
+            "dimensions": "L 630 mm , P 700 mm H 830 mm"
+          }
+        ],
+        "corbeilles": {
+          "pageTitle": "Corbeilles",
+          "name": "Corbeille",
+          "description": "La corbeille THAL S, tout comme le soleil pour les peuples de l’Egypte antique, prend une place fondamentale dans son environnement puisqu’elle est, de nos jours, son seul protecteur. Sa teinte dorée et ses parures triangulaires font écho au sable du désert et des pyramides. Cette corbeille en acier se fera facilement sa place dans chacun de vos espaces.",
+          "images": [
+            "assets/images/nos-creations/thals/Thal-S-Banc-5-min.png",
+            "assets/images/nos-creations/thals/Thal-S-Banc-6-min.png",
+            "assets/images/nos-creations/thals/Thal-S-Banc-7-min.png"
+          ],
+          "materials": ["Acier (S235, galvanisé, Corten, inox)"],
+          "finitions": [
+            "Thermoalquage RAL au choix",
+            "Electropolissage de l’inox",
+            "Corten naturel, ciré ou vernis"
+          ],
+          "dimensions": "Ø 600 mm H 850 mm"
+        },
+        "jardinieres": {
+          "pageTitle": "Jardinières",
+          "name": "Jardinière",
+          "description": "En reprenant les caractères d’une pyramide, la jardinière THAL S s’impose dans vos espaces pour apporter un aspect élégant de par sa chaude teinte ambrée et de ses découpes minimalistes. Sa réserve d’eau offre de la fraîcheur à vos plantations, les dimensions et les finitions sont personnalisables si vous le souhaitez.",
+          "images": [
+            "assets/images/nos-creations/thals/Thal-S-Jardiniere-min.png",
+            "assets/images/nos-creations/thals/Thal-S-Jardiniere-2-min.png",
+            "assets/images/nos-creations/thals/Thal-S-Jardiniere-3-min.png",
+            "assets/images/nos-creations/thals/Thal-S-Jardiniere-4-min.png"
+          ],
+          "materials": ["Acier (S235, galvanisé, Corten, inox)"],
+          "finitions": [
+            "Thermoalquage RAL au choix",
+            "Electropolissage de l’inox",
+            "Corten naturel, ciré ou vernis"
+          ],
+          "dimensions": "Sur mesure"
+        },
+        "potelets": {
+          "pageTitle": "Potelets",
+          "name": "Potelet",
+          "description": "Le potelet THAL S, reprenant les motifs triangulaires propres à sa collection est l’objet parfait pour venir habiller et délimiter vos espaces. Sa couleur chaude et sa structure viendront parsemer vos extérieurs de clarté et de magnifiques motifs créés par son ombre. Sa structure en acier ciré rend le potelet solide et durable, en respect avec la nature qu’il représente.",
+          "images": [
+            "assets/images/nos-creations/thals/Thal-S-Potelet-2-min.png",
+            "assets/images/nos-creations/thals/Thal-S-Potelet-3-min.png",
+            "assets/images/nos-creations/thals/Thal-S-Potelet-min.png"
+          ],
+          "materials": ["Acier (S235, galvanisé, Corten, inox)"],
+          "finitions": [
+            "Thermoalquage RAL au choix",
+            "Electropolissage de l’inox",
+            "Corten naturel, ciré ou vernis"
+          ],
+          "dimensions": "L 100 mm , P 50 mm , H 1200 mm"
+        },
+        "barrieres": {
+          "pageTitle": "Barrières & garde-corps",
+          "name": "Barrière",
+          "description": "La barrière THAL S a été pensée pour venir réconforter vos espaces extérieurs par sa chaude teinte dorée, tout en se figeant dans l’environnement tel les pyramides représentées par ses motifs découpés dans l’acier. Sa finition en bois exotique et sa couleur inspirée des paysages égyptiens font de cette barrière un objet chic et fonctionnel.",
+          "images": [
+            "assets/images/nos-creations/thals/thals-barriere-3-min.png",
+            "assets/images/nos-creations/thals/thals-barriere-2-min.png",
+            "assets/images/nos-creations/thals/thals-barriere-4-min.png",
+            "assets/images/nos-creations/thals/thals-barriere-min.png"
+          ],
+          "materials": ["Acier (S235, galvanisé, Corten, inox)", "Bois"],
+          "finitions": [
+            "Thermoalquage RAL au choix",
+            "Electropolissage de l’inox",
+            "Corten naturel, ciré ou vernis",
+            "Bois traité à l’huile végétale ou lasuré"
+          ],
+          "dimensions": "L 1000 mm P 35 mm H 900 mm"
+        }
+      }
+    },
+    "bulle": {
+      "name": "Bulle",
+      "description": "Cette collection est fabriquée à partir de chutes de tubes.",
+      "symbole": "assets/icons/04-BULLES-min-e1761123999218.png",
+      "products": {
+        "assises": [
+          {
+            "name": "Banc",
+            "description": "Cette collection est fabriquée à partir de chutes de tubes métalliques, ce qui la rend à la fois spéciale et fonctionnelle. Elle a été conçue en ayant conscience des enjeux environnementaux, de ces motifs ronds irréguliers, la collection mérite son nom de Bulle.",
+            "images": [
+              "assets/images/nos-creations/bulle/Bulle-banc-4-min.png",
+              "assets/images/nos-creations/bulle/Bulle-banc-2-min.png",
+              "assets/images/nos-creations/bulle/Bulle-banc-3-min.png",
+              "assets/images/nos-creations/bulle/Bulle-banc-min.png"
+            ],
+            "materials": ["Acier (S235, galvanisé, Corten, inox)", "Bois"],
+            "finitions": [
+              "Thermoalquage RAL au choix",
+              "Electropolissage de l’inox",
+              "Corten naturel, ciré ou vernis",
+              "Bois traité à l’huile végétale ou lasuré"
+            ],
+            "dimensions": "L 1300mm P 462mm H 894mm / L 2000mm P 462mm H 894mm"
+          }
+        ],
+
+        "potelets": {
+          "name": "Potelet",
+          "description": "Cette collection est fabriquée à partir de chutes de tubes métalliques, ce qui la rend à la fois spéciale et fonctionnelle. Elle a été conçue en ayant conscience des enjeux environnementaux, de ces motifs ronds irréguliers, la collection mérite son nom de Bulle.",
+          "images": [
+            "assets/images/nos-creations/bulle/Bulle-potelet-2-min.png",
+            "assets/images/nos-creations/bulle/Bulle-potelet-min.png"
+          ],
+          "materials": ["Acier (S235, galvanisé, Corten, inox)"],
+          "finitions": [
+            "Thermoalquage RAL au choix",
+            "Electropolissage de l’inox",
+            "Corten naturel, ciré ou vernis"
+          ],
+          "dimensions": "L 100mm P 50mm H 1200mm"
+        },
+        "barrieres": {
+          "name": "Barrière",
+          "description": "Cette collection est fabriquée à partir de chutes de tubes métalliques, ce qui la rend à la fois spéciale et fonctionnelle. Elle a été conçue en ayant conscience des enjeux environnementaux, de ces motifs ronds irréguliers, la collection mérite son nom de Bulle.",
+          "images": [
+            "assets/images/nos-creations/bulle/Bulle-barriere-min.png",
+            "assets/images/nos-creations/bulle/Bulle-barriere-2-min.png"
+          ],
+          "materials": ["Acier (S235, galvanisé, Corten, inox)"],
+          "finitions": [
+            "Thermoalquage RAL au choix",
+            "Electropolissage de l’inox",
+            "Corten naturel, ciré ou vernis"
+          ],
+          "dimensions": "L 1000mm P 60mm H 1000mm"
+        },
+        "supportsvelos": {
+          "pageTitle": "Supports Vélo",
+          "name": "Supports Vélo",
+          "description": "Cette collection est fabriquée à partir de chutes de tubes métalliques, ce qui la rend à la fois spéciale et fonctionnelle. Elle a été conçue en ayant conscience des enjeux environnementaux, de ces motifs ronds irréguliers, la collection mérite son nom de Bulle.",
+          "images": [
+            "assets/images/nos-creations/bulle/Bulle-support-velo-4-min.png",
+            "assets/images/nos-creations/bulle/Bulle-support-velo-2-min.png",
+            "assets/images/nos-creations/bulle/Bulle-support-velo-3-min.png",
+            "assets/images/nos-creations/bulle/Bulle-support-velo-min.png"
+          ],
+          "materials": ["Acier (S235, galvanisé, Corten, inox)"],
+          "finitions": [
+            "Thermoalquage RAL au choix",
+            "Electropolissage de l’inox",
+            "Corten naturel, ciré ou vernis"
+          ],
+          "dimensions": "Ø 800mm H 1000mm"
+        }
+      }
+    },
+    "enjoy": {
+      "name": "Enjoy",
+      "description": "La collection Enjoy est une collection idéale pour éveiller votre (?)",
+      "symbole": "assets/icons/13-ENJOY-min-e1761124049353.png",
+      "products": {
+        "assises": [
+          {
+            "name": "Banc",
+            "description": "Cette collection a été conçue pour donner à accès au plus grand nombre au design, tout en s’amusant. C’est une manière de « vulgariser » le Design avec chic.<br>Des assises courbées avec ou sans dossier pour se créer des passages, des lignes dans tous les sens et encercler le végétal. Les autres pièces ont des fromes plus basique et facile à personnaliser, à s’approprier. Avec cette collection, tout le monde peut créer un lieu d’exception, c’est en quelque sorte la collection « Venez comme vous êtes ».",
+            "images": [
+              "assets/images/nos-creations/enjoy/enjoy-min.jpg",
+              "assets/images/nos-creations/enjoy/Banc-Enjoy-avec-accoudoir-R600.jpg",
+              "assets/images/nos-creations/enjoy/enjoy-2-min.jpg",
+              "assets/images/nos-creations/enjoy/enjoy-3-min.jpg",
+              "assets/images/nos-creations/enjoy/enjoy-4-min.jpg",
+              "assets/images/nos-creations/enjoy/enjoy-5-min.jpg",
+              "assets/images/nos-creations/enjoy/enjoy-18-min.jpg",
+              "assets/images/nos-creations/enjoy/enjoy-19-min.jpg",
+              "assets/images/nos-creations/enjoy/enjoy-20-min.jpg.jpg"
+            ],
+            "materials": ["Acier (S235, métallisation, Corten, Inox)", "Bois"],
+            "finitions": [
+              "Thermoalquage RAL au choix",
+              "Electropolissage de l’inox",
+              "Corten naturel, ciré ou vernis",
+              "Bois traité à l’huile végétale"
+            ],
+            "dimensions": "L 3400 mm P 500 mm H 450 mm"
+          }
+        ],
+
+        "potelets": {
+          "name": "Potelet",
+          "description": "La collection Enjoy est une collection idéale pour éveiller votre créativité, car les découpes sont personnalisables et nous vous offrons divers choix de couleur. Tous les mobiliers de la collection ont été pensés pour convenir à tout espace. ",
+          "images": [
+            "assets/images/nos-creations/enjoy/enjoy-9-min.jpg",
+            "assets/images/nos-creations/enjoy/enjoy-7-min.jpg",
+            "assets/images/nos-creations/enjoy/enjoy-8-min.jpg",
+            "assets/images/nos-creations/enjoy/enjoy-10-min.jpg"
+          ],
+          "materials": ["Acier (S235, métallisation, Corten, Inox)"],
+          "finitions": [
+            "Thermoalquage RAL au choix",
+            "Electropolissage de l’inox",
+            "Corten naturel, ciré ou vernis"
+          ],
+          "dimensions": "Ø 100 mm H 950 mm"
+        },
+        "corbeilles": {
+          "name": "Corbeille",
+          "description": "La collection Enjoy est une collection idéale pour éveiller votre créativité, car les découpes sont personnalisables et nous vous offrons divers choix de couleur. Tous les mobiliers de la collection ont été pensés pour convenir à tout espace. ",
+          "images": [
+            "assets/images/nos-creations/enjoy/enjoy-11-min.jpg",
+            "assets/images/nos-creations/enjoy/enjoy-12-min.jpg",
+            "assets/images/nos-creations/enjoy/enjoy-13-min.jpg"
+          ],
+          "materials": ["Acier (S235, métallisation, Corten, Inox)"],
+          "finitions": [
+            "Thermoalquage RAL au choix",
+            "Electropolissage de l’inox",
+            "Corten naturel, ciré ou vernis"
+          ],
+          "dimensions": "Ø 400 mm H 1162 mm"
+        },
+        "jardinieres": [
+          {
+            "name": "Jardinière circulaire",
+            "description": "La collection Enjoy est une collection idéale pour éveiller votre créativité, car les découpes sont personnalisables et nous vous offrons divers choix de couleur. Tous les mobiliers de la collection ont été pensés pour convenir à tout espace. ",
+            "images": [
+              "assets/images/nos-creations/enjoy/enjoy75-min.jpg",
+              "assets/images/nos-creations/enjoy/4circulaires-2-min.jpg",
+              "assets/images/nos-creations/enjoy/4circulaires-3-min.jpg",
+              "assets/images/nos-creations/enjoy/4circulaires-min.jpg"
+            ],
+            "materials": ["Acier (S235, galvanisé, Corten, inox)"],
+            "finitions": [
+              "Thermoalquage RAL au choix",
+              "Electropolissage de l’inox",
+              "Corten naturel, ciré ou vernis"
+            ],
+            "dimensions": "Ø 557 mm H 1246 mm  / Ø 743 mm H 843mm / Ø 1013 mm H 643 mm / Ø 1313 mm H 546 mm"
+          },
+          {
+            "name": "Jardinière rectangulaire",
+            "description": "La collection Enjoy est une collection idéale pour éveiller votre créativité, car les découpes sont personnalisables et nous vous offrons divers choix de couleur. Tous les mobiliers de la collection ont été pensés pour convenir à tout espace. ",
+            "images": [
+              "assets/images/nos-creations/enjoy/2222-min.jpg",
+              "assets/images/nos-creations/enjoy/75-min.jpg",
+              "assets/images/nos-creations/enjoy/86-min.jpg",
+              "assets/images/nos-creations/enjoy/333-min.jpg",
+              "assets/images/nos-creations/enjoy/555-min.jpg"
+            ],
+            "materials": ["Acier (S235, métallisation, Corten, Inox)"],
+            "finitions": [
+              "Thermoalquage RAL au choix",
+              "Electropolissage de l’inox",
+              "Corten naturel, ciré ou vernis"
+            ],
+            "dimensions": [
+              "L 550 mm H 1183 mm",
+              "L 750 mm H 783 mm",
+              "L 1000 mm H 583 mm",
+              "L 1300 mm H 489 mm"
+            ]
+          }
+        ],
+        "cendriers": {
+          "pageTitle": "Cendriers",
+          "name": "Cendrier",
+          "description": "La collection Enjoy est une collection idéale pour éveiller votre créativité, car les découpes sont personnalisables et nous vous offrons divers choix de couleur. Tous les mobiliers de la collection ont été pensés pour convenir à tout espace. ",
+          "images": ["assets/images/nos-creations/enjoy/enjoy-6-min.jpg"],
+          "materials": ["Acier (S235, métallisation, Corten, Inox)"],
+          "finitions": [
+            "Thermoalquage RAL au choix",
+            "Electropolissage de l’inox",
+            "Corten naturel, ciré ou vernis"
+          ],
+          "dimensions": [
+            "Cendrier mural – Ø 100 mm P 130 mm H 450 mm",
+            "Cendrier sur pied – Ø 100 mm H 950 mm"
+          ]
+        },
+        "supportsvelos": {
+          "pageTitle": "Supports Vélo",
+          "name": "Support Vélo",
+          "description": "La collection Enjoy est une collection idéale pour éveiller votre créativité, car les découpes sont personnalisables et nous vous offrons divers choix de couleur. Tous les mobiliers de la collection ont été pensés pour convenir à tout espace. ",
+          "images": [
+            "assets/images/nos-creations/enjoy/enjoy-15-min.jpg",
+            "assets/images/nos-creations/enjoy/enjoy-14-min.jpg",
+            "assets/images/nos-creations/enjoy/enjoy-16-min.jpg"
+          ],
+          "materials": ["Acier (S235, métallisation, Corten, Inox)"],
+          "finitions": [
+            "Thermoalquage RAL au choix",
+            "Electropolissage de l’inox",
+            "Corten naturel, ciré ou vernis"
+          ],
+          "dimensions": "L 554 mm P 213 mm H 850 mm"
+        }
+      }
+    },
+    "escale": {
+      "name": "Escale",
+      "description": "La collection Escale est inspirée de la mer, une pause dans un port, d’où ses formes de vague.",
+      "symbole": "assets/icons/11-ESCALE-min-1-e1761124027185.png",
+      "products": {
+        "transatsdivans": [
+          {
+            "pageTitle": "Transats & Divans",
+            "name": "Transat",
+            "description": "",
+            "images": [
+              "assets/images/nos-creations/escale/11-070-A-MES-ESCALE-TRANSAT-1-PLACE.jpg",
+              "assets/images/nos-creations/escale/11-080-A-MES-ESCALE-TRANSAT-2-PLACES.jpg",
+              "assets/images/nos-creations/escale/7916-A-MES-CAMPING-LA-BASTIANE.3.jpg"
+            ],
+            "materials": ["Acier", "Bois"],
+            "finitions": [
+              "Thermoalquage RAL au choix",
+              "Electropolissage de l’inox",
+              "Corten naturel, ciré ou vernis",
+              "Bois traité à l’huile végétale ou lasuré"
+            ],
+            "dimensions": "L 2350 mm P 650 mm H 1065 mm"
+          },
+          {
+            "name": "Divan",
+            "description": "",
+            "images": [
+              "assets/images/nos-creations/escale/11-081-A-MES-ESCALE-DIVAN.2.jpg",
+              "assets/images/nos-creations/escale/11-081-A-MES-ESCALE-DIVAN.jpg",
+              "assets/images/nos-creations/escale/7916-A-MES-CAMPING-LA-BASTIANE.4.jpg"
+            ],
+            "materials": ["Acier", "Bois"],
+            "finitions": [
+              "Thermoalquage RAL au choix",
+              "Electropolissage de l’inox",
+              "Corten naturel, ciré ou vernis",
+              "Bois traité à l’huile végétale ou lasuré"
+            ],
+            "dimensions": ""
+          }
+        ],
+        "paravents": {
+          "name": "Paravent",
+          "description": "",
+          "images": [
+            "assets/images/nos-creations/escale/7916-A-MES-CAMPING-LA-BASTIANE.3.jpg"
+          ],
+          "materials": ["Acier", "Bois"],
+          "finitions": [
+            "Thermoalquage RAL au choix",
+            "Electropolissage de l’inox",
+            "Corten naturel, ciré ou vernis",
+            "Bois traité à l’huile végétale ou lasuré"
+          ],
+          "dimensions": ""
+        }
+      }
+    },
+    "jeux&co": {
+      "name": "Jeux & Co",
+      "description": "La collection Jeux & Co est une collection composée notamment (?)",
+      "symbole": "assets/icons/09-JEUXCO-min-e1761124136754.png",
+      "products": {
+        "assises": [
+          {
+            "name": "Assise",
+            "description": "Cet objet ajoutera une touche de couleur dans votre espace. De plus, les crayons sont disponibles sous toutes les couleurs et sont personnalisables à la dimension souhaitée. Ces assises sont idéalement faites pour un air de jeux ou encore une cour d’école primaire.",
+            "images": [
+              "assets/images/nos-creations/jeux&co/jeux-and-co-min.jpg",
+              "assets/images/nos-creations/jeux&co/jeux-and-co-2-min.jpg",
+              "assets/images/nos-creations/jeux&co/jeux-and-co-3-min.jpg",
+              "assets/images/nos-creations/jeux&co/jeux-and-co-4-min.jpg"
+            ],
+            "materials": ["Acier", "Bois"],
+            "finitions": [
+              "Thermoalquage RAL au choix",
+              "Electropolissage de l’inox",
+              "Corten naturel, ciré ou vernis",
+              "Bois traité à l’huile végétale ou lasuré"
+            ],
+            "dimensions": "L 1800 mm P 400 mm H 400 mm"
+          }
+        ]
+      }
+    },
+    "litterature&co": {
+      "name": "Littérature",
+      "description": "Mobilier contemporain en acier et bois.",
+      "symbole": "assets/icons/06-LITTERATURE-min-e1761124092254.png",
+      "products": {
+        "assises": [
+          {
+            "name": "Fauteuil",
+            "description": "Le fauteuil littérature nous marque, de par son look élégant tout en assurant une assise généreuse et enveloppante. Le style moderne de cet objet est idéal pour apprécier un instant unique et adapté pour n’importe quel extérieur.",
+            "images": [
+              "assets/images/nos-creations/litterature/litt-min.jpg",
+              "assets/images/nos-creations/litterature/litt-2-min.jpg",
+              "assets/images/nos-creations/litterature/litt-3-min.jpg",
+              "assets/images/nos-creations/litterature/Liiterature-min.png",
+              "assets/images/nos-creations/litterature/Liiterature-2-min.png"
+            ],
+            "materials": ["Acier", "Bois"],
+            "finitions": [
+              "Thermoalquage RAL au choix",
+              "Electropolissage de l’inox",
+              "Corten naturel, ciré ou vernis",
+              "Bois traité à l’huile végétale ou lasuré"
+            ],
+            "dimensions": "Ø 1000 mm h 1350mm"
+          }
+        ]
+      }
+    },
+    "mosaique": {
+      "name": "Mosaïque",
+      "description": "La collection Mosaïque est bien connue comme un art décoratif.",
+      "symbole": "assets/icons/03-MOSAIQUE-min-e1761124071180.png",
+      "products": {
+        "assises": [
+          {
+            "name": "Tabouret",
+            "description": "La Mosaïque est bien connue comme un art décoratif dans lequel on utilise souvent des fragments de pierre pour constituer des motifs ou des figures. Dans cette collection, vous trouverez un assemblage de motifs pentagones, découpés en acier Corten, plus ou moins régulier. Ce qui rend les pièces de cette collection captivantes et singulières. De plus, les finitions en bois exotique s’intégreront avec sobriété dans vos extérieurs.",
+            "images": [
+              "assets/images/nos-creations/mosaique/Mosaique-Tabouret-min.png",
+              "assets/images/nos-creations/mosaique/Mosaique-Tabouret-2-min.png",
+              "assets/images/nos-creations/mosaique/Mosaique-Tabouret-3-min.png"
+            ],
+            "materials": ["Acier (S235, galvanisé, Corten, inox)"],
+            "finitions": [
+              "Thermoalquage RAL au choix",
+              "Electropolissage de l’inox",
+              "Corten naturel, ciré ou vernis"
+            ],
+            "dimensions": "L 500mm P 500mm H 450mm"
+          },
+          {
+            "name": "Fauteuil",
+            "description": "La Mosaïque est bien connue comme un art décoratif dans lequel on utilise souvent des fragments de pierre pour constituer des motifs ou des figures. Dans cette collection, vous trouverez un assemblage de motifs pentagones, découpés en acier Corten, plus ou moins régulier. Ce qui rend les pièces de cette collection captivantes et singulières. De plus, les finitions en bois exotique s’intégreront avec sobriété dans vos extérieurs.",
+            "images": [
+              "assets/images/nos-creations/mosaique/Mosaique-Fauteuil-2-min.png",
+              "assets/images/nos-creations/mosaique/Mosaique-Fauteuil-min.png",
+              "assets/images/nos-creations/mosaique/Mosaique-Fauteuil-3-min.png",
+              "assets/images/nos-creations/mosaique/Mosaique-Fauteuil-4-min.png"
+            ],
+            "materials": ["Acier (S235, galvanisé, Corten, inox)", "Bois"],
+            "finitions": [
+              "Thermoalquage RAL au choix",
+              "Electropolissage de l’inox",
+              "Corten naturel, ciré ou vernis",
+              "Bois traité à l’huile végétale ou lasuré"
+            ],
+            "dimensions": "L 500mm P 500mm H 935mm"
+          },
+          {
+            "name": "Banquette",
+            "description": "La Mosaïque est bien connue comme un art décoratif dans lequel on utilise souvent des fragments de pierre pour constituer des motifs ou des figures. Dans cette collection, vous trouverez un assemblage de motifs pentagones, découpés en acier Corten, plus ou moins régulier. Ce qui rend les pièces de cette collection captivantes et singulières. De plus, les finitions en bois exotique s’intégreront avec sobriété dans vos extérieurs.",
+            "images": [
+              "assets/images/nos-creations/mosaique/Mosaique-banquette-min.png",
+              "assets/images/nos-creations/mosaique/Mosaique-banquette-2-min.png",
+              "assets/images/nos-creations/mosaique/Mosaique-banquette-3-min.png"
+            ],
+            "materials": ["Acier (S235, galvanisé, Corten, inox)", "Bois"],
+            "finitions": [
+              "Thermoalquage RAL au choix",
+              "Electropolissage de l’inox",
+              "Corten naturel, ciré ou vernis",
+              "Bois traité à l’huile végétale ou lasuré"
+            ],
+            "dimensions": "L 1800mm P 500mm H 450mm"
+          },
+          {
+            "name": "Banc",
+            "description": "La Mosaïque est bien connue comme un art décoratif dans lequel on utilise souvent des fragments de pierre pour constituer des motifs ou des figures. Dans cette collection, vous trouverez un assemblage de motifs pentagones, découpés en acier Corten, plus ou moins régulier. Ce qui rend les pièces de cette collection captivantes et singulières. De plus, les finitions en bois exotique s’intégreront avec sobriété dans vos extérieurs.",
+            "images": [
+              "assets/images/nos-creations/mosaique/Mosaique-banc-min.png",
+              "assets/images/nos-creations/mosaique/Mosaique-banc-2-min.png",
+              "assets/images/nos-creations/mosaique/Mosaique-banc-3-min.png",
+              "assets/images/nos-creations/mosaique/Mosaique-banc-4-min.png",
+              "assets/images/nos-creations/mosaique/Mosaique-banc-5-min.png"
+            ],
+            "materials": ["Acier", "Bois"],
+            "finitions": [
+              "Thermoalquage RAL au choix",
+              "Electropolissage de l’inox",
+              "Corten naturel, ciré ou vernis",
+              "Bois traité à l’huile végétale ou lasuré"
+            ],
+            "dimensions": "L 2000mm P 500mm H 950mm"
+          }
+        ],
+        "corbeilles": {
+          "name": "Corbeille",
+          "description": "La Mosaïque est bien connue comme un art décoratif dans lequel on utilise souvent des fragments de pierre pour constituer des motifs ou des figures. Dans cette collection, vous trouverez un assemblage de motifs pentagones, découpés en acier Corten, plus ou moins régulier. Ce qui rend les pièces de cette collection captivantes et singulières. De plus, les finitions en bois exotique s’intégreront avec sobriété dans vos extérieurs.",
+          "images": [
+            "assets/images/nos-creations/mosaique/Mosaique-corbeille-min.png",
+            "assets/images/nos-creations/mosaique/Mosaique-corbeille-2-min.png",
+            "assets/images/nos-creations/mosaique/Mosaique-corbeille-3-min.png"
+          ],
+          "materials": ["Acier (S235, galvanisé, Corten, inox)"],
+          "finitions": [
+            "Thermoalquage RAL au choix",
+            "Electropolissage de l’inox",
+            "Corten naturel, ciré ou vernis"
+          ],
+          "dimensions": "Ø 400mm H 780mm"
+        },
+        "jardinieres": {
+          "name": "Jardinière",
+          "description": "La Mosaïque est bien connue comme un art décoratif dans lequel on utilise souvent des fragments de pierre pour constituer des motifs ou des figures. Dans cette collection, vous trouverez un assemblage de motifs pentagones, découpés en acier Corten, plus ou moins régulier. Ce qui rend les pièces de cette collection captivantes et singulières. De plus, les finitions en bois exotique s’intégreront avec sobriété dans vos extérieurs.",
+          "images": [
+            "assets/images/nos-creations/mosaique/Mosaique-jardiniere-3-min.png",
+            "assets/images/nos-creations/mosaique/Mosaique-jardiniere-min.png",
+            "assets/images/nos-creations/mosaique/Mosaique-jardiniere-2-min.png",
+            "assets/images/nos-creations/mosaique/Mosaique-jardiniere-4-min.png"
+          ],
+          "materials": ["Acier (S235, galvanisé, Corten, inox)"],
+          "finitions": [
+            "Thermoalquage RAL au choix",
+            "Electropolissage de l’inox",
+            "Corten naturel, ciré ou vernis"
+          ],
+          "dimensions": "L 700 mm H 700 mm"
+        },
+        "potelets": {
+          "name": "Potelet",
+          "description": "La Mosaïque est bien connue comme un art décoratif dans lequel on utilise souvent des fragments de pierre pour constituer des motifs ou des figures. Dans cette collection, vous trouverez un assemblage de motifs pentagones, découpés en acier Corten, plus ou moins régulier. Ce qui rend les pièces de cette collection captivantes et singulières. De plus, les finitions en bois exotique s’intégreront avec sobriété dans vos extérieurs.",
+          "images": [
+            "assets/images/nos-creations/mosaique/Mosaique-potelet-2-min.png",
+            "assets/images/nos-creations/mosaique/Mosaique-potelet-min.png"
+          ],
+          "materials": ["Acier (S235, galvanisé, Corten, inox)"],
+          "finitions": [
+            "Thermoalquage RAL au choix",
+            "Electropolissage de l’inox",
+            "Corten naturel, ciré ou vernis"
+          ],
+          "dimensions": "L 100 mm P 100 mm H 1200mm"
+        },
+        "barrieres": {
+          "name": "Barrière",
+          "description": "La Mosaïque est bien connue comme un art décoratif dans lequel on utilise souvent des fragments de pierre pour constituer des motifs ou des figures. Dans cette collection, vous trouverez un assemblage de motifs pentagones, découpés en acier Corten, plus ou moins régulier. Ce qui rend les pièces de cette collection captivantes et singulières. De plus, les finitions en bois exotique s’intégreront avec sobriété dans vos extérieurs.",
+          "images": [
+            "assets/images/nos-creations/mosaique/Mosaique-Barriere-2-min.png",
+            "assets/images/nos-creations/mosaique/Mosaique-Barriere-min.png"
+          ],
+          "materials": ["Acier (S235, galvanisé, Corten, inox)"],
+          "finitions": [
+            "Thermoalquage RAL au choix",
+            "Electropolissage de l’inox",
+            "Corten naturel, ciré ou vernis"
+          ],
+          "dimensions": "L 100 mm H 1200mm"
+        },
+        "supportsvelos": {
+          "name": "Support Vélo",
+          "description": "La Mosaïque est bien connue comme un art décoratif dans lequel on utilise souvent des fragments de pierre pour constituer des motifs ou des figures. Dans cette collection, vous trouverez un assemblage de motifs pentagones, découpés en acier Corten, plus ou moins régulier. Ce qui rend les pièces de cette collection captivantes et singulières. De plus, les finitions en bois exotique s’intégreront avec sobriété dans vos extérieurs.",
+          "images": [
+            "assets/images/nos-creations/mosaique/Mosaique-Support-velo-min.png",
+            "assets/images/nos-creations/mosaique/Mosaique-Support-velo-2-min.png",
+            "assets/images/nos-creations/mosaique/Mosaique-Support-velo-3-min.png"
+          ],
+          "materials": ["Acier (S235, galvanisé, Corten, inox)"],
+          "finitions": [
+            "Thermoalquage RAL au choix",
+            "Electropolissage de l’inox",
+            "Corten naturel, ciré ou vernis"
+          ],
+          "dimensions": "L 850 mmc EP 35 mm H 850 mm"
+        }
+      }
+    },
+
+    "origine": {
+      "name": "Origine",
+      "description": "Le design des racines d'arbres est inspiré pour créer cette collection.",
+      "symbole": "assets/icons/08-ORIGINE-min-e1761123864739.png",
+      "products": {
+        "tables": {
+          "name": "Table",
+          "description": "Le design des racines d’arbre est inspiré pour créer cette collection nommé Origine. Son style permet de se fondre dans l’environnement de manière sombre et discret",
+          "images": ["assets/images/nos-creations/origine/Table-Origine.jpg"],
+          "materials": ["Acier (S235, métallisation, Corten, inox)", "Bois"],
+          "finitions": [
+            "Thermoalquage RAL au choix",
+            "Electropolissage de l’inox",
+            "Corten naturel, ciré ou vernis",
+            "Bois traité à l’huile végétale ou lasuré"
+          ],
+          "dimensions": "L 3200 ou 2500 mm P 800 mm H 780 mm"
+        },
+        "bornes": {
+          "name": "Borne",
+          "description": "Le design des racines d’arbre est inspiré pour créer cette collection nommé Origine. Son style permet de se fondre dans l’environnement de manière sombre et discret.",
+          "images": [
+            "assets/images/nos-creations/origine/ORIGINE-Borne-min.png",
+            "assets/images/nos-creations/origine/ORIGINE-Borne-3-min.png",
+            "assets/images/nos-creations/origine/ORIGINE-Borne-4-min.png"
+          ],
+          "materials": ["Acier (S235, métallisation, Corten, inox)", "Bois"],
+          "finitions": [
+            "Thermoalquage RAL au choix",
+            "Electropolissage de l’inox",
+            "Corten naturel, ciré ou vernis"
+          ],
+          "dimensions": "Ø 250 et h hors sol 600 mm"
+        },
+        "potelets": {
+          "name": "Borne",
+          "description": "Le design des racines d’arbre est inspiré pour créer cette collection nommé Origine. Son style permet de se fondre dans l’environnement de manière sombre et discret.",
+          "images": [
+            "assets/images/nos-creations/origine/ORIGINE-Potelet-min.png",
+            "assets/images/nos-creations/origine/ORIGINE-Potelet-2-min.png",
+            "assets/images/nos-creations/origine/OORIGINE-Potelet-3-min.png"
+          ],
+          "materials": ["Acier (S235, métallisation, Corten, inox)", "Bois"],
+          "finitions": [
+            "Thermoalquage RAL au choix",
+            "Electropolissage de l’inox",
+            "Corten naturel, ciré ou vernis"
+          ],
+          "dimensions": "L 91.74 mm P 50 mm H 1154.9 mm"
+        }
+      }
+    },
+    "printemps": {
+      "name": "Printemps",
+      "description": "La collection Printemps est inspirée d’une balade dans la nature, à la rencontre des arbres en quête des symbolismes de feuilles.",
+      "symbole": "assets/icons/01-PRINTEMPS-min-e1761123499315.png",
+      "products": {
+        "assises": [
+          {
+            "name": "Tabouret",
+            "description": "Les assises PRINTEMPS, mélangeant le Corten et le bois exotique, sont des fusions entre les éléments. Leur puissante forme rappelant la position d’un imposant totem, vient s’habiller de précises découpes de feuilles de palme plus volatiles. Cela crée le sentiment que cette création peut aussi bien s’adapter à tous types d’environnement que s’y figer afin de rendre sa présence naturelle et indispensable.",
+            "images": [
+              "assets/images/nos-creations/printemps/Printemps-Tabouret-min.png",
+              "assets/images/nos-creations/printemps/Printemps-Tabouret-2-min.png",
+              "assets/images/nos-creations/printemps/Printemps-Tabouret-3-min.png"
+            ],
+            "materials": ["Acier (S235, galvanisé, Corten, inox)", "Bois"],
+            "finitions": [
+              "Thermoalquage RAL au choix",
+              "Electropolissage de l’inox",
+              "Corten naturel, ciré ou vernis",
+              "Bois traité à l’huile végétale ou lasuré"
+            ],
+            "dimensions": "L 600 mm H 450 mm"
+          },
+          {
+            "name": "Banquette",
+            "description": "Une version tout acier du banc Thal S, avec une esthétique brute et contemporaine, parfaite pour les espaces publics modernes.",
+            "images": [
+              "assets/images/nos-creations/printemps/Printemps-Banquette-2-min.png",
+              "assets/images/nos-creations/printemps/Printemps-Banquette-3-min.png",
+              "assets/images/nos-creations/printemps/Printemps-Banquette-4-min.png",
+              "assets/images/nos-creations/printemps/Printemps-Banquette-min.png"
+            ],
+            "materials": ["Acier (S235, galvanisé, Corten, inox)", "Bois"],
+            "finitions": [
+              "Thermoalquage RAL au choix",
+              "Electropolissage de l’inox",
+              "Corten naturel, ciré ou vernis",
+              "Bois traité à l’huile végétale ou lasuré"
+            ],
+            "dimensions": "L 1800 mm H 450 mm"
+          },
+          {
+            "name": "Fauteuil",
+            "description": "Parmi d’autres pièces de la collection THAL S, Urban Tendances vous propose une déclinaison des assises avec un design plus épuré. Ces assises, composées de lames de bois, reprennent la forme originale de la collection sans découpe de motifs en acier.",
+            "images": [
+              "assets/images/nos-creations/printemps/Printemps-Fauteuil-4-min.png",
+              "assets/images/nos-creations/printemps/Printemps-Fauteuil-2-min.png",
+              "assets/images/nos-creations/printemps/Printemps-Fauteuil-3-min.png",
+              "assets/images/nos-creations/printemps/Printemps-Fauteuil-min.png"
+            ],
+            "materials": ["Acier (S235, galvanisé, Corten, inox)", "Bois"],
+            "finitions": [
+              "Thermoalquage RAL au choix",
+              "Electropolissage de l’inox",
+              "Corten naturel, ciré ou vernis",
+              "Bois traité à l’huile végétale ou lasuré"
+            ],
+            "dimensions": "L 650 mm P 650 mm H 820 mm"
+          },
+          {
+            "name": "Banc",
+            "description": "Une version tout acier du banc Thal S, avec une esthétique brute et contemporaine, parfaite pour les espaces publics modernes.",
+            "images": [
+              "assets/images/nos-creations/printemps/Printemps-Banc-min.png",
+              "assets/images/nos-creations/printemps/Printemps-Banc-2-min.png",
+              "assets/images/nos-creations/printemps/Printemps-Banc-3-min.png",
+              "assets/images/nos-creations/printemps/Printemps-Banc-4-min.png"
+            ],
+            "materials": ["Acier (S235, galvanisé, Corten, inox)", "Bois"],
+            "finitions": [
+              "Thermoalquage RAL au choix",
+              "Electropolissage de l’inox",
+              "Corten naturel, ciré ou vernis",
+              "Bois traité à l’huile végétale ou lasuré"
+            ],
+            "dimensions": "L 1800 mm P 650 mm H 820 mm"
+          }
+        ],
+        "corbeilles": {
+          "name": "Corbeille",
+          "description": "La corbeille PRINTEMPS n’est pas seulement un objet mais aussi une véritable pièce de décoration. Elle vient habiller vos espaces de son magnifique brun naturel et de sa robe inspirée de feuilles de palmes.",
+          "images": [
+            "assets/images/nos-creations/printemps/Printemps-Corbeille-2-min.png",
+            "assets/images/nos-creations/printemps/Printemps-Corbeille-3-min.png",
+            "assets/images/nos-creations/printemps/Printemps-Corbeille-min.png"
+          ],
+          "materials": ["Acier (S235, galvanisé, Corten, inox)"],
+          "finitions": [
+            "Thermoalquage RAL au choix",
+            "Electropolissage de l’inox",
+            "Corten naturel, ciré ou vernis"
+          ],
+          "dimensions": "∅ 600mm H 850mm ou 780mm"
+        },
+        "jardinieres": {
+          "name": "Jardinière",
+          "description": "Telle une fleur qui enrobe vos plantations de ses pétales, la jardinière Printemps en acier Corten est la parfaitement solution pour aménager vos espaces. Elle vient compléter la collection Printemps de ses motifs de feuilles de palme plus volatiles.",
+          "images": [
+            "assets/images/nos-creations/printemps/Printemps-Jardiniere-2-min.png",
+            "assets/images/nos-creations/printemps/Printemps-Jardiniere-min.png"
+          ],
+          "materials": ["Acier (S235, galvanisé, Corten, inox)"],
+          "finitions": [
+            "Thermoalquage RAL au choix",
+            "Electropolissage de l’inox",
+            "Corten naturel, ciré ou vernis"
+          ],
+          "dimensions": "L 1 000 mm l 910 mm"
+        },
+        "potelets": {
+          "name": "Potelet",
+          "description": "Le potelet PRINTEMPS est la parfaite solution pour sécuriser et délimiter vos espaces avec singularité. Sa structure en acier Corten est renforcée de par ses 4 côtés parsemés de motifs floraux légers qui lui permettent d’assurer votre sécurité sans gêner votre vue sur votre environnement. Dans un milieu urbain ou floral, ce potelet s’accordera parfaitement avec ce qui l’entoure.",
+          "images": [
+            "assets/images/nos-creations/printemps/Printemps-Potelet-min.png",
+            "assets/images/nos-creations/printemps/Printemps-Potelet-2-min.png",
+            "assets/images/nos-creations/printemps/Printemps-Potelet-3-min.png"
+          ],
+          "materials": ["Acier (S235, galvanisé, Corten, inox)"],
+          "finitions": [
+            "Thermoalquage RAL au choix",
+            "Electropolissage de l’inox",
+            "Corten naturel, ciré ou vernis"
+          ],
+          "dimensions": "L 100 mm EP 100 mm H 1100 mm (hors sol)"
+        },
+
+        "barrieres": [
+          {
+            "name": "Barrière",
+            "description": "La barrière PRINTEMPS s’intègre avec légèreté dans n’importe quel extérieur, comme une feuille se posant délicatement sur le sol brut d’une forêt. Son armature en acier Corten offre la sécurité de n’importe quelle barrière mais avec la sobriété de son brun naturel. La main courante peut être en bois ou bien en acier.",
+            "images": [
+              "assets/images/nos-creations/printemps/Printemps-Barriere-2-min.png",
+              "assets/images/nos-creations/printemps/Printemps-Barriere-min.png",
+              "assets/images/nos-creations/printemps/Printemps-Barriere-3-min.png",
+              "assets/images/nos-creations/printemps/Printemps-Barriere-4-min.png"
+            ],
+            "materials": ["Acier (S235, galvanisé, Corten, inox)", "Bois"],
+            "finitions": [
+              "Thermoalquage RAL au choix",
+              "Electropolissage de l’inox",
+              "Corten naturel, ciré ou vernis",
+              "Bois traité à l’huile végétale ou lasuré"
+            ],
+            "dimensions": "L 1000 mm P 35 mm H 900 mm"
+          },
+          {
+            "name": "Garde-corps",
+            "description": "Le garde-corps PRINTEMPS s’intègre avec légèreté dans n’importe quel extérieur, comme une feuille se posant délicatement sur le sol brut d’une forêt. Son armature en acier Corten offre la sécurité de n’importe quelle barrière mais avec la sobriété de son brun naturel. La main courante peut être en bois ou bien en acier.",
+            "images": [
+              "assets/images/nos-creations/printemps/printemps-garde-corps-min.jpg"
+            ],
+            "materials": ["Acier (S235, galvanisé, Corten, inox)"],
+            "finitions": [
+              "Thermoalquage RAL au choix",
+              "Electropolissage de l’inox",
+              "Corten naturel, ciré ou vernis"
+            ],
+            "dimensions": "L 1186 mm P 50 mm H 1100 mm"
+          }
+        ],
+        "transatsdivans": {
+          "name": "Transat",
+          "description": "Le transat Printemps est l’expression d’un bain de soleil chaleureux accompagné d’une ambiance exotique à travers ses découpes de feuilles de palme et le bois de mélèze. Ils sont disponibles pour une ou bien deux personnes.",
+          "images": [
+            "assets/images/nos-creations/printemps/Printemps-Transat-min.png",
+            "assets/images/nos-creations/printemps/Printemps-Transat-2-min.png",
+            "assets/images/nos-creations/printemps/Printemps-Transat-3-min.png",
+            "assets/images/nos-creations/printemps/Printemps-Transat-4-min.png",
+            "assets/images/nos-creations/printemps/Printemps-Transat-5-min.png"
+          ],
+          "materials": ["Acier (S235, galvanisé, Corten, inox)", "Bois"],
+          "finitions": [
+            "Thermoalquage RAL au choix",
+            "Electropolissage de l’inox",
+            "Corten naturel, ciré ou vernis",
+            "Bois traité à l’huile végétale ou lasuré"
+          ],
+          "dimensions": [
+            "Transat une place : H 1 165 mm  L 2 128 mm l 650 mm",
+            "Transat deux places : H 1 165 mm  L 2 128 mm l 1 500 mm"
+          ]
+        },
+        "grillesdarbre": {
+          "pageTitle": "Grilles d'arbre",
+          "name": "Grille d'arbre",
+          "description": "Telle une feuille se détachant de sa branche en plein automne, la grille Printemps vient se poser avec légèreté au pied d’un arbre. L’acier Corten dans lequel est produit cette grille offre un rendu magnifique et vient habiller vos espaces verts de la façon la plus simple et harmonieuse. Cette grille d’arbre s’inspire de la nature et a été pensée afin de s’y adapter et l’habiller sans en gêner son équilibre.",
+          "images": [
+            "assets/images/nos-creations/printemps/Printemps-Grille-2-min.png",
+            "assets/images/nos-creations/printemps/Printemps-Grille-min.png",
+            "assets/images/nos-creations/printemps/Printemps-Grille-3-min.png",
+            "assets/images/nos-creations/printemps/Printemps-Grille-4-min.png"
+          ],
+          "materials": ["Acier (S235, galvanisé, Corten, inox)"],
+          "finitions": [
+            "Thermoalquage RAL au choix",
+            "Electropolissage de l’inox",
+            "Corten naturel, ciré ou vernis"
+          ],
+          "dimensions": "Sur mesure"
+        },
+        "lampes": {
+          "name": "Lampe florale",
+          "description": "Ce luminaire en Corten, également disponible en d’autres finitions, est un objet imposant habillé de sa robe florale et vient s’installer dans votre espace extérieur ou bien intérieur en créant une atmosphère chaleureuse et exotique.  Cette lampe s’accompagne d’un équipement électrique qui dispose d’un projecteur LED.",
+          "images": [
+            "assets/images/nos-creations/printemps/Printemps-Lampe-2-min.png",
+            "assets/images/nos-creations/printemps/Printemps-Lampe-min.png",
+            "assets/images/nos-creations/printemps/Printemps-Lampe-3-min.png",
+            "assets/images/nos-creations/printemps/Printemps-Lampe-4-min.png"
+          ],
+          "materials": ["Acier (S235, galvanisé, Corten, inox)"],
+          "finitions": [
+            "Thermoalquage RAL au choix",
+            "Electropolissage de l’inox",
+            "Corten naturel, ciré ou vernis"
+          ],
+          "dimensions": "200 mm  x 200 mm  x 1400 mm"
+        },
+        "cendriers": {
+          "name": "Cendrier",
+          "description": "Le cendrier est un mobilier qui fait également partie de la collection Printemps. C’est à la fois un objet fonctionnel et décorateur. Ses motifs exotiques chics et audacieux, mélangeant la sobriété et la simplicité, rendent cet objet unique s’intégrera naturellement dans votre espace.",
+          "images": [
+            "assets/images/nos-creations/printemps/Printemps-Cendrier-min.png",
+            "assets/images/nos-creations/printemps/Printemps-Cendrier-2-min.png",
+            "assets/images/nos-creations/printemps/Printemps-Cendrier-3-min.png",
+            "assets/images/nos-creations/printemps/Printemps-Cendrier-4-min.png",
+            "assets/images/nos-creations/printemps/Printemps-Cendrier-5-min.png"
+          ],
+          "materials": ["Acier (S235, galvanisé, Corten, inox)"],
+          "finitions": [
+            "Thermoalquage RAL au choix",
+            "Electropolissage de l’inox",
+            "Corten naturel, ciré ou vernis"
+          ],
+          "dimensions": "L 170 mm H 910 mm"
+        },
+        "bornes": {
+          "name": "Borne florale",
+          "description": "La borne florale de la collection Printemps est la parfaite solution pour sécuriser et délimiter vos espaces avec singularité. Sa structure en acier Corten est renforcée de par ses 4 côtés parsemés de motifs floraux légers qui lui permettent d’assurer votre sécurité sans gêner votre vue sur votre environnement. Dans un milieu urbain ou floral, cette borne s’accordera parfaitement avec ce qui l’entoure.",
+          "images": [
+            "assets/images/nos-creations/printemps/Printemps-Borne-min.png",
+            "assets/images/nos-creations/printemps/Printemps-Borne-2-min.png",
+            "assets/images/nos-creations/printemps/Printemps-Borne-3-min.png",
+            "assets/images/nos-creations/printemps/Printemps-Borne-4-min.png"
+          ],
+          "materials": ["Acier (S235, galvanisé, Corten, inox)"],
+          "finitions": [
+            "Thermoalquage RAL au choix",
+            "Electropolissage de l’inox",
+            "Corten naturel, ciré ou vernis"
+          ],
+          "dimensions": "L 200 mm H 700 mm"
+        },
+        "supportsvelos": {
+          "name": "Support vélo",
+          "description": "Aussi fonctionnel qu’esthétique, le support à vélo PRINTEMPS vient se camoufler dans son environnement en imitant la forme d’une feuille. Solide et durable par son armature renforcée en acier Corten, ce support de vélo se veut, comme l’ensemble de la collection Printemps, confondu dans vos paysages avec respect.",
+          "images": [
+            "assets/images/nos-creations/printemps/Printemps-support-velo-min.png",
+            "assets/images/nos-creations/printemps/Printemps-support-velo-2-min.png",
+            "assets/images/nos-creations/printemps/Printemps-support-velo-3-min.png"
+          ],
+          "materials": ["Acier", "Peinture époxy"],
+          "finitions": [
+            "Thermoalquage RAL au choix",
+            "Electropolissage de l’inox",
+            "Corten naturel, ciré ou vernis"
+          ],
+          "dimensions": "L 550 mm P 430 mm H 714 mm"
+        },
+        "tables": {
+          "name": "Table",
+          "description": "Les tables de pique-nique Printemps, mélangeant le Corten et le bois exotique, sont des fusions entre les éléments. Leur puissante forme rappelant la position d’un imposant totem, vient s’habiller de précises découpes de feuilles de palme plus volatiles. Cela crée le sentiment que cette création peut aussi bien s’adapter à tous types d’environnement que s’y figer afin de rendre sa présence naturelle et indispensable.  Nous avons crée une table pour six personnes et également une table pour deux personnes, les assises quant à eux sont personnalisables. Ces dernières peuvent être avec ou bien sans dossier.",
+          "images": [
+            "assets/images/nos-creations/printemps/Printemps-Table-min.png",
+            "assets/images/nos-creations/printemps/Printemps-Table-2-min.png",
+            "assets/images/nos-creations/printemps/Printemps-Table-3-min.png",
+            "assets/images/nos-creations/printemps/Printemps-Table-4-min.png"
+          ],
+          "materials": ["Acier", "Peinture époxy", " Bois"],
+          "finitions": [
+            "Thermoalquage RAL au choix",
+            "Electropolissage de l’inox",
+            "Corten naturel, ciré ou vernis",
+            "Bois traité à l’huile végétale ou lasuré"
+          ],
+          "dimensions": [
+            "Table de 2 personnes :   L 900 mm H 750 mm  l 1 300 mm",
+            "Table de 6 personnes :  L 900 mm H 750 mm  l 2 000 mm"
+          ]
+        }
+      }
+    },
+    "respire": {
+      "name": "Respire",
+      "description": "Mobilier contemporain en acier et bois.",
+      "symbole": "assets/icons/15-RESPIRE-min-e1761123828427.png",
+      "products": {
+        "recuperateursdepiles": {
+          "pageTitle": "Récupérateurs de piles",
+          "name": "Récuperateur de piles",
+          "description": "Conçu pour sensibiliser et inciter au recyclage, le récupérateur de piles Respire transforme un geste écoresponsable en une expérience fluide et intuitive. Son format compact permet de l’installer facilement dans des halls d’accueil, bureaux, magasins ou lieux publics, sans dénaturer l’espace.<br>Son design épuré et fonctionnel fait du recyclage un acte simple et accessible à tous. Grâce à sa capacité optimisée, il permet une collecte efficace des piles usagées, contribuant ainsi à la réduction des déchets toxiques.",
+          "images": [
+            "assets/images/nos-creations/respire/Recuperatuer-de-piles-Respire-3.jpg",
+            "assets/images/nos-creations/respire/Recuperatuer-de-piles-Respire-1.jpg",
+            "assets/images/nos-creations/respire/Recuperatuer-de-piles-Respire-2.jpg"
+          ],
+          "materials": ["Acier (S235, galvanisé, Corten, inox)"],
+          "finitions": [
+            "Thermoalquage RAL au choix",
+            "Electropolissage de l’inox",
+            "Corten naturel, ciré ou vernis",
+            "Bois traité à l’huile végétale ou lasuré"
+          ],
+          "dimensions": "L 345 x P 230 x H 1100 mm"
+        }
+      }
+    },
+    "silva": {
+      "name": "Silva",
+      "description": "Mobilier contemporain en acier et bois.",
+      "symbole": "assets/icons/14-SILVA-min-e1761123571647.png",
+      "products": {
+        "tables": [
+          {
+            "name": "Table Pique nique",
+            "description": "Découvrez la table de pique-nique Silva, conçue en grosse section de bois massif, alliant solidité, esthétique et durabilité. Idéale pour les espaces urbains, les jardins collectifs, les parcs et les parties communes, elle invite au partage et à la convivialité.",
+            "images": [
+              "assets/images/nos-creations/silva/silva-tablepicnic1.jpg",
+              "assets/images/nos-creations/silva/14-150-A-MES-SILVA-TABLE-PIQUE-NIQUE-2.png",
+              "assets/images/nos-creations/silva/14-150-A-MES-SILVA-TABLE-PIQUE-NIQUE-3.png",
+              "assets/images/nos-creations/silva/14-150-A-MES-SILVA-TABLE-PIQUE-NIQUE-4.png"
+            ],
+            "materials": [
+              "Acier traité (sablage + traitement anticorrosif + thermolaquage C5 bord de mer",
+              "corten naturel",
+              "Inox 304 (sablage + traitement anticorrosif + thermolaquage C5 bord de mer – teinte au choix)",
+              "Bois (chêne ou exotique) – saturateur à base d’huile végétale"
+            ],
+            "finitions": [""],
+            "dimensions": "L2000/3000 x P470 x H450  mm"
+          },
+          {
+            "name": "Table basse",
+            "description": "La table basse Silva est conçue pour s’adapter à différents espaces et usages. Que ce soit pour un coin lounge en extérieur, une zone de repos dans un parc ou un espace détente en entreprise, son design minimaliste et robuste s’intègre harmonieusement à tout environnement.",
+            "images": [
+              "assets/images/nos-creations/silva/14-140-A-MES-SILVA-TABLE-BASSE-1.png",
+              "assets/images/nos-creations/silva/14-140-A-MES-SILVA-TABLE-BASSE-2.png",
+              "assets/images/nos-creations/silva/14-140-A-MES-SILVA-TABLE-BASSE-3.png"
+            ],
+            "materials": [
+              "Acier traité (sablage + traitement anticorrosif + thermolaquage C5 bord de mer",
+              "corten naturel",
+              "Inox 304 (sablage + traitement anticorrosif + thermolaquage C5 bord de mer – teinte au choix)",
+              "Bois (chêne ou exotique) – saturateur à base d’huile végétale"
+            ],
+            "finitions": [""],
+            "dimensions": "L800 x P470 x H450  mm"
+          }
+        ],
+        "assises": [
+          {
+            "name": "Banc 2000/3000",
+            "description": "Apportez du confort et du style à vos aménagements avec le banc Silva, conçue en bois massif de grosse section. Parfaite pour les espaces urbains, les jardins publics, les entreprises ou les parties communes, elle allie solidité, design naturel et durabilité.",
+            "images": [
+              "assets/images/nos-creations/silva/14-020-A-MES-BANC-L2000-2.png",
+              "assets/images/nos-creations/silva/14-020-A-MES-BANC-L2000-3.png",
+              "assets/images/nos-creations/silva/14-020-A-MES-BANC-L2000-4.png",
+              "assets/images/nos-creations/silva/14-021-A-MES-BANC-L3000-2.png",
+              "assets/images/nos-creations/silva/14-021-A-MES-BANC-L3000-4.png"
+            ],
+            "materials": [
+              "Acier traité (sablage + traitement anticorrosif + thermolaquage C5 bord de mer",
+              "corten naturel",
+              "Inox 304 (sablage + traitement anticorrosif + thermolaquage C5 bord de mer – teinte au choix)",
+              "Bois (chêne ou exotique) – saturateur à base d’huile végétale"
+            ],
+            "finitions": [""],
+            "dimensions": "L2000/3000 x P470 x H450  mm"
+          },
+          {
+            "name": "Banquette 2000/30000",
+            "description": "PApportez du confort et du style à vos aménagements avec la banquette Silva, conçue en bois massif de grosse section. Parfaite pour les espaces urbains, les jardins publics, les entreprises ou les parties communes, elle allie solidité, design naturel et durabilité.",
+            "images": [
+              "assets/images/nos-creations/silva/IMG-20241031-WA0018.jpg",
+              "assets/images/nos-creations/silva/14-040-A-MES-BANQUETTE-L2000-1.png",
+              "assets/images/nos-creations/silva/14-040-A-MES-BANQUETTE-L2000-2.png",
+              "assets/images/nos-creations/silva/14-040-A-MES-BANQUETTE-L2000-4.png"
+            ],
+            "materials": [
+              "Acier traité (sablage + traitement anticorrosif + thermolaquage C5 bord de mer",
+              "corten naturel",
+              "Inox 304 (sablage + traitement anticorrosif + thermolaquage C5 bord de mer – teinte au choix)",
+              "Bois (chêne ou exotique) – saturateur à base d’huile végétale"
+            ],
+            "finitions": [""],
+            "dimensions": "L2000/3000 x P470 x H450  mm"
+          },
+          {
+            "name": "Tabouret",
+            "description": "Apportez une touche d’élégance et de robustesse à vos aménagements avec la table basse Silva. Fabriquée en bois massif de grosse section, elle conjugue solidité, esthétique et praticité. Parfaite pour les terrasses, jardins, espaces urbains et collectifs, elle crée un lieu convivial pour se détendre et partager des moments en extérieur.",
+            "images": [
+              "assets/images/nos-creations/silva/IMG-20241031-WA0016.jpg"
+            ],
+            "materials": [
+              "Acier traité (sablage + traitement anticorrosif + thermolaquage C5 bord de mer",
+              "corten naturel",
+              "Inox 304 (sablage + traitement anticorrosif + thermolaquage C5 bord de mer – teinte au choix)",
+              "Bois (chêne ou exotique) – saturateur à base d’huile végétale"
+            ],
+            "finitions": [""],
+            "dimensions": "L650 x P470 x H450  mm"
+          }
+        ],
+        "transatsdivans": {
+          "name": "Transat",
+          "description": "Offrez à vos espaces extérieurs une touche de design et de confort avec le transat Silva. Conçu en bois massif de grosse section, il allie robustesse, élégance et ergonomie, idéal pour se détendre en plein air. Que ce soit pour un jardin, une terrasse, un espace public ou une piscine, ce transat apporte une solution esthétique et durable pour le bien-être de tous.",
+          "images": [
+            "assets/images/nos-creations/silva/14-070-A-MES-TRANSAT-1.png"
+          ],
+          "materials": [
+            "Acier traité (sablage + traitement anticorrosif + thermolaquage C5 bord de mer",
+            "corten naturel",
+            "Inox 304 (sablage + traitement anticorrosif + thermolaquage C5 bord de mer – teinte au choix)",
+            "Bois (chêne ou exotique) – saturateur à base d’huile végétale"
+          ],
+          "finitions": [""],
+          "dimensions": "L1908 x P566 x H1232/472  mm"
+        }
+      }
+    },
+    "tulipe": {
+      "name": "Tulipe",
+      "description": "Cette collection a été pensé dans le but de redonner une place appréciée dans son environnement. En effet son allure tulipe nous renvoie aux propriétés de la fleur, faisant de ces mobiliers des accessoires pratiques et esthétiques.",
+      "symbole": "assets/icons/07-TULIPE-min-e1761123948867.png",
+      "products": {
+        "cendriers": {
+          "name": "Cendrier",
+          "description": "Cet objet est l’oxymore du cendrier. Il a été pensé dans le but de redonner une place appréciée dans son environnement. En effet son allure de tulipe nous renvoie aux propriétés de la fleur, faisant de ce mobilier, un accessoire pratique et esthétique pour réceptionner les mégots de cigarette. Ce cendrier de tulipe s’installera parfaitement dans vos espaces en se confondant nativement avec la nature.",
+          "images": [
+            "assets/images/nos-creations/tulipe/TULIPE-cendrier-2-min.png",
+            "assets/images/nos-creations/tulipe/TULIPE-cendrier-3-min.png",
+            "assets/images/nos-creations/tulipe/TULIPE-cendrier-4-min.png",
+            "assets/images/nos-creations/tulipe/TULIPE-cendrier-5-min.png",
+            "assets/images/nos-creations/tulipe/TULIPE-cendrier-min.png"
+          ],
+          "materials": ["Acier (S235, galvanisé, Corten, inox)"],
+          "finitions": [
+            "Thermoalquage RAL au choix",
+            "Electropolissage de l’inox",
+            "Corten naturel, ciré ou vernis"
+          ],
+          "dimensions": "Hauteur hors sol 900 mm"
+        },
+        "jardinieres": {
+          "name": "Jardinière",
+          "description": "Cette jardinière élégante, chic et branché fait partie de notre collection tulipe. Vous pourriez réaliser de charmants ensembles en accompagnant vos plantations de notre jardinière Tulipe. Les couleurs et finitions sont personnalisables ainsi que la dimension.",
+          "images": [
+            "assets/images/nos-creations/tulipe/TULIPE-jardiniere-2-min.png",
+            "assets/images/nos-creations/tulipe/TULIPE-jardiniere-min.png"
+          ],
+          "materials": ["Acier (S235, galvanisé, Corten, inox)"],
+          "finitions": [
+            "Thermoalquage RAL au choix",
+            "Electropolissage de l’inox",
+            "Corten naturel, ciré ou vernis"
+          ],
+          "dimensions": "Ø 1100 mm H 1000 mm"
+        }
+      }
+    }
+  },
+  "projects": {
+    "villasimone": {
+      "name": "Villa Simone Ensemble | Table pique-nique Mosaïque",
+      "city": "Six-Fours-Les-Plages",
+      "year": 2024,
+      "description": "Rénovation complète de la place avec mobilier urbain de la collection Thal S.",
+      "products": [
+        {
+          "collection": "thal-s",
+          "type": "assises",
+          "name": "Banc en acier",
+          "quantity": 12
+        },
+        {
+          "collection": "thal-s",
+          "type": "corbeilles",
+          "name": "Corbeille",
+          "quantity": 8
+        }
+      ],
+      "images": [
+        "assets/images/projets/Villa-Simone-scaled.jpg",
+        "assets/images/projets/villa-simone1.jpg",
+        "assets/images/projets/villa-simone2.jpg",
+        "assets/images/projets/villa-simone3.jpg",
+        "assets/images/projets/villa-simone4.jpg",
+        "assets/images/projets/villa-simone5.jpg"
+      ]
+    },
+    "stouenlotissement": {
+      "name": "Lotissement | Collection Silva",
+      "city": "St Ouen",
+      "year": 2023,
+      "description": "Création d'un espace de repos avec des assises et jardinières.",
+      "products": [
+        {
+          "collection": "bulle",
+          "type": "assises",
+          "name": "Banc",
+          "quantity": 6
+        },
+        {
+          "collection": "thal-s",
+          "type": "jardinieres",
+          "name": "Jardinière",
+          "quantity": 4
+        }
+      ],
+      "images": [
+        "assets/images/nos-creations/silva/silva-transat1.jpg",
+        "assets/images/nos-creations/silva/Village-des-Athletes.png",
+        "assets/images/nos-creations/silva/silva-tablepicnic1.jpg",
+        "assets/images/nos-creations/silva/silva-tabouret1.jpg"
+      ]
+    },
+    "ideetheque": {
+      "name": "Idéethèque | Stèle Missak et Mélinée Manouchian",
+      "city": "Pennes Mirabeau (13)",
+      "year": 2023,
+      "description": "Création d'un espace de repos avec des assises et jardinières.",
+      "products": [
+        {
+          "collection": "bulle",
+          "type": "assises",
+          "name": "Banc",
+          "quantity": 6
+        },
+        {
+          "collection": "thal-s",
+          "type": "jardinieres",
+          "name": "Jardinière",
+          "quantity": 4
+        }
+      ],
+      "images": ["assets/images/projets/Stele-Missak.jpg"]
+    },
+    "placejourdan": {
+      "name": "Place Jourdan | Corbeille et banc Printemps personnalisés",
+      "city": "La Ciotat (13)",
+      "year": 2023,
+      "description": "Création d'un espace de repos avec des assises et jardinières.",
+      "products": [
+        {
+          "collection": "bulle",
+          "type": "assises",
+          "name": "Banc",
+          "quantity": 6
+        },
+        {
+          "collection": "thal-s",
+          "type": "jardinieres",
+          "name": "Jardinière",
+          "quantity": 4
+        }
+      ],
+      "images": [
+        "assets/images/projets/aire-jourdan2.jpg",
+        "assets/images/projets/aire-jourdan1.jpg"
+      ]
+    },
+    "villasaintraphael": {
+      "name": "Villa | Lampes Florales Corten",
+      "city": "Saint Raphaël (83)",
+      "year": 2023,
+      "description": "Création d'un espace de repos avec des assises et jardinières.",
+      "products": [
+        {
+          "collection": "bulle",
+          "type": "assises",
+          "name": "Banc",
+          "quantity": 6
+        },
+        {
+          "collection": "thal-s",
+          "type": "jardinieres",
+          "name": "Jardinière",
+          "quantity": 4
+        }
+      ],
+      "images": [
+        "assets/images/projets/villa-st-raph1.jpg",
+        "assets/images/projets/villa-st-raph2.jpg"
+      ]
+    },
+    "villaroubaud": {
+      "name": "Villa Roubaud | Table pique-nique AMOP Collection Mateus",
+      "city": "Hyères (83)",
+      "year": 2023,
+      "description": "Création d'un espace de repos avec des assises et jardinières.",
+      "products": [
+        {
+          "collection": "bulle",
+          "type": "assises",
+          "name": "Banc",
+          "quantity": 6
+        },
+        {
+          "collection": "thal-s",
+          "type": "jardinieres",
+          "name": "Jardinière",
+          "quantity": 4
+        }
+      ],
+      "images": ["assets/images/projets/villa-roubaud1.jpg"]
+    },
+    "bergesdugapeau": {
+      "name": "Berges du Gapeau | Banc collection Arpuro+ - AMOP",
+      "city": "Solliès-Pont (83)",
+      "year": 2023,
+      "description": "Création d'un espace de repos avec des assises et jardinières.",
+      "products": [
+        {
+          "collection": "bulle",
+          "type": "assises",
+          "name": "Banc",
+          "quantity": 6
+        },
+        {
+          "collection": "thal-s",
+          "type": "jardinieres",
+          "name": "Jardinière",
+          "quantity": 4
+        }
+      ],
+      "images": [
+        "assets/images/projets/montpellier-1.jpg",
+        "assets/images/projets/montpellier-2.jpg"
+      ]
+    },
+    "saintchamas": {
+      "name": "Place du centre | Banc collection Mosaïque",
+      "city": "Saint Chamas (13)",
+      "year": 2023,
+      "description": "Création d'un espace de repos avec des assises et jardinières.",
+      "products": [
+        {
+          "collection": "bulle",
+          "type": "assises",
+          "name": "Banc",
+          "quantity": 6
+        },
+        {
+          "collection": "thal-s",
+          "type": "jardinieres",
+          "name": "Jardinière",
+          "quantity": 4
+        }
+      ],
+      "images": [
+        "assets/images/projets/montpellier-1.jpg",
+        "assets/images/projets/montpellier-2.jpg"
+      ]
+    },
+    "tourfondue": {
+      "name": "Tour Fondue | Main courante inox thermolaquée",
+      "city": "Hyères (83)",
+      "year": 2023,
+      "description": "Création d'un espace de repos avec des assises et jardinières.",
+      "products": [
+        {
+          "collection": "bulle",
+          "type": "assises",
+          "name": "Banc",
+          "quantity": 6
+        },
+        {
+          "collection": "thal-s",
+          "type": "jardinieres",
+          "name": "Jardinière",
+          "quantity": 4
+        }
+      ],
+      "images": [
+        "assets/images/projets/montpellier-1.jpg",
+        "assets/images/projets/montpellier-2.jpg"
+      ]
+    },
+    "soprotec": {
+      "name": "Soprotec | Banc collection THAL'S",
+      "city": "Hyères (83)",
+      "year": 2023,
+      "description": "Création d'un espace de repos avec des assises et jardinières.",
+      "products": [
+        {
+          "collection": "bulle",
+          "type": "assises",
+          "name": "Banc",
+          "quantity": 6
+        },
+        {
+          "collection": "thal-s",
+          "type": "jardinieres",
+          "name": "Jardinière",
+          "quantity": 4
+        }
+      ],
+      "images": [
+        "assets/images/projets/montpellier-1.jpg",
+        "assets/images/projets/montpellier-2.jpg"
+      ]
+    },
+    "pasducerf": {
+      "name": "Pas du Cerf | Assises collection THAL'S",
+      "city": "La Londe (83)",
+      "year": 2023,
+      "description": "Création d'un espace de repos avec des assises et jardinières.",
+      "products": [
+        {
+          "collection": "bulle",
+          "type": "assises",
+          "name": "Banc",
+          "quantity": 6
+        },
+        {
+          "collection": "thal-s",
+          "type": "jardinieres",
+          "name": "Jardinière",
+          "quantity": 4
+        }
+      ],
+      "images": [
+        "assets/images/projets/montpellier-1.jpg",
+        "assets/images/projets/montpellier-2.jpg"
+      ]
+    },
+    "ecolejulesverne": {
+      "name": "École Jules Verne | Poufs colorés",
+      "city": "Agde (34)",
+      "year": 2023,
+      "description": "Création d'un espace de repos avec des assises et jardinières.",
+      "products": [
+        {
+          "collection": "bulle",
+          "type": "assises",
+          "name": "Banc",
+          "quantity": 6
+        },
+        {
+          "collection": "thal-s",
+          "type": "jardinieres",
+          "name": "Jardinière",
+          "quantity": 4
+        }
+      ],
+      "images": [
+        "assets/images/projets/montpellier-1.jpg",
+        "assets/images/projets/montpellier-2.jpg"
+      ]
+    },
+    "bergessollies": {
+      "name": "Berges du Gapeau | Corbeilles SLIM",
+      "city": "Solliès-Pont (83)",
+      "year": 2023,
+      "description": "Création d'un espace de repos avec des assises et jardinières.",
+      "products": [
+        {
+          "collection": "bulle",
+          "type": "assises",
+          "name": "Banc",
+          "quantity": 6
+        },
+        {
+          "collection": "thal-s",
+          "type": "jardinieres",
+          "name": "Jardinière",
+          "quantity": 4
+        }
+      ],
+      "images": [
+        "assets/images/projets/montpellier-1.jpg",
+        "assets/images/projets/montpellier-2.jpg"
+      ]
+    }
+  }
+}
