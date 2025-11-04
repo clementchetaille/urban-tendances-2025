@@ -303,7 +303,6 @@ const projectsListTemplate = fs.readFileSync(
 );
 
 // 🏗️ Étape 4 : Générer les pages projets individuelles
-// 🏗️ Étape 4 : Générer les pages projets individuelles
 const projectsDir = path.join(distDir, "projets");
 fs.mkdirSync(projectsDir, { recursive: true });
 
@@ -348,7 +347,7 @@ for (const [projectSlug, project] of Object.entries(data.projects || {})) {
     .join("\n");
 
   // Remplir le template
-  const assetsBasePath = "../..";
+  const assetsBasePath = BASE_PATH ? BASE_PATH : "../..";
   const navBasePath = BASE_PATH ? `${BASE_PATH}/dist` : "..";
   const projectHTML = projectTemplate
     .replace(/{{assetsBasePath}}/g, assetsBasePath)
