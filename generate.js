@@ -303,6 +303,7 @@ const projectsListTemplate = fs.readFileSync(
 );
 
 // 🏗️ Étape 4 : Générer les pages projets individuelles
+// 🏗️ Étape 4 : Générer les pages projets individuelles
 const projectsDir = path.join(distDir, "projets");
 fs.mkdirSync(projectsDir, { recursive: true });
 
@@ -310,7 +311,8 @@ for (const [projectSlug, project] of Object.entries(data.projects || {})) {
   // Générer les images
   const imagesHTML = project.images
     .map((img) => {
-      const imgPath = `/${img.replace(/^(\.\.\/)+/, "")}`;
+      const cleanPath = img.replace(/^(\.\.\/)+/, "");
+      const imgPath = `${BASE_PATH}/${cleanPath}`;
       return `<img src="${imgPath}" alt="${project.name}">`;
     })
     .join("\n");
@@ -323,8 +325,12 @@ for (const [projectSlug, project] of Object.entries(data.projects || {})) {
       const collection = data.collections[product.collection];
       if (!collection) return "";
 
-      const symbolePath = collection.symbole
-        ? `/${collection.symbole.replace(/^(\.\.\/)+/, "")}`
+      // ✅ Déclarer cleanSymbolPath ici, dans le scope du .map()
+      const cleanSymbolPath = collection.symbole
+        ? collection.symbole.replace(/^(\.\.\/)+/, "")
+        : "";
+      const symbolePath = cleanSymbolPath
+        ? `${BASE_PATH}/${cleanSymbolPath}`
         : "";
 
       return `
@@ -342,9 +348,7 @@ for (const [projectSlug, project] of Object.entries(data.projects || {})) {
     .join("\n");
 
   // Remplir le template
-  // Chemins relatifs pour les assets depuis /dist/projets/
   const assetsBasePath = "../..";
-  // Chemin complet pour la navigation
   const navBasePath = BASE_PATH ? `${BASE_PATH}/dist` : "..";
   const projectHTML = projectTemplate
     .replace(/{{assetsBasePath}}/g, assetsBasePath)
@@ -364,7 +368,8 @@ for (const [projectSlug, project] of Object.entries(data.projects || {})) {
 const projectsListHTML = Object.entries(data.projects || {})
   .map(([slug, project]) => {
     const firstImage = project.images[0] || "assets/images/placeholder.jpg";
-    const imagePath = `/${firstImage.replace(/^(\.\.\/)+/, "")}`;
+    const cleanPath = firstImage.replace(/^(\.\.\/)+/, "");
+    const imagePath = `${BASE_PATH}/${cleanPath}`; // ✅ Ajout de BASE_PATH
 
     return `
       <div class="project-card">
