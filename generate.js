@@ -303,6 +303,9 @@ const projectsListTemplate = fs.readFileSync(
 );
 
 // 🏗️ Étape 4 : Générer les pages projets individuelles
+// 🏗️ Étape 4 : Générer les pages projets individuelles
+// 🏗️ Étape 4 : Générer les pages projets individuelles
+// 🏗️ Étape 4 : Générer les pages projets individuelles
 const projectsDir = path.join(distDir, "projets");
 fs.mkdirSync(projectsDir, { recursive: true });
 
@@ -347,11 +350,15 @@ for (const [projectSlug, project] of Object.entries(data.projects || {})) {
     .join("\n");
 
   // Remplir le template
-  const assetsBasePath = BASE_PATH ? BASE_PATH : "../..";
-  const navBasePath = BASE_PATH ? `${BASE_PATH}/dist` : "..";
+  const assetsBasePath = BASE_PATH ? BASE_PATH : "../.."; // Pour assets
+  const navBasePath = BASE_PATH ? BASE_PATH : "../.."; // ✅ Changé : pour fichiers racine
+  const distNavBasePath = BASE_PATH ? `${BASE_PATH}/dist` : ".."; // Pour fichiers dans dist/
+
   const projectHTML = projectTemplate
+    .replace(/{{basePath}}/g, BASE_PATH)
     .replace(/{{assetsBasePath}}/g, assetsBasePath)
-    .replace(/{{navBasePath}}/g, navBasePath)
+    .replace(/{{navBasePath}}/g, navBasePath) // Pour index.html, sur-mesure.html
+    .replace(/{{distNavBasePath}}/g, distNavBasePath) // Pour projets.html, collections.html
     .replace(/{{name}}/g, project.name)
     .replace(/{{city}}/g, project.city)
     .replace(/{{year}}/g, project.year)
