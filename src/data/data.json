@@ -1162,6 +1162,23 @@
     }
   },
   "projects": {
+    "lettragebandol": {
+      "name": "Avenue Jean Loste | Lettrage 3D acier",
+      "city": "Bandol (83)",
+      "year": 2024,
+      "description": "Rénovation complète de la place avec mobilier urbain de la collection Thal S.",
+      "products": [
+        {
+          "collection": "",
+          "type": "assises",
+          "name": ""
+        }
+      ],
+      "images": [
+        "assets/images/projets/Lettrage-3d-Bandol_2.jpg",
+        "assets/images/projets/Lettrage-3d-Bandol.jpg"
+      ]
+    },
     "villasimone": {
       "name": "Villa Simone Ensemble | Table pique-nique Mosaïque",
       "city": "Six-Fours-Les-Plages",
@@ -1169,16 +1186,10 @@
       "description": "Rénovation complète de la place avec mobilier urbain de la collection Thal S.",
       "products": [
         {
-          "collection": "thal-s",
+          "collection": "mosaique",
           "type": "assises",
-          "name": "Banc en acier",
-          "quantity": 12
-        },
-        {
-          "collection": "thal-s",
-          "type": "corbeilles",
-          "name": "Corbeille",
-          "quantity": 8
+          "name": "",
+          "quantity": 0
         }
       ],
       "images": [
@@ -1197,16 +1208,10 @@
       "description": "Création d'un espace de repos avec des assises et jardinières.",
       "products": [
         {
-          "collection": "bulle",
+          "collection": "silva",
           "type": "assises",
-          "name": "Banc",
+          "name": "",
           "quantity": 6
-        },
-        {
-          "collection": "thal-s",
-          "type": "jardinieres",
-          "name": "Jardinière",
-          "quantity": 4
         }
       ],
       "images": [
@@ -1223,16 +1228,10 @@
       "description": "Création d'un espace de repos avec des assises et jardinières.",
       "products": [
         {
-          "collection": "bulle",
-          "type": "assises",
-          "name": "Banc",
-          "quantity": 6
-        },
-        {
-          "collection": "thal-s",
-          "type": "jardinieres",
-          "name": "Jardinière",
-          "quantity": 4
+          "collection": "",
+          "type": "",
+          "name": "",
+          "quantity": 0
         }
       ],
       "images": ["assets/images/projets/Stele-Missak.jpg"]
@@ -1244,15 +1243,15 @@
       "description": "Création d'un espace de repos avec des assises et jardinières.",
       "products": [
         {
-          "collection": "bulle",
+          "collection": "printemps",
           "type": "assises",
-          "name": "Banc",
-          "quantity": 6
+          "name": "bancs",
+          "quantity": 0
         },
         {
-          "collection": "thal-s",
-          "type": "jardinieres",
-          "name": "Jardinière",
+          "collection": "printemps",
+          "type": "corbeilles",
+          "name": "corbeille",
           "quantity": 4
         }
       ],
@@ -1268,16 +1267,10 @@
       "description": "Création d'un espace de repos avec des assises et jardinières.",
       "products": [
         {
-          "collection": "bulle",
-          "type": "assises",
-          "name": "Banc",
-          "quantity": 6
-        },
-        {
-          "collection": "thal-s",
-          "type": "jardinieres",
-          "name": "Jardinière",
-          "quantity": 4
+          "collection": "",
+          "type": "lampes",
+          "name": "Lampe florale",
+          "quantity": 0
         }
       ],
       "images": [
@@ -1292,16 +1285,10 @@
       "description": "Création d'un espace de repos avec des assises et jardinières.",
       "products": [
         {
-          "collection": "bulle",
+          "collection": "",
           "type": "assises",
-          "name": "Banc",
-          "quantity": 6
-        },
-        {
-          "collection": "thal-s",
-          "type": "jardinieres",
-          "name": "Jardinière",
-          "quantity": 4
+          "name": "table pique-nique",
+          "quantity": 0
         }
       ],
       "images": ["assets/images/projets/villa-roubaud1.jpg"]
@@ -1313,21 +1300,15 @@
       "description": "Création d'un espace de repos avec des assises et jardinières.",
       "products": [
         {
-          "collection": "bulle",
+          "collection": "",
           "type": "assises",
           "name": "Banc",
-          "quantity": 6
-        },
-        {
-          "collection": "thal-s",
-          "type": "jardinieres",
-          "name": "Jardinière",
-          "quantity": 4
+          "quantity": 0
         }
       ],
       "images": [
-        "assets/images/projets/montpellier-1.jpg",
-        "assets/images/projets/montpellier-2.jpg"
+        "assets/images/projets/berges-du-gapeau1.jpg",
+        "assets/images/projets/berges-du-gapeau2.jpg"
       ]
     },
     "saintchamas": {
@@ -1337,22 +1318,13 @@
       "description": "Création d'un espace de repos avec des assises et jardinières.",
       "products": [
         {
-          "collection": "bulle",
+          "collection": "mosaique",
           "type": "assises",
-          "name": "Banc",
-          "quantity": 6
-        },
-        {
-          "collection": "thal-s",
-          "type": "jardinieres",
-          "name": "Jardinière",
-          "quantity": 4
+          "name": "Bancs",
+          "quantity": 0
         }
       ],
-      "images": [
-        "assets/images/projets/montpellier-1.jpg",
-        "assets/images/projets/montpellier-2.jpg"
-      ]
+      "images": ["assets/images/projets/place-du-village1.jpg"]
     },
     "tourfondue": {
       "name": "Tour Fondue | Main courante inox thermolaquée",
@@ -1361,21 +1333,36 @@
       "description": "Création d'un espace de repos avec des assises et jardinières.",
       "products": [
         {
-          "collection": "bulle",
+          "collection": "",
+          "type": "",
+          "name": "",
+          "quantity": 0
+        }
+      ],
+      "images": ["assets/images/projets/tour-fondue1.jpg"]
+    },
+    "lesoliviersjeux": {
+      "name": "Aire de jeux Les Oliviers | Banquettes arquées et jardinières Enjoy",
+      "city": "Le Broc (06)",
+      "year": 2023,
+      "description": "Création d'un espace de repos avec des assises et jardinières.",
+      "products": [
+        {
+          "collection": "enjoy",
           "type": "assises",
-          "name": "Banc",
-          "quantity": 6
+          "name": "banc",
+          "quantity": 0
         },
         {
-          "collection": "thal-s",
+          "collection": "enjoy",
           "type": "jardinieres",
-          "name": "Jardinière",
-          "quantity": 4
+          "name": "jardinière",
+          "quantity": 0
         }
       ],
       "images": [
-        "assets/images/projets/montpellier-1.jpg",
-        "assets/images/projets/montpellier-2.jpg"
+        "assets/images/projets/aire-les-oliviers1.jpg",
+        "assets/images/projets/aire-les-oliviers2.jpg"
       ]
     },
     "soprotec": {
@@ -1385,22 +1372,13 @@
       "description": "Création d'un espace de repos avec des assises et jardinières.",
       "products": [
         {
-          "collection": "bulle",
+          "collection": "thal-s",
           "type": "assises",
           "name": "Banc",
-          "quantity": 6
-        },
-        {
-          "collection": "thal-s",
-          "type": "jardinieres",
-          "name": "Jardinière",
-          "quantity": 4
+          "quantity": 0
         }
       ],
-      "images": [
-        "assets/images/projets/montpellier-1.jpg",
-        "assets/images/projets/montpellier-2.jpg"
-      ]
+      "images": ["assets/images/projets/bureaux-soprotec1.jpg"]
     },
     "pasducerf": {
       "name": "Pas du Cerf | Assises collection THAL'S",
@@ -1409,21 +1387,16 @@
       "description": "Création d'un espace de repos avec des assises et jardinières.",
       "products": [
         {
-          "collection": "bulle",
+          "collection": "thal-s",
           "type": "assises",
           "name": "Banc",
-          "quantity": 6
-        },
-        {
-          "collection": "thal-s",
-          "type": "jardinieres",
-          "name": "Jardinière",
-          "quantity": 4
+          "quantity": 0
         }
       ],
       "images": [
-        "assets/images/projets/montpellier-1.jpg",
-        "assets/images/projets/montpellier-2.jpg"
+        "assets/images/projets/pas-du-cerf1.jpg",
+        "assets/images/projets/pas-du-cerf2.jpg",
+        "assets/images/projets/pas-du-cerf3.jpg"
       ]
     },
     "ecolejulesverne": {
@@ -1433,22 +1406,13 @@
       "description": "Création d'un espace de repos avec des assises et jardinières.",
       "products": [
         {
-          "collection": "bulle",
-          "type": "assises",
-          "name": "Banc",
-          "quantity": 6
-        },
-        {
-          "collection": "thal-s",
-          "type": "jardinieres",
-          "name": "Jardinière",
-          "quantity": 4
+          "collection": "",
+          "type": "",
+          "name": "",
+          "quantity": 0
         }
       ],
-      "images": [
-        "assets/images/projets/montpellier-1.jpg",
-        "assets/images/projets/montpellier-2.jpg"
-      ]
+      "images": ["assets/images/projets/ecole-jules-verne1.jpg"]
     },
     "bergessollies": {
       "name": "Berges du Gapeau | Corbeilles SLIM",
@@ -1469,10 +1433,7 @@
           "quantity": 4
         }
       ],
-      "images": [
-        "assets/images/projets/montpellier-1.jpg",
-        "assets/images/projets/montpellier-2.jpg"
-      ]
+      "images": ["assets/images/projets/berges-du-gapeau2.jpg"]
     }
   }
 }

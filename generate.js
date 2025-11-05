@@ -375,19 +375,16 @@ const projectsListHTML = Object.entries(data.projects || {})
   .map(([slug, project]) => {
     const firstImage = project.images[0] || "assets/images/placeholder.jpg";
     const cleanPath = firstImage.replace(/^(\.\.\/)+/, "");
-    const imagePath = `${BASE_PATH}/${cleanPath}`; // ✅ Ajout de BASE_PATH
-
+    const imagePath = `${BASE_PATH}/${cleanPath}`;
     return `
-      <div class="project-card">
+      <a href="projets/${slug}.html" class="project-card">
         <img src="${imagePath}" alt="${project.name}" class="project-card-image">
         <div class="project-card-content">
           <h2>${project.name}</h2>
           <div class="project-card-meta">
           </div>
-
-          <a href="projets/${slug}.html" class="project-card-link">Voir le projet →</a>
         </div>
-      </div>
+      </a>
     `;
   })
   .join("\n");
