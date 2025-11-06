@@ -1162,23 +1162,6 @@
     }
   },
   "projects": {
-    "lettragebandol": {
-      "name": "Avenue Jean Loste | Lettrage 3D acier",
-      "city": "Bandol (83)",
-      "year": 2024,
-      "description": "Rénovation complète de la place avec mobilier urbain de la collection Thal S.",
-      "products": [
-        {
-          "collection": "",
-          "type": "assises",
-          "name": ""
-        }
-      ],
-      "images": [
-        "assets/images/projets/Lettrage-3d-Bandol_2.jpg",
-        "assets/images/projets/Lettrage-3d-Bandol.jpg"
-      ]
-    },
     "villasimone": {
       "name": "Villa Simone Ensemble | Table pique-nique Mosaïque",
       "city": "Six-Fours-Les-Plages",
@@ -1397,6 +1380,23 @@
         "assets/images/projets/pas-du-cerf1.jpg",
         "assets/images/projets/pas-du-cerf2.jpg",
         "assets/images/projets/pas-du-cerf3.jpg"
+      ]
+    },
+    "lettragebandol": {
+      "name": "Avenue Jean Loste | Lettrage 3D acier",
+      "city": "Bandol (83)",
+      "year": 2024,
+      "description": "Rénovation complète de la place avec mobilier urbain de la collection Thal S.",
+      "products": [
+        {
+          "collection": "",
+          "type": "assises",
+          "name": ""
+        }
+      ],
+      "images": [
+        "assets/images/projets/Lettrage-3d-Bandol_2.jpg",
+        "assets/images/projets/Lettrage-3d-Bandol.jpg"
       ]
     },
     "ecolejulesverne": {
