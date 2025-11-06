@@ -1195,17 +1195,25 @@
     </header>
 
     <main>
-      <section class="path-product">Collections -> {{collectionName}}</section>
+      <!--<section class="path-product">Collections -> {{collectionName}}</section>-->
       <section class="collection-hero">
         <div class="collection-symbol">
           <img src="{{symbole}}" alt="Symbole {{collectionName}}" />
         </div>
-        <h1 class="collection-title">{{collectionName}}</h1>
-        <p class="collection-description">{{collectionDescription}}</p>
+        <div class="collec-name">
+          <h1 class="collection-title">{{collectionName}}</h1>
+        </div>
+        <div class="collec-text">
+          <p class="collection-description">{{collectionDescription}}</p>
+        </div>
       </section>
       <section class="collection-products">
         <h2>Produits de la collection</h2>
         <div class="product-grid">{{productList}}</div>
+      </section>
+      <section class="other-collections">
+        <h2>Autres collections</h2>
+        <div class="other-collections-grid">{{otherCollections}}</div>
       </section>
       <div class="search-overlay">
         <div class="search-overlay-content">

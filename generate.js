@@ -268,6 +268,29 @@ for (const [collectionSlug, collection] of Object.entries(data.collections)) {
     })
     .join("\n");
 
+  // 🧩 AJOUT : générer les autres collections aléatoirement
+  const otherCollections = Object.entries(data.collections)
+    .filter(([slug]) => slug !== collectionSlug)
+    .sort(() => 0.5 - Math.random()) // mélange aléatoire
+    .slice(0, 5) // 5 collections
+    .map(([slug, other]) => {
+      const otherSymbol = other.symbole
+        ? `${BASE_PATH}/${other.symbole.replace(/^(\.\.\/)+/, "")}`
+        : "assets/images/placeholder.jpg";
+
+      return `
+      <div class="other-collection-card symbol-only">
+        <a href="${BASE_PATH}/dist/collections/${slug}.html">
+          <div class="symbol-container">
+            <img src="${otherSymbol}" alt="${other.name}" class="symbol-image" />
+          </div>
+          <h3>${other.name}</h3>
+        </a>
+      </div>
+    `;
+    })
+    .join("\n");
+
   const cleanSymbolPath = collection.symbole
     ? collection.symbole.replace(/^(\.\.\/)+/, "")
     : "";
@@ -280,7 +303,9 @@ for (const [collectionSlug, collection] of Object.entries(data.collections)) {
       cleanSymbolPath ? `${BASE_PATH}/${cleanSymbolPath}` : ""
     )
     .replace(/{{collectionDescription}}/g, collection.description)
-    .replace(/{{productList}}/g, listHTML);
+    .replace(/{{productList}}/g, listHTML)
+    // 🔥 Ajout du bloc "autres collections"
+    .replace(/{{otherCollections}}/g, otherCollections);
 
   const collectionPath = path.join(collectionsDir, `${collectionSlug}.html`);
   fs.writeFileSync(collectionPath, collectionHTML);
@@ -369,6 +394,7 @@ for (const [projectSlug, project] of Object.entries(data.projects || {})) {
   fs.writeFileSync(projectPath, projectHTML);
   console.log(`🏗️ Projet généré : ${project.name}`);
 }
+// ETAPE OTHER COLLECTIONS :
 
 // 🏗️ Étape 5 : Générer la page liste des projets
 const projectsListHTML = Object.entries(data.projects || {})
