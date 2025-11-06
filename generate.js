@@ -401,3 +401,37 @@ const projectsListPageHTML = projectsListTemplate
 const projectsListPath = path.join(distDir, "projets.html");
 fs.writeFileSync(projectsListPath, projectsListPageHTML);
 console.log("📋 Page liste des projets générée");
+
+// RECHERCHE SITE //
+// 🔍 Générer le fichier de recherche
+const searchData = [];
+
+for (const [collectionSlug, collection] of Object.entries(data.collections)) {
+  for (const [type, productsArray] of Object.entries(collection.products)) {
+    const products = Array.isArray(productsArray)
+      ? productsArray
+      : [productsArray];
+
+    products.forEach((product, index) => {
+      const fileName =
+        products.length > 1
+          ? `${collectionSlug}-${index + 1}.html`
+          : `${collectionSlug}.html`;
+
+      searchData.push({
+        name: `${type.charAt(0).toUpperCase() + type.slice(1)} ${
+          collection.name
+        }`,
+        collection: collection.name,
+        type: type,
+        url: `${BASE_PATH}/dist/produits/${type}/${fileName}`,
+      });
+    });
+  }
+}
+
+fs.writeFileSync(
+  "js/search-data.js",
+  `const productsData = ${JSON.stringify(searchData, null, 2)};`
+);
+console.log("🔍 Fichier de recherche généré");

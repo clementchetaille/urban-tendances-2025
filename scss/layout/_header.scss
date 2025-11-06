@@ -15,6 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 2rem; /* 👈 Espace entre logo, liens et recherche */
 }
 .arrow-down {
   font-size: 0.5rem;
@@ -33,10 +34,12 @@
 .nav_links {
   display: flex;
   list-style: none;
-  gap: 2.5rem;
+  gap: 1.4rem;
   align-items: center;
   color: #333;
   transition: color 0.3s ease;
+  flex: 1; /* 👈 Permet aux liens de prendre l'espace disponible */
+  justify-content: right; /* 👈 Met les liens à droite */
 }
 
 .nav_links a {
@@ -46,6 +49,8 @@
   gap: 8px;
   transition: color 0.3s ease;
   text-decoration: none;
+  font-weight: 100;
+  font-size: 0.96rem;
 }
 
 .nav_links a:hover {
@@ -69,4 +74,166 @@
   height: 3px;
   background-color: #333;
   transition: 0.3s;
+}
+
+// BARRE RECHERCHE //
+/* Icône de recherche dans le header */
+.search-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  transition: color 0.3s;
+  flex-shrink: 0;
+
+  &:hover {
+    color: $secondary;
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* Overlay de recherche */
+.search-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.search-overlay-content {
+  position: relative;
+  width: 90%;
+  max-width: 700px;
+  padding: 40px;
+}
+
+/* Bouton fermer */
+.search-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  color: $primary;
+  cursor: pointer;
+  padding: 10px;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: rotate(90deg);
+  }
+
+  svg {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* Champ de recherche */
+.search-box {
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  padding: 20px 30px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 12px;
+  background: white;
+  color: $secondary;
+  outline: none;
+
+  &::placeholder {
+    color: #999;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.3);
+  }
+}
+
+/* Résultats de recherche */
+.search-results {
+  margin-top: 20px;
+  background: white;
+  border-radius: 12px;
+  max-height: 400px;
+  overflow-y: auto;
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.search-result-item {
+  padding: 20px;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+  transition: background 0.2s;
+  text-decoration: none;
+  display: block;
+  color: #333;
+
+  &:hover {
+    background: #f8f8f8;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.search-result-title {
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.search-result-excerpt {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.no-results {
+  padding: 30px;
+  text-align: center;
+  color: white;
+  font-size: 1.1rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .search-overlay-content {
+    padding: 20px;
+  }
+
+  .search-input {
+    font-size: 1.2rem;
+    padding: 15px 20px;
+  }
 }

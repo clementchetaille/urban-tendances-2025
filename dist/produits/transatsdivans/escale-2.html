@@ -1175,6 +1175,22 @@
         <div class="nav_burger" id="burger">
           <span></span><span></span><span></span>
         </div>
+        <button class="search-icon" aria-label="Rechercher">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+          </svg>
+        </button>
       </nav>
     </header>
 
@@ -1237,9 +1253,40 @@
           </ul>
         </div>
       </section>
+      <div class="search-overlay">
+        <div class="search-overlay-content">
+          <button class="search-close" aria-label="Fermer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+
+          <div class="search-box">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Rechercher un produit, une collection..."
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="search-results"></div>
+        </div>
+      </div>
     </main>
 
     <footer></footer>
     <script src="/urban-tendances-2025/js/main.js"></script>
+    <script src="/urban-tendances-2025/js/search-data.js"></script>
+    <script src="/urban-tendances-2025/js/search.js"></script>
   </body>
 </html>

@@ -93,6 +93,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 2rem; /* 👈 Espace entre logo, liens et recherche */
 }
 
 .arrow-down {
@@ -112,10 +113,12 @@ a {
 .nav_links {
   display: flex;
   list-style: none;
-  gap: 2.5rem;
+  gap: 1.4rem;
   align-items: center;
   color: #333;
   transition: color 0.3s ease;
+  flex: 1; /* 👈 Permet aux liens de prendre l'espace disponible */
+  justify-content: right; /* 👈 Met les liens à droite */
 }
 
 .nav_links a {
@@ -125,6 +128,8 @@ a {
   gap: 8px;
   transition: color 0.3s ease;
   text-decoration: none;
+  font-weight: 100;
+  font-size: 0.96rem;
 }
 
 .nav_links a:hover {
@@ -150,6 +155,155 @@ a {
   transition: 0.3s;
 }
 
+/* Icône de recherche dans le header */
+.search-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  transition: color 0.3s;
+  flex-shrink: 0;
+}
+.search-icon:hover {
+  color: #bf8821;
+}
+.search-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Overlay de recherche */
+.search-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.search-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.search-overlay-content {
+  position: relative;
+  width: 90%;
+  max-width: 700px;
+  padding: 40px;
+}
+
+/* Bouton fermer */
+.search-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  color: #dfaf4f;
+  cursor: pointer;
+  padding: 10px;
+  transition: transform 0.3s;
+}
+.search-close:hover {
+  transform: rotate(90deg);
+}
+.search-close svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* Champ de recherche */
+.search-box {
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  padding: 20px 30px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 12px;
+  background: white;
+  color: #bf8821;
+  outline: none;
+}
+.search-input::placeholder {
+  color: #999;
+}
+.search-input:focus {
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.3);
+}
+
+/* Résultats de recherche */
+.search-results {
+  margin-top: 20px;
+  background: white;
+  border-radius: 12px;
+  max-height: 400px;
+  overflow-y: auto;
+  display: none;
+}
+.search-results.active {
+  display: block;
+}
+
+.search-result-item {
+  padding: 20px;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+  transition: background 0.2s;
+  text-decoration: none;
+  display: block;
+  color: #333;
+}
+.search-result-item:hover {
+  background: #f8f8f8;
+}
+.search-result-item:last-child {
+  border-bottom: none;
+}
+
+.search-result-title {
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.search-result-excerpt {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.no-results {
+  padding: 30px;
+  text-align: center;
+  color: white;
+  font-size: 1.1rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .search-overlay-content {
+    padding: 20px;
+  }
+  .search-input {
+    font-size: 1.2rem;
+    padding: 15px 20px;
+  }
+}
 main {
   padding: 2rem 0rem;
 }
@@ -610,7 +764,7 @@ main {
   cursor: grabbing;
 }
 .product-page-img-container .product-images img {
-  width: 600px;
+  width: 400px;
   height: auto;
   object-fit: cover;
   border-radius: 10px 60px 60px 60px;
@@ -707,12 +861,16 @@ main {
 
 .collection-symbol {
   font-size: 80px;
-  margin-bottom: 20px;
   line-height: 1;
 }
 
+.collection-symbol img {
+  width: 70px;
+  height: 70px;
+}
+
 .collection-title {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 700;
   margin-bottom: 20px;
   color: #1a1a1a;
@@ -742,7 +900,7 @@ main {
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 30px;
 }
 
@@ -1155,7 +1313,7 @@ main {
 
 .project-images {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap: 20px;
   justify-items: center;
 }
@@ -1274,21 +1432,6 @@ main {
   font-size: 0.85rem;
 }
 
-@media (max-width: 1200px) {
-  .projects-list {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (max-width: 900px) {
-  .projects-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 600px) {
-  .projects-list {
-    grid-template-columns: 1fr;
-  }
-}
 .section-histoire {
   max-width: 1400px;
   margin: 0 auto;

@@ -530,7 +530,7 @@ main {
     }
 
     img {
-      width: 600px;
+      width: 400px;
       height: auto;
       object-fit: cover;
       border-radius: 10px 60px 60px 60px;
@@ -634,12 +634,16 @@ main {
 
 .collection-symbol {
   font-size: 80px;
-  margin-bottom: 20px;
   line-height: 1;
 }
 
+.collection-symbol img {
+  width: 70px;
+  height: 70px;
+}
+
 .collection-title {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 700;
   margin-bottom: 20px;
   color: #1a1a1a;
@@ -669,7 +673,7 @@ main {
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 30px;
 }
 // ============================== //
@@ -1022,13 +1026,12 @@ main {
 }
 
 // ============================== //
-// ======= PAGE PROJETS ======= //
+// ======= PAGE NOS PROJETS ======= //
 // ============================ //
 
 .project-header {
   display: grid;
   gap: 1.5rem;
-
   margin-top: 3rem;
   margin-left: auto;
   margin-right: auto;
@@ -1105,7 +1108,7 @@ main {
 
 .project-images {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap: 20px;
   justify-items: center;
 }
@@ -1222,24 +1225,6 @@ main {
   margin-bottom: 8px; /* 👈 Réduit de 12px à 8px */
   color: #666;
   font-size: 0.85rem;
-}
-
-@media (max-width: 1200px) {
-  .projects-list {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 900px) {
-  .projects-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .projects-list {
-    grid-template-columns: 1fr;
-  }
 }
 
 // ============================== //
