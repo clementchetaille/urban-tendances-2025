@@ -52,8 +52,6 @@ document.addEventListener("DOMContentLoaded", function () {
   function transformData(data) {
     const flatData = [];
     const path = window.location.pathname;
-    const isInProductPage = path.includes("/dist/produits/");
-    const isInCollectionPage = path.includes("/dist/collections/");
 
     Object.entries(data.collections).forEach(([collectionKey, collection]) => {
       Object.entries(collection.products).forEach(
@@ -63,15 +61,31 @@ document.addEventListener("DOMContentLoaded", function () {
             categoryData.forEach((product, index) => {
               let relativePath;
 
-              if (isInProductPage) {
-                relativePath = `${categoryKey}/${collectionKey}${
+              // Cas 1: pages produits individuelles (profondeur 2)
+              // Ex: /dist/produits/potelets/thal-s.html
+              if (path.match(/\/dist\/produits\/[^/]+\/[^/]+\.html/)) {
+                relativePath = `../${categoryKey}/${collectionKey}${
                   categoryData.length > 1 ? "-" + (index + 1) : ""
                 }.html`;
-              } else if (isInCollectionPage) {
+              }
+              // Cas 2: pages catégories produits OU collections (profondeur 1)
+              // Ex: /dist/produits/assises.html ou /dist/collections/silva.html
+              else if (
+                path.match(/\/dist\/(produits|collections)\/[^/]+\.html/)
+              ) {
                 relativePath = `../produits/${categoryKey}/${collectionKey}${
                   categoryData.length > 1 ? "-" + (index + 1) : ""
                 }.html`;
-              } else {
+              }
+              // Cas 3: autres pages dans /dist/
+              // Ex: /dist/projets.html
+              else if (path.includes("/dist/")) {
+                relativePath = `produits/${categoryKey}/${collectionKey}${
+                  categoryData.length > 1 ? "-" + (index + 1) : ""
+                }.html`;
+              }
+              // Cas 4: racine
+              else {
                 relativePath = `dist/produits/${categoryKey}/${collectionKey}${
                   categoryData.length > 1 ? "-" + (index + 1) : ""
                 }.html`;
@@ -91,11 +105,22 @@ document.addEventListener("DOMContentLoaded", function () {
           else if (typeof categoryData === "object") {
             let relativePath;
 
-            if (isInProductPage) {
-              relativePath = `${categoryKey}/${collectionKey}.html`;
-            } else if (isInCollectionPage) {
+            // Cas 1: pages produits individuelles (profondeur 2)
+            if (path.match(/\/dist\/produits\/[^/]+\/[^/]+\.html/)) {
+              relativePath = `../${categoryKey}/${collectionKey}.html`;
+            }
+            // Cas 2: pages catégories produits OU collections (profondeur 1)
+            else if (
+              path.match(/\/dist\/(produits|collections)\/[^/]+\.html/)
+            ) {
               relativePath = `../produits/${categoryKey}/${collectionKey}.html`;
-            } else {
+            }
+            // Cas 3: autres pages dans /dist/
+            else if (path.includes("/dist/")) {
+              relativePath = `produits/${categoryKey}/${collectionKey}.html`;
+            }
+            // Cas 4: racine
+            else {
               relativePath = `dist/produits/${categoryKey}/${collectionKey}.html`;
             }
 
