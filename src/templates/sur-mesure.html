@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sur-mesure | Urban Tendances</title>
+    <link rel="stylesheet" href="{{basePath}}/css/styles.css" />
+  </head>
+  <body>
+    {{header}}
+    <main>
+      <section class="surmesure-hero">
+        <video id="surmesureHeroVideo" autoplay muted loop playsinline>
+          <source
+            src="{{basePath}}/assets/videos/Urban-tendances_AtelierV2_compressee.mp4"
+            type="video/mp4"
+          />
+          Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
+        <div class="surmesure-hero__overlay"></div>
+        <button
+          class="surmesure-hero__sound-toggle"
+          id="surmesureSoundToggle"
+          aria-label="Activer/Désactiver le son"
+        >
+          <svg
+            class="surmesure-hero__sound-icon surmesure-hero__sound-icon--muted"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M11 5L6 9H2v6h4l5 4V5z" />
+            <line x1="23" y1="9" x2="17" y2="15" />
+            <line x1="17" y1="9" x2="23" y2="15" />
+          </svg>
+          <svg
+            class="surmesure-hero__sound-icon surmesure-hero__sound-icon--unmuted"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M11 5L6 9H2v6h4l5 4V5z" />
+            <path
+              d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"
+            />
+          </svg>
+        </button>
+      </section>
+      <div class="surmesure-title-top">
+        <h2 class="surmesure-title-top__heading">Sur-mesure</h2>
+      </div>
+      <!-- Bureau d'études Section -->
+      <section class="surmesure-bureau">
+        <div class="surmesure-container">
+          <h2 class="surmesure-bureau__title">Bureau d'études</h2>
+          <p class="surmesure-bureau__text">
+            Nous vous offrons bien plus qu'un simple service de fabrication.
+            Chez nous, nous vous accompagnons dans vos projets de manière
+            personnalisée, en vous proposant un processus complet et
+            transparent, de la conception à la fabrication.
+          </p>
+          <p class="surmesure-bureau__text">
+            Nous réalisons l'étude de faisabilité, le prototypage et la
+            fabrication sur-mesure de vos produits. Pour tous les clients,
+            toutes les configurations. Sur la base d'un simple croquis, d'un
+            dessin à la demande, finalisé par des plans et une modélisation 3D
+            ou une mise en scène pour l'aménagement de votre espace.
+          </p>
+        </div>
+      </section>
+
+      <!-- Image Grid -->
+      <section class="surmesure-gallery">
+        <div class="surmesure-container">
+          <div class="surmesure-gallery__grid">
+            <div class="surmesure-gallery__item">
+              <img
+                src="{{basePath}}/assets/images/sur-mesure/sketch-1.jpg"
+                alt="sketch-urban-tendances-1"
+              />
+              <!-- Placeholder si pas d'image -->
+              <!-- <div class="surmesure-gallery__placeholder">Image 1<br>Remplacez par votre image</div> -->
+            </div>
+            <div class="surmesure-gallery__item item2">
+              <img
+                src="{{basePath}}/assets/images/sur-mesure/sketch-2.png"
+                alt="sketch-urban-tendances-2"
+              />
+              <!-- <div class="surmesure-gallery__placeholder">Image 2<br>Remplacez par votre image</div> -->
+            </div>
+            <div class="surmesure-gallery__item">
+              <img
+                src="{{basePath}}/assets/images/sur-mesure/sketch-3.png"
+                alt="sketch-urban-tendances-3"
+              />
+              <!-- <div class="surmesure-gallery__placeholder">Image 3<br>Remplacez par votre image</div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Nos Forces Section -->
+      <section class="surmesure-forces">
+        <div class="surmesure-container">
+          <h2 class="surmesure-forces__title">Nos forces</h2>
+          <div class="surmesure-forces__content">
+            <p class="surmesure-forces__text">
+              Chez Urban Tendances, nous incarnons l'harmonie entre artisanat
+              raffiné et puissance industrielle. Notre fabrication est
+              entièrement Made in France, ancrée localement pour soutenir
+              l'économie locale. En tant que PME à taille humaine, nous
+              accordons une attention personnalisée à chaque projet, offrant un
+              service sur-mesure qui répond précisément à vos besoins.
+            </p>
+            <p class="surmesure-forces__text">
+              Notre parc machine complet nous permet de réaliser une gamme
+              étendue de projets, avec qualité et efficacité. De plus, en
+              combinant notre expertise en chaudronnerie et notre bureau
+              d'études, nous offrons une solution complète, tout sous le même
+              toit.
+            </p>
+            <p class="surmesure-forces__text">
+              Ce qui nous distingue également, c'est que notre designer et notre
+              dirigeante ne font qu'un, apportant une vision créative et une
+              direction stratégique cohérente à chaque projet. Chez Urban
+              Tendances, nous sommes fiers de notre capacité à allier
+              innovation, artisanat et savoir-faire industriel pour vous offrir
+              des solutions uniques et de haute qualité.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Carousel Section -->
+      <section class="surmesure-carousel">
+        <div class="surmesure-container">
+          <div class="surmesure-carousel__wrapper">
+            <div class="surmesure-carousel__track" id="surmesureCarouselTrack">
+              <div class="surmesure-carousel__slide">
+                <img
+                  src="{{basePath}}/assets/images/savoir-faire/urban-tendances-surmesure1.jpg"
+                  alt="Réalisation 1"
+                />
+                <!-- <div class="surmesure-carousel__placeholder">Réalisation 1</div> -->
+              </div>
+              <div class="surmesure-carousel__slide">
+                <img
+                  src="{{basePath}}/assets/images/savoir-faire/urban-tendances-surmesure2.jpg"
+                  alt="Réalisation 2"
+                />
+                <!-- <div class="surmesure-carousel__placeholder">Réalisation 2</div> -->
+              </div>
+              <div class="surmesure-carousel__slide">
+                <img
+                  src="{{basePath}}/assets/images/savoir-faire/urban-tendances-surmesure3.jpg"
+                  alt="Réalisation 3"
+                />
+                <!-- <div class="surmesure-carousel__placeholder">Réalisation 3</div> -->
+              </div>
+              <div class="surmesure-carousel__slide">
+                <img
+                  src="{{basePath}}/assets/images/savoir-faire/urban-tendances-surmesure4.jpg"
+                  alt="Réalisation 4"
+                />
+                <!-- <div class="surmesure-carousel__placeholder">Réalisation 4</div> -->
+              </div>
+              <div class="surmesure-carousel__slide">
+                <img
+                  src="{{basePath}}/assets/images/savoir-faire/urban-tendances-surmesure5.jpg"
+                  alt="Réalisation 5"
+                />
+                <!-- <div class="surmesure-carousel__placeholder">Réalisation 5</div> -->
+              </div>
+              <div class="surmesure-carousel__slide">
+                <img
+                  src="{{basePath}}/assets/images/savoir-faire/urban-tendances-surmesure6.jpg"
+                  alt="Réalisation 6"
+                />
+                <!-- <div class="surmesure-carousel__placeholder">Réalisation 6</div> -->
+              </div>
+              <div class="surmesure-carousel__slide">
+                <img
+                  src="{{basePath}}/assets/images/savoir-faire/urban-tendances-surmesure7.jpg"
+                  alt="Réalisation 7"
+                />
+                <!-- <div class="surmesure-carousel__placeholder">Réalisation 7</div> -->
+              </div>
+              <div class="surmesure-carousel__slide">
+                <img
+                  src="{{basePath}}/assets/images/savoir-faire/urban-tendances-surmesure8.jpg"
+                  alt="Réalisation 8"
+                />
+                <!-- <div class="surmesure-carousel__placeholder">Réalisation 8</div> -->
+              </div>
+              <div class="surmesure-carousel__slide">
+                <img
+                  src="{{basePath}}/assets/images/savoir-faire/urban-tendances-surmesure9.jpg"
+                  alt="Réalisation 9"
+                />
+                <!-- <div class="surmesure-carousel__placeholder">Réalisation 8</div> -->
+              </div>
+              <div class="surmesure-carousel__slide">
+                <img
+                  src="{{basePath}}/assets/images/savoir-faire/urban-tendances-surmesure10.jpg"
+                  alt="Réalisation 10"
+                />
+                <!-- <div class="surmesure-carousel__placeholder">Réalisation 8</div> -->
+              </div>
+              <div class="surmesure-carousel__slide">
+                <img
+                  src="{{basePath}}/assets/images/savoir-faire/urban-tendances-surmesure11.jpg"
+                  alt="Réalisation 11"
+                />
+                <!-- <div class="surmesure-carousel__placeholder">Réalisation 8</div> -->
+              </div>
+              <div class="surmesure-carousel__slide">
+                <img
+                  src="{{basePath}}/assets/images/savoir-faire/urban-tendances-surmesure12.jpg"
+                  alt="Réalisation 12"
+                />
+                <!-- <div class="surmesure-carousel__placeholder">Réalisation 8</div> -->
+              </div>
+              <div class="surmesure-carousel__slide">
+                <img
+                  src="{{basePath}}/assets/images/savoir-faire/urban-tendances-surmesure13.jpg"
+                  alt="Réalisation 13"
+                />
+                <!-- <div class="surmesure-carousel__placeholder">Réalisation 8</div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="search-overlay">
+        <div class="search-overlay-content">
+          <button class="search-close" aria-label="Fermer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+
+          <div class="search-box">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Rechercher un produit, une collection..."
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="search-results"></div>
+        </div>
+      </div>
+    </main>
+
+    {{footer}}
+
+    <script src="{{basePath}}/js/main.js"></script>
+    <script src="{{basePath}}/js/surmesure.js"></script>
+    <script src="{{basePath}}/js/search-data.js"></script>
+    <script src="{{basePath}}/js/search.js"></script>
+  </body>
+</html>

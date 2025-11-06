@@ -27,6 +27,8 @@ const collectionTemplate = fs.readFileSync(
   "src/templates/collection-template.html",
   "utf8"
 );
+const headerTemplate = fs.readFileSync("src/templates/header.html", "utf8");
+const footerTemplate = fs.readFileSync("src/templates/footer.html", "utf8");
 
 // Charger les données JSON
 const data = JSON.parse(fs.readFileSync("src/data/data.json", "utf8"));
@@ -148,7 +150,15 @@ for (const [collectionSlug, collection] of Object.entries(data.collections)) {
         .replace(/{{images}}/g, renderImages(product.images))
         .replace(/{{materials}}/g, renderMaterials(product.materials))
         .replace(/{{finitions}}/g, renderFinitions(product.finitions))
-        .replace(/{{dimensions}}/g, renderDimensions(product.dimensions));
+        .replace(/{{dimensions}}/g, renderDimensions(product.dimensions))
+        .replace(
+          /{{header}}/g,
+          headerTemplate.replace(/{{basePath}}/g, BASE_PATH)
+        )
+        .replace(
+          /{{footer}}/g,
+          footerTemplate.replace(/{{basePath}}/g, BASE_PATH)
+        );
 
       const productFolder = path.join(productsDir, type);
       fs.mkdirSync(productFolder, { recursive: true });
@@ -225,7 +235,9 @@ for (const [type, products] of Object.entries(typesMap)) {
   const typeHTML = typeTemplate
     .replace(/{{basePath}}/g, BASE_PATH)
     .replace(/{{pageTitle}}/g, pageTitle)
-    .replace(/{{productList}}/g, cardsHTML);
+    .replace(/{{productList}}/g, cardsHTML)
+    .replace(/{{header}}/g, headerTemplate.replace(/{{basePath}}/g, BASE_PATH))
+    .replace(/{{footer}}/g, footerTemplate.replace(/{{basePath}}/g, BASE_PATH));
 
   const typePath = path.join(productsDir, `${type}.html`);
   fs.writeFileSync(typePath, typeHTML);
@@ -305,7 +317,9 @@ for (const [collectionSlug, collection] of Object.entries(data.collections)) {
     .replace(/{{collectionDescription}}/g, collection.description)
     .replace(/{{productList}}/g, listHTML)
     // 🔥 Ajout du bloc "autres collections"
-    .replace(/{{otherCollections}}/g, otherCollections);
+    .replace(/{{otherCollections}}/g, otherCollections)
+    .replace(/{{header}}/g, headerTemplate.replace(/{{basePath}}/g, BASE_PATH))
+    .replace(/{{footer}}/g, footerTemplate.replace(/{{basePath}}/g, BASE_PATH));
 
   const collectionPath = path.join(collectionsDir, `${collectionSlug}.html`);
   fs.writeFileSync(collectionPath, collectionHTML);
@@ -388,7 +402,9 @@ for (const [projectSlug, project] of Object.entries(data.projects || {})) {
     .replace(/{{city}}/g, project.city)
     .replace(/{{year}}/g, project.year)
     .replace(/{{images}}/g, imagesSection)
-    .replace(/{{products}}/g, productsHTML);
+    .replace(/{{products}}/g, productsHTML)
+    .replace(/{{header}}/g, headerTemplate.replace(/{{basePath}}/g, BASE_PATH))
+    .replace(/{{footer}}/g, footerTemplate.replace(/{{basePath}}/g, BASE_PATH));
 
   const projectPath = path.join(projectsDir, `${projectSlug}.html`);
   fs.writeFileSync(projectPath, projectHTML);
@@ -422,7 +438,9 @@ const projectsListPageHTML = projectsListTemplate
   .replace(/{{basePath}}/g, BASE_PATH)
   .replace(/{{navBasePath}}/g, navBasePath)
   .replace(/{{assetsBasePath}}/g, assetsBasePathList) // 👈 Utilise la bonne variable
-  .replace(/{{projectsList}}/g, projectsListHTML);
+  .replace(/{{projectsList}}/g, projectsListHTML)
+  .replace(/{{header}}/g, headerTemplate.replace(/{{basePath}}/g, BASE_PATH))
+  .replace(/{{footer}}/g, footerTemplate.replace(/{{basePath}}/g, BASE_PATH));
 
 const projectsListPath = path.join(distDir, "projets.html");
 fs.writeFileSync(projectsListPath, projectsListPageHTML);
@@ -461,3 +479,51 @@ fs.writeFileSync(
   `const productsData = ${JSON.stringify(searchData, null, 2)};`
 );
 console.log("🔍 Fichier de recherche généré");
+
+// 🏠 TEST : Générer contact.html
+console.log("\n🏠 Génération de contact.html...");
+
+const contactTemplate = fs.readFileSync(
+  path.join(__dirname, "src/templates/contact.html"),
+  "utf8"
+);
+
+const contactHTML = contactTemplate
+  .replace(/{{basePath}}/g, BASE_PATH || ".")
+  .replace(
+    /{{footer}}/g,
+    footerTemplate.replace(/{{basePath}}/g, BASE_PATH || ".")
+  )
+  .replace(
+    /{{header}}/g,
+    headerTemplate.replace(/{{basePath}}/g, BASE_PATH || ".")
+  );
+
+fs.writeFileSync("contact.html", contactHTML);
+console.log("✅ contact.html généré");
+
+// 🏠 Générer toutes les pages racines
+console.log("\n🏠 Génération des pages racines...");
+
+const rootPages = ["index", "histoire", "sur-mesure"];
+
+rootPages.forEach((pageName) => {
+  const pageTemplate = fs.readFileSync(
+    path.join(__dirname, `src/templates/${pageName}.html`),
+    "utf8"
+  );
+
+  const pageHTML = pageTemplate
+    .replace(/{{basePath}}/g, BASE_PATH || ".")
+    .replace(
+      /{{footer}}/g,
+      footerTemplate.replace(/{{basePath}}/g, BASE_PATH || ".")
+    )
+    .replace(
+      /{{header}}/g,
+      headerTemplate.replace(/{{basePath}}/g, BASE_PATH || ".")
+    );
+
+  fs.writeFileSync(`${pageName}.html`, pageHTML);
+  console.log(`✅ ${pageName}.html généré`);
+});

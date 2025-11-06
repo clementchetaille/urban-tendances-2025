@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Urban Tendances</title>
+    <link rel="stylesheet" href="{{basePath}}/css/styles.css" />
+  </head>
+  <body>
+    {{header}}
+    <!-- Test deploy automatique OUI OUI  -->
+    <main>
+      <div class="contact-container">
+        <div class="contact-content">
+          <!-- Formulaire de contact -->
+          <div class="contact-form-section">
+            <h1>Contactez-nous</h1>
+            <p class="subtitle">
+              Remplissez le formulaire ci-dessous et nous vous répondrons dans
+              les plus brefs délais.
+            </p>
+
+            <form class="contact-form" action="#" method="POST">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="nom">Nom *</label>
+                  <input type="text" id="nom" name="nom" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="prenom">Prénom *</label>
+                  <input type="text" id="prenom" name="prenom" required />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Adresse mail *</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="telephone">Numéro de téléphone *</label>
+                  <input type="tel" id="telephone" name="telephone" required />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="projet">Projet *</label>
+                  <input type="text" id="projet" name="projet" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="ville">Ville *</label>
+                  <input type="text" id="ville" name="ville" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="type-entreprise">Vous êtes *</label>
+                <select id="type-entreprise" name="type-entreprise" required>
+                  <option value="">Sélectionnez votre profil</option>
+                  <option value="bureau-detudes">Bureau d'études</option>
+                  <option value="Designer">Designer</option>
+                  <option value="architecte-urbaniste">
+                    Architecte urbaniste
+                  </option>
+                  <option value="architecte-paysagiste">
+                    Architecte paysagiste
+                  </option>
+                  <option value="camping">Camping</option>
+                  <option value="architecte-dinterieur">
+                    Architecte d'intérieur
+                  </option>
+                  <option value="syndic">Syndic</option>
+                  <option value="promoteur">Promoteur</option>
+                  <option value="center-commercial">Centre commercial</option>
+                  <option value="Golf">Golf</option>
+                  <option value="musees">Musées</option>
+                  <option value="decorateur">Décorateur</option>
+                  <option value="administrations">Administration</option>
+                  <option value="collectivites">Collectivités</option>
+                  <option value="hotel-bar-restaurant">
+                    Hôtel/Bar/Restaurant
+                  </option>
+                  <option value="particulier">Particulier</option>
+                  <option value="bpt">BTP</option>
+                  <option value="paysagiste">Paysagiste</option>
+                  <option value="installateur">Installateur</option>
+                  <option value="revendeur">Revendeur</option>
+                  <option value="autres">Autres</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Votre message *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="submit-btn">
+                Envoyer le message
+              </button>
+            </form>
+          </div>
+
+          <!-- Informations de l'entreprise -->
+          <div class="contact-info-section">
+            <div class="info-block">
+              <h3>📞 Téléphone</h3>
+              <p>
+                <a href="tel:+33123456789">04 94 21 10 42 / 06 95 62 64 57</a>
+              </p>
+            </div>
+
+            <div class="info-block">
+              <h3>📧 Email</h3>
+              <p>
+                <a href="mailto:contact@entreprise.fr">contact@sr-plus.fr</a>
+              </p>
+            </div>
+
+            <div class="info-block">
+              <h3>📍 Adresse</h3>
+              <p>
+                Zac l'Estagnol<br />92 impasse Lavoisier<br />83260 La Crau<br />France
+              </p>
+            </div>
+
+            <div class="info-block">
+              <h3>🕒 Horaires d'ouverture</h3>
+              <p>
+                <strong>Lundi - Vendredi :</strong> 8h30 - 17h00<br />
+
+                <strong>Samedi - Dimanche :</strong> Fermé
+              </p>
+            </div>
+
+            <div class="map-container">
+              <h3>📌 Nous trouver</h3>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2912.090438003672!2d6.0724163774930275!3d43.12362632113236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c923906832fc15%3A0xecd1b09a21292b52!2sUrban%20Tendances!5e0!3m2!1sfr!2sfr!4v1761825265612!5m2!1sfr!2sfr"
+                width="400"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="search-overlay">
+        <div class="search-overlay-content">
+          <button class="search-close" aria-label="Fermer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+
+          <div class="search-box">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Rechercher un produit, une collection..."
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="search-results"></div>
+        </div>
+      </div>
+    </main>
+
+    {{footer}}
+
+    <script src="{{basePath}}/js/main.js"></script>
+    <script src="{{basePath}}/js/animations.js"></script>
+    <script src="{{basePath}}/js/search-data.js"></script>
+    <script src="{{basePath}}/js/search.js"></script>
+  </body>
+</html>
+n

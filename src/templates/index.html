@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // Détecte si on est en local ou sur GitHub Pages
+      if (
+        window.location.hostname !== "localhost" &&
+        window.location.hostname !== "127.0.0.1"
+      ) {
+        document.write('<base href="/urban-tendances-2025/">');
+      }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URBAN TENDANCES</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    {{header}}
+
+    <main>
+      <section class="hero">
+        <div class="hero__col hero__col--left">
+          <img src="{{basePath}}/assets/images/projets/pas-du-cerf2.jpg" />
+        </div>
+
+        <div class="hero__col hero__col--center">
+          <div class="hero__block hero__block--top">
+            <h2>Mobilier</h2>
+          </div>
+          <div class="hero__block hero__block--mid">
+            <img src="{{basePath}}/assets/images/projets/villa-simone1.jpg" />
+          </div>
+          <div class="hero__block hero__block--bot">
+            <h2>Urbain</h2>
+          </div>
+        </div>
+
+        <div class="hero__col hero__col--right">
+          <img
+            src="{{basePath}}/assets/images/nos-creations/silva/silva-tablepicnic1.jpg"
+          />
+        </div>
+      </section>
+      <!-- Section fond d'écran qui déborde -->
+
+      <section class="sketch-section">
+        <div class="sketch-bg">
+          <img
+            src="{{basePath}}/assets/images/savoir-faire/Ecole-Mandelieu-_pdf-page-1.png"
+            class="sketch sketch-left"
+          />
+          <img
+            src="{{basePath}}/assets/images/savoir-faire/WhatsApp-Image-2024-04-02-a-21.25.59_203ad352-min.jpg"
+            class="sketch sketch-right"
+          />
+        </div>
+
+        <section class="content">
+          <p>
+            Nous vous offrons bien plus qu’un simple service de fabrication.
+            Chez nous, nous vous accompagnons dans vos projets de manière
+            personnalisée, en vous proposant un processus complet et
+            transparent, de la conception à la fabrication.
+          </p>
+        </section>
+      </section>
+
+      <section class="commitments">
+        <div class="commitments__inner">
+          <h2 class="commitments__title">Nos engagements</h2>
+          <div class="commitments__grid">
+            <article class="commitment-card">
+              <div class="commitment-card__icon">
+                <img src="{{basePath}}/assets/svg/truck.svg" alt="" />
+              </div>
+              <h3 class="commitment-card__title">Circuits courts</h3>
+              <p class="commitment-card__description">
+                Dans notre démarche environnementale, nous optons pour des
+                circuits courts, réduisant ainsi notre empreinte carbone et les
+                frais de transport, tout en soutenant l'économie locale.
+              </p>
+            </article>
+
+            <article class="commitment-card">
+              <div class="commitment-card__icon">
+                <img src="{{basePath}}/assets/svg/thumbs-up.svg" alt="" />
+              </div>
+              <h3 class="commitment-card__title">Fabrication 100% Française</h3>
+              <p class="commitment-card__description">
+                Notre mobilier urbain est entièrement fabriqué en France,
+                incarnant ainsi l'excellence de l'artisanat local et soutenant
+                l'emploi dans notre pays.
+              </p>
+            </article>
+
+            <article class="commitment-card">
+              <div class="commitment-card__icon">
+                <img src="{{basePath}}/assets/svg/wand-sparkles.svg" alt="" />
+              </div>
+              <h3 class="commitment-card__title">
+                3 en 1 : Designer, concepteur et Fabricant
+              </h3>
+              <p class="commitment-card__description">
+                Nous réunissons design, conception et fabrication sous un même
+                toit, garantissant ainsi une cohérence et une qualité
+                exceptionnelles à chaque pièce de mobilier urbain que nous
+                créons.
+              </p>
+            </article>
+
+            <article class="commitment-card">
+              <div class="commitment-card__icon">
+                <img src="{{basePath}}/assets/svg/brain.svg" alt="" />
+              </div>
+              <h3 class="commitment-card__title">Esprit créatif</h3>
+              <p class="commitment-card__description">
+                Notre approche créative repousse les limites du design pour
+                façonner des solutions de mobilier urbain à la fois esthétiques
+                et fonctionnelles, inspirant ainsi des espaces urbains uniques
+                et dynamiques.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <div class="search-overlay">
+        <div class="search-overlay-content">
+          <button class="search-close" aria-label="Fermer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+
+          <div class="search-box">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Rechercher un produit, une collection..."
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="search-results"></div>
+        </div>
+      </div>
+    </main>
+
+    {{footer}}
+
+    <script src="{{basePath}}/js/main.js"></script>
+    <script src="{{basePath}}/js/animations.js"></script>
+    <script src="{{basePath}}/js/search-data.js"></script>
+    <script src="{{basePath}}/js/search.js"></script>
+  </body>
+</html>
