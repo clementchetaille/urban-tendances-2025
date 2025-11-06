@@ -141,20 +141,6 @@ a {
   height: 20px;
 }
 
-.nav_burger {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
-}
-
-.nav_burger span {
-  width: 25px;
-  height: 3px;
-  background-color: #333;
-  transition: 0.3s;
-}
-
 /* Icône de recherche dans le header */
 .search-icon {
   background: none;
@@ -359,7 +345,6 @@ a {
 
 .footer-brand img {
   width: 360px;
-  margin-bottom: 20px;
 }
 
 .footer-brand p {
@@ -2734,6 +2719,221 @@ main {
 
 .project-images img {
   cursor: pointer; /* Indique que l'image est cliquable */
+}
+
+/* Bouton hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+}
+
+.hamburger span {
+  width: 100%;
+  height: 3px;
+  background: #333;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.hamburger:hover span {
+  background: #000;
+}
+
+/* Overlay du menu mobile */
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 2000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Contenu du menu */
+.mobile-menu-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 85%;
+  max-width: 400px;
+  height: 100%;
+  background: #fff;
+  padding: 80px 40px 40px;
+  transform: translateX(100%);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: auto;
+  box-shadow: -5px 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-menu-overlay.active .mobile-menu-content {
+  transform: translateX(0);
+}
+
+/* Bouton fermer */
+.mobile-menu-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  color: #333;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.mobile-menu-close:hover {
+  transform: rotate(90deg);
+  color: #000;
+}
+
+/* Navigation mobile */
+.mobile-nav {
+  margin-top: 20px;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-nav li {
+  margin-bottom: 8px;
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-overlay.active .mobile-nav li {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Délai d'animation pour chaque élément */
+.mobile-nav li:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.mobile-nav li:nth-child(2) {
+  transition-delay: 0.15s;
+}
+
+.mobile-nav li:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.mobile-nav li:nth-child(4) {
+  transition-delay: 0.25s;
+}
+
+.mobile-nav li:nth-child(5) {
+  transition-delay: 0.3s;
+}
+
+.mobile-nav li:nth-child(6) {
+  transition-delay: 0.35s;
+}
+
+.mobile-nav a {
+  display: block;
+  padding: 15px 20px;
+  color: #333;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.mobile-nav a:hover {
+  background: #f5f5f5;
+  color: #000;
+  transform: translateX(5px);
+}
+
+.mobile-submenu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 20px;
+  background: transparent;
+  border: none;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.mobile-submenu-toggle:hover {
+  background: #f5f5f5;
+}
+
+.mobile-arrow {
+  transition: transform 0.3s ease;
+  font-size: 0.8rem;
+}
+
+.mobile-submenu.active .mobile-arrow {
+  transform: rotate(180deg);
+}
+
+.mobile-submenu-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding-left: 20px;
+}
+
+.mobile-submenu.active .mobile-submenu-content {
+  max-height: 1000px;
+}
+
+.mobile-submenu-content li {
+  margin-bottom: 5px;
+}
+
+.mobile-submenu-content a {
+  padding: 10px 15px;
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+/* Responsive : afficher sur mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+  /* Cache la nav desktop sur mobile */
+  header > nav {
+    display: none;
+  }
+}
+/* Empêcher le scroll quand le menu est ouvert */
+body.menu-open {
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -62,20 +62,6 @@
   height: 20px;
 }
 
-.nav_burger {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
-}
-
-.nav_burger span {
-  width: 25px;
-  height: 3px;
-  background-color: #333;
-  transition: 0.3s;
-}
-
 // BARRE RECHERCHE //
 /* Icône de recherche dans le header */
 .search-icon {

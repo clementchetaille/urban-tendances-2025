@@ -178,7 +178,7 @@
               </div></a
             >
 
-            <a href="{{basePath}}/ist/produits/potelets.html">
+            <a href="{{basePath}}/dist/produits/potelets.html">
               <div class="product-item">
                 <svg
                   class="icon-product"
@@ -1098,9 +1098,6 @@
         </a>
       </li>
     </ul>
-    <div class="nav_burger" id="burger">
-      <span></span><span></span><span></span>
-    </div>
     <button class="search-icon" aria-label="Rechercher">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -1117,5 +1114,169 @@
         <path d="m21 21-4.35-4.35"></path>
       </svg>
     </button>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </nav>
+
+  <!-- Menu mobile overlay -->
+  <div class="mobile-menu-overlay" id="mobileMenu">
+    <div class="mobile-menu-content">
+      <button
+        class="mobile-menu-close"
+        id="closeMenuBtn"
+        aria-label="Fermer le menu"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <nav class="mobile-nav">
+        <ul>
+          <li><a href="{{basePath}}/index.html">Accueil</a></li>
+
+          <!-- Nos produits avec sous-menu -->
+          <li class="mobile-submenu">
+            <button class="mobile-submenu-toggle">
+              Nos produits
+              <span class="mobile-arrow">▼</span>
+            </button>
+            <ul class="mobile-submenu-content">
+              <li>
+                <a href="{{basePath}}/dist/produits/assises.html">Assises</a>
+              </li>
+              <li>
+                <a href="{{basePath}}/dist/produits/jardinieres.html"
+                  >Jardinières</a
+                >
+              </li>
+              <li>
+                <a href="{{basePath}}/dist/produits/corbeilles.html"
+                  >Corbeilles</a
+                >
+              </li>
+              <li>
+                <a href="{{basePath}}/dist/produits/potelets.html">Potelets</a>
+              </li>
+              <li>
+                <a href="{{basePath}}/dist/produits/barrieres.html"
+                  >Barrières</a
+                >
+              </li>
+              <li>
+                <a href="{{basePath}}/dist/produits/supportsvelos.html"
+                  >Supports Vélo</a
+                >
+              </li>
+              <li>
+                <a href="{{basePath}}/dist/produits/cendriers.html"
+                  >Cendriers</a
+                >
+              </li>
+              <li>
+                <a href="{{basePath}}/dist/produits/paravents.html"
+                  >Paravents</a
+                >
+              </li>
+              <li>
+                <a href="{{basePath}}/dist/produits/transatsdivans.html"
+                  >Transats - Divans</a
+                >
+              </li>
+              <li>
+                <a href="{{basePath}}/dist/produits/tables.html">Tables</a>
+              </li>
+              <li>
+                <a href="{{basePath}}/dist/produits/bornes.html">Bornes</a>
+              </li>
+              <li>
+                <a href="{{basePath}}/dist/produits/lampes.html">Lampes</a>
+              </li>
+              <li>
+                <a href="{{basePath}}/dist/produits/grillesdarbre.html"
+                  >Grilles d'arbre</a
+                >
+              </li>
+              <li>
+                <a href="{{basePath}}/dist/produits/recuperateursdepiles.html"
+                  >Récupérateur piles</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <!-- Collections avec sous-menu -->
+          <li class="mobile-submenu">
+            <button class="mobile-submenu-toggle">
+              Collections
+              <span class="mobile-arrow">▼</span>
+            </button>
+            <ul class="mobile-submenu-content">
+              <li>
+                <a href="{{basePath}}/dist/collections/printemps.html"
+                  >Printemps</a
+                >
+              </li>
+              <li>
+                <a href="{{basePath}}/dist/collections/silva.html">Silva</a>
+              </li>
+              <li>
+                <a href="{{basePath}}/dist/collections/respire.html">Respire</a>
+              </li>
+              <li>
+                <a href="{{basePath}}/dist/collections/origine.html">Origine</a>
+              </li>
+              <li>
+                <a href="{{basePath}}/dist/collections/tulipe.html">Tulipe</a>
+              </li>
+              <li>
+                <a href="{{basePath}}/dist/collections/Bulle.html">Bulle</a>
+              </li>
+              <li>
+                <a href="{{basePath}}/dist/collections/escale.html">Escale</a>
+              </li>
+              <li>
+                <a href="{{basePath}}/dist/collections/Enjoy.html">Enjoy</a>
+              </li>
+              <li>
+                <a href="{{basePath}}/dist/collections/mosaique.html"
+                  >Mosaïque</a
+                >
+              </li>
+              <li>
+                <a href="{{basePath}}/dist/collections/litterature&co.html"
+                  >Littérature</a
+                >
+              </li>
+              <li>
+                <a href="{{basePath}}/dist/collections/thal-s.html">Thal S</a>
+              </li>
+              <li>
+                <a href="{{basePath}}/dist/collections/jeux&co.html"
+                  >Jeux & Co</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li><a href="{{basePath}}/sur-mesure.html">Sur-Mesure</a></li>
+          <li><a href="{{basePath}}/dist/projets.html">Nos projets</a></li>
+          <li><a href="{{basePath}}/histoire.html">Histoire</a></li>
+          <li><a href="{{basePath}}/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 </header>
