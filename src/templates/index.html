@@ -43,8 +43,17 @@
           />
         </div>
       </section>
-      <!-- Section fond d'écran qui déborde -->
 
+      <div class="separator"></div>
+
+      <section class="content">
+        <p>
+          Nous vous offrons bien plus qu’un simple service de fabrication. Chez
+          nous, nous vous accompagnons dans vos projets de manière
+          personnalisée, en vous proposant un processus complet et transparent,
+          de la conception à la fabrication.
+        </p>
+      </section>
       <section class="sketch-section">
         <div class="sketch-bg">
           <img
@@ -56,17 +65,132 @@
             class="sketch sketch-right"
           />
         </div>
-
-        <section class="content">
-          <p>
-            Nous vous offrons bien plus qu’un simple service de fabrication.
-            Chez nous, nous vous accompagnons dans vos projets de manière
-            personnalisée, en vous proposant un processus complet et
-            transparent, de la conception à la fabrication.
-          </p>
-        </section>
       </section>
+      <!-- CARROUSEL ICI -->
+      <section class="featured-products">
+        <div class="featured-products__inner">
+          <!-- <h2 class="featured-products__title">Nos créations</h2>
+          <p class="featured-products__subtitle">
+            Découvrez une sélection de notre mobilier urbain
+          </p> -->
 
+          <div class="products-carousel">
+            <button
+              class="carousel-btn carousel-btn--prev"
+              aria-label="Précédent"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="m15 18-6-6 6-6" />
+              </svg>
+            </button>
+
+            <div class="carousel-container">
+              <div class="carousel-track">
+                <div class="product-carousel-card">
+                  <a href="{{basePath}}/dist/produits/assises/Bulle.html">
+                    <div class="product-carousel-image">
+                      <img
+                        src="{{basePath}}/assets/images/nos-creations/bulle/Bulle-banc-4-min.png"
+                        alt="Banc Bulle"
+                      />
+                    </div>
+                    <div class="product-carousel-content">
+                      <h3>Banc Bulle</h3>
+                      <p class="product-type">Assises</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="product-carousel-card">
+                  <a href="{{basePath}}/dist/produits/corbeilles/enjoy.html">
+                    <div class="product-carousel-image">
+                      <img
+                        src="{{basePath}}/assets/images/nos-creations/enjoy/enjoy-12-min.jpg"
+                        alt="Table Silva"
+                      />
+                    </div>
+                    <div class="product-carousel-content">
+                      <h3>Corbeille Enjoy</h3>
+                      <p class="product-type">Corbeilles</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="product-carousel-card">
+                  <a href="{{basePath}}/dist/produits/barrieres/thal-s.html">
+                    <div class="product-carousel-image">
+                      <img
+                        src="{{basePath}}/assets/images/nos-creations/thals/thals-barriere-3-min.png"
+                        alt="Barrière Thal S"
+                      />
+                    </div>
+                    <div class="product-carousel-content">
+                      <h3>Barrière Thal S</h3>
+                      <p class="product-type">Barrières</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="product-carousel-card">
+                  <a href="{{basePath}}/dist/produits/tables/printemps.html">
+                    <div class="product-carousel-image">
+                      <img
+                        src="{{basePath}}/assets/images/nos-creations/printemps/Printemps-Table-min.png"
+                        alt="Table Printemps"
+                      />
+                    </div>
+                    <div class="product-carousel-content">
+                      <h3>Table Printemps</h3>
+                      <p class="product-type">Tables</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="product-carousel-card">
+                  <a href="{{basePath}}/dist/produits/cendriers/silva.html">
+                    <div class="product-carousel-image">
+                      <img
+                        src="{{basePath}}/assets/images/nos-creations/printemps/Printemps-Cendrier-min.png"
+                        alt="Cendrier Printemps"
+                      />
+                    </div>
+                    <div class="product-carousel-content">
+                      <h3>Cendrier Printemps</h3>
+                      <p class="product-type">Cendriers</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="carousel-btn carousel-btn--next"
+              aria-label="Suivant"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- FIN DU CARROUSEL ICI -->
       <section class="commitments">
         <div class="commitments__inner">
           <h2 class="commitments__title">Nos engagements</h2>
@@ -161,6 +285,7 @@
     <script src="{{basePath}}/js/main.js"></script>
     <script src="{{basePath}}/js/mobile-menu.js"></script>
     <script src="{{basePath}}/js/animations.js"></script>
+    <script src="{{basePath}}/js/carousel.js"></script>
     <script src="{{basePath}}/js/search-data.js"></script>
     <script src="{{basePath}}/js/search.js"></script>
   </body>

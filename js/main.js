@@ -107,10 +107,15 @@ if (dropdownBtn && dropdown) {
 const modal = document.getElementById("image-modal");
 const modalImg = document.getElementById("modal-image");
 const closeModal = document.querySelector(".close-modal");
-const projectImages = document.querySelectorAll(".project-images img");
+
+// Cibler à la fois les images de projets ET de produits
+const clickableImages = document.querySelectorAll(
+  ".project-images img, .product-images img"
+);
 
 // Ajouter un écouteur de clic sur chaque image
-projectImages.forEach((img) => {
+clickableImages.forEach((img) => {
+  // ⭐ CHANGÉ ICI
   img.addEventListener("click", function () {
     modal.style.display = "block";
     modalImg.src = this.src;

@@ -1,22 +1,35 @@
 @use "../utils/variables" as *;
 @use "../utils/mixins" as *;
+@use "../base/functions" as *;
 
 // ======================================
 // COMPONENT : BOX CARD PRODUCTS
 // ======================================
 
 .box {
-  background: #f6f6f6;
-  border-radius: 20px;
   display: grid;
   grid-template-columns: 64px 1fr;
   position: relative;
+  background: #f6f6f6;
+  border-radius: 20px;
+
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 
   &:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  // Responsive
+  @media (max-width: 768px) {
+    grid-template-columns: 48px 1fr; // Réduire la colonne icône
+    border-radius: 16px;
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 40px 1fr;
+    border-radius: 12px;
   }
 }
 
@@ -26,9 +39,19 @@
   color: $primary;
 
   img {
-    width: 30px; // ou la taille que tu veux
+    width: 30px;
     height: 30px;
-    object-fit: contain; // pour garder les proportions
+    object-fit: contain;
+
+    @media (max-width: 768px) {
+      width: 24px;
+      height: 24px;
+    }
+
+    @media (max-width: 480px) {
+      width: 20px;
+      height: 20px;
+    }
   }
 }
 
@@ -42,6 +65,16 @@
   padding-top: 16px;
   font-weight: 500;
   color: #555;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    padding-top: 12px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 12px;
+    padding-top: 8px;
+  }
 }
 
 .box-title {
@@ -53,19 +86,41 @@
   letter-spacing: 0.125em;
   color: #555;
   text-transform: uppercase;
+
+  @media (max-width: 768px) {
+    height: 48px;
+    padding-left: 12px;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+  }
+
+  @media (max-width: 480px) {
+    height: 40px;
+    padding-left: 8px;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+  }
 }
 
 .box-image {
   width: 100%;
-  aspect-ratio: 4 / 3; // ✅ ratio horizontal classique
+  aspect-ratio: 4 / 3;
   border-radius: 18px 0 18px 0;
   overflow: hidden;
 
   img {
     width: 100%;
     height: 100%;
-    object-fit: cover; // garde la bonne proportion
+    object-fit: cover;
     display: block;
+  }
+
+  @media (max-width: 768px) {
+    border-radius: 14px 0 14px 0;
+  }
+
+  @media (max-width: 480px) {
+    border-radius: 10px 0 10px 0;
   }
 }
 
@@ -83,6 +138,10 @@
   transition: 0.35s ease all;
   overflow: hidden;
   max-width: 40px;
+
+  @media (max-width: 768px) {
+    display: none; // 👈 Masqué sur tablette et mobile
+  }
 }
 
 .studio-button-icon {
@@ -99,15 +158,47 @@
   transition: 0.25s ease all;
 }
 
-.box:hover {
+// Hover uniquement sur desktop
+@media (hover: hover) and (min-width: 769px) {
+  .box:hover {
+    .studio-button {
+      max-width: 100%;
+    }
+
+    .studio-button-label {
+      opacity: 1;
+      transform: translateX(0);
+      transition: 0.25s 0.1s ease-in opacity,
+        0.15s 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275) transform;
+    }
+  }
+}
+
+// Désactiver l'effet hover sur mobile/tablette
+@media (hover: hover) {
+  .box:hover {
+    .studio-button {
+      max-width: 100%;
+    }
+
+    .studio-button-label {
+      opacity: 1;
+      transform: translateX(0);
+      transition: 0.25s 0.1s ease-in opacity,
+        0.15s 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275) transform;
+    }
+  }
+}
+
+// Sur mobile/tablette, toujours afficher le label
+@media (hover: none) {
   .studio-button {
     max-width: 100%;
   }
+
   .studio-button-label {
     opacity: 1;
     transform: translateX(0);
-    transition: 0.25s 0.1s ease-in opacity,
-      0.15s 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275) transform;
   }
 }
 // ======================================
@@ -134,7 +225,7 @@
 
 .card-image {
   width: 100%;
-  height: 250px;
+  height: fluid(250px, 300px);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -195,24 +286,223 @@
 }
 
 // ======================================
-// ====== RESPONSIVE DESIGN =============
+// ====== CARROUSEL INDEX ===============
 // ======================================
+.featured-products {
+  padding: 80px 20px;
+  background: #f9f9f9;
 
-@media (max-width: 768px) {
-  .box {
-    grid-template-columns: 1fr;
+  @include mobile {
+    padding: 60px 15px;
+  }
+
+  &__inner {
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 2.5rem;
     text-align: center;
+    margin-bottom: 10px;
+    color: #222;
+
+    @include tablet {
+      font-size: 2rem;
+    }
+
+    @include mobile-small {
+      font-size: 1.6rem;
+    }
   }
 
-  .box-title {
-    writing-mode: horizontal-tb;
-    text-orientation: initial;
-    justify-content: center;
-    font-size: 18px;
+  &__subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 40px;
+
+    @include mobile-small {
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.products-carousel {
+  position: relative;
+  padding: 0;
+}
+
+.carousel-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  cursor: grab;
+  user-select: none;
+  padding-bottom: 30px;
+
+  // Scrollbar personnalisée pour Firefox
+  scrollbar-width: thin;
+  scrollbar-color: $primary #e0e0e0;
+
+  // Scrollbar personnalisée pour Chrome, Safari, Edge
+  &::-webkit-scrollbar {
+    height: 8px;
+    display: block;
+
+    @include mobile {
+      height: 6px;
+    }
   }
 
-  .box-image {
+  &::-webkit-scrollbar-track {
+    background: #e0e0e0;
+    border-radius: 10px;
+    margin: 0 20px;
+
+    @include mobile {
+      margin: 0 15px;
+    }
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $primary;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: darken($primary, 10%);
+    }
+  }
+
+  &:active {
+    cursor: grabbing;
+  }
+
+  @include mobile {
+    padding-bottom: 20px;
+  }
+}
+
+.carousel-track {
+  display: flex;
+  gap: 24px;
+  padding: 0 20px 20px;
+
+  @include mobile {
+    gap: 20px;
+    padding: 0 15px 15px;
+  }
+}
+
+.product-carousel-card {
+  min-width: 200px;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  }
+
+  @include desktop-large {
+    min-width: calc(25% - 18px);
+  }
+
+  @include laptop {
+    min-width: calc(33.333% - 16px);
+  }
+
+  @include tablet {
+    min-width: calc(50% - 12px);
+  }
+
+  @include mobile {
+    min-width: calc(80% - 10px);
+  }
+
+  @include mobile-small {
+    min-width: calc(85% - 10px);
+  }
+}
+
+.product-carousel-image {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+
+  img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
   }
+
+  @include laptop {
+    height: 400px;
+  }
+
+  @include tablet {
+    height: 380px;
+  }
+
+  @include mobile {
+    height: 350px;
+  }
+
+  @include mobile-small {
+    height: 320px;
+  }
+}
+
+.product-carousel-card:hover .product-carousel-image img {
+  transform: scale(1.05);
+}
+
+.product-carousel-content {
+  padding: 28px;
+
+  h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #333;
+
+    @include mobile-small {
+      font-size: 1.15rem;
+    }
+  }
+
+  .product-type {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+
+    @include mobile-small {
+      font-size: 0.95rem;
+    }
+  }
+
+  @include mobile {
+    padding: 22px;
+  }
+}
+
+// Suppression complète des boutons de navigation
+.carousel-btn {
+  display: none;
 }

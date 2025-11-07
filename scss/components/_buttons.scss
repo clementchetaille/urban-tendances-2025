@@ -1,5 +1,6 @@
 @use "../utils/variables" as *;
 @use "../utils/mixins" as *;
+@use "../base/functions" as *;
 
 .btn {
   display: inline-block;

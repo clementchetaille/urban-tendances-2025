@@ -2,6 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{pageTitle}} – {{collectionName}} | Nom Entreprise</title>
     <link rel="stylesheet" href="{{basePath}}/css/styles.css" />
   </head>
@@ -19,6 +20,7 @@
           <div class="dropdown-menu">{{collectionLinks}}</div>
         </div>
       </section>
+
       <section class="product-page-img-container">
         <div class="product-images">{{images}}</div>
       </section>
@@ -77,6 +79,11 @@
         </div>
       </div>
     </main>
+    <!-- ⭐ AJOUTE LA MODALE ICI ⭐ -->
+    <div id="image-modal" class="image-modal">
+      <span class="close-modal">&times;</span>
+      <img id="modal-image" class="modal-content" alt="Image agrandie" />
+    </div>
 
     {{footer}}
 

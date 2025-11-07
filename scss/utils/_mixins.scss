@@ -1,12 +1,32 @@
-// _mixins.scss
-@mixin flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@use "../base/functions" as *;
+
+// Breakpoints
+@mixin tablet {
+  @media (max-width: 1024px) {
+    @content;
+  }
 }
 
-@mixin container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile-small {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin desktop-large {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: 1025px) and (max-width: 1600px) {
+    @content;
+  }
 }

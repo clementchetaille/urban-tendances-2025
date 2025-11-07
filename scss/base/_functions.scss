@@ -1,0 +1,15 @@
+// ===========================
+// Function: fluid()
+// Génère un clamp() fluide entre deux valeurs
+// ===========================
+// $min: valeur minimale (en px, rem, etc.)
+// $max: valeur maximale
+// $min-vw: largeur d’écran à partir de laquelle le min s’applique
+// $max-vw: largeur d’écran à partir de laquelle le max s’applique
+// ===========================
+
+@function fluid($min, $max, $min-vw: 320px, $max-vw: 1920px) {
+  $slope: ($max - $min) / ($max-vw - $min-vw) * 100; // calcule la pente
+  $base: $min - ($slope / 100) * $min-vw; // calcule l’intercept
+  @return clamp(#{$min}, calc(#{$base} + #{$slope}vw), #{$max});
+}
