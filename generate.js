@@ -67,7 +67,7 @@ function renderMaterials(materials) {
       ) {
         icon = `<img src="${BASE_PATH}/assets/icons/acier-texture2.jpg" alt="acier" class="material-icon">`;
       } else if (materialLower.includes("bois")) {
-        icon = `<img src="${BASE_PATH}/assets/icons/wood-texture.png" alt="bois" class="material-icon">`;
+        icon = `<img src="${BASE_PATH}/assets/icons/wood-texture.webp" alt="bois" class="material-icon">`;
       }
 
       return `<li>${icon}${m}</li>`;

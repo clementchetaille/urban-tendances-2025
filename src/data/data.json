@@ -1017,10 +1017,10 @@
             "name": "Table Pique nique",
             "description": "Découvrez la table de pique-nique Silva, conçue en grosse section de bois massif, alliant solidité, esthétique et durabilité. Idéale pour les espaces urbains, les jardins collectifs, les parcs et les parties communes, elle invite au partage et à la convivialité.",
             "images": [
-              "assets/images/nos-creations/silva/silva-tablepicnic1.jpg",
+              "assets/images/nos-creations/silva/silva-tablepicnic1.webp",
               "assets/images/nos-creations/silva/14-150-A-MES-SILVA-TABLE-PIQUE-NIQUE-2.png",
               "assets/images/nos-creations/silva/14-150-A-MES-SILVA-TABLE-PIQUE-NIQUE-3.png",
-              "assets/images/nos-creations/silva/14-150-A-MES-SILVA-TABLE-PIQUE-NIQUE-4.png"
+              "assets/images/nos-creations/silva/14-150-A-MES-SILVA-TABLE-PIQUE-NIQUE-4.webp"
             ],
             "materials": [
               "Acier traité (sablage + traitement anticorrosif + thermolaquage C5 bord de mer",
@@ -1182,13 +1182,13 @@
         }
       ],
       "images": [
-        "assets/images/projets/leluc-2025/leluc-fauteuil-2.jpg",
-        "assets/images/projets/leluc-2025/leluc-fauteuil-1.jpg",
-        "assets/images/projets/leluc-2025/leluc-jardiniere-1.jpg",
-        "assets/images/projets/leluc-2025/leluc-banc-1.jpg",
-        "assets/images/projets/leluc-2025/leluc-macro-1.jpg",
-        "assets/images/projets/leluc-2025/leluc-jardiniere-2.jpg",
-        "assets/images/projets/leluc-2025/leluc-corbeille-1.jpg"
+        "assets/images/projets/leluc-2025/leluc-fauteuil-2.webp",
+        "assets/images/projets/leluc-2025/leluc-fauteuil-1.webp",
+        "assets/images/projets/leluc-2025/leluc-jardiniere-1.webp",
+        "assets/images/projets/leluc-2025/leluc-banc-1.webp",
+        "assets/images/projets/leluc-2025/leluc-macro-1.webp",
+        "assets/images/projets/leluc-2025/leluc-jardiniere-2.webp",
+        "assets/images/projets/leluc-2025/leluc-corbeille-1.webp"
       ]
     },
     "villasimone": {
@@ -1205,11 +1205,11 @@
         }
       ],
       "images": [
-        "assets/images/projets/Villa-Simone-scaled.jpg",
-        "assets/images/projets/villa-simone1.jpg",
-        "assets/images/projets/villa-simone2.jpg",
+        "assets/images/projets/Villa-Simone-scaled.webp",
+        "assets/images/projets/villa-simone1.webp",
+        "assets/images/projets/villa-simone2.webp",
         "assets/images/projets/villa-simone3.jpg",
-        "assets/images/projets/villa-simone4.jpg",
+        "assets/images/projets/villa-simone4.webp",
         "assets/images/projets/villa-simone5.jpg"
       ]
     },
@@ -1228,8 +1228,8 @@
       ],
       "images": [
         "assets/images/nos-creations/silva/silva-transat1.jpg",
-        "assets/images/nos-creations/silva/Village-des-Athletes.png",
-        "assets/images/nos-creations/silva/silva-tablepicnic1.jpg",
+        "assets/images/nos-creations/silva/Village-des-Athletes.webp",
+        "assets/images/nos-creations/silva/silva-tablepicnic1.webp",
         "assets/images/nos-creations/silva/silva-tabouret1.jpg"
       ]
     },
@@ -1373,8 +1373,8 @@
         }
       ],
       "images": [
-        "assets/images/projets/aire-les-oliviers1.jpg",
-        "assets/images/projets/aire-les-oliviers2.jpg"
+        "assets/images/projets/aire-les-oliviers1.webp",
+        "assets/images/projets/aire-les-oliviers2.webp"
       ]
     },
     "soprotec": {
@@ -1441,7 +1441,7 @@
           "quantity": 0
         }
       ],
-      "images": ["assets/images/projets/ecole-jules-verne1.jpg"]
+      "images": ["assets/images/projets/ecole-jules-verne1.webp"]
     },
     "bergessollies": {
       "name": "Berges du Gapeau | Corbeilles SLIM",
