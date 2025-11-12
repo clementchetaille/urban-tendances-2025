@@ -1162,6 +1162,35 @@
     }
   },
   "projects": {
+    "lelucplace": {
+      "name": "Place de la liberté | Assises & Corbeilles",
+      "city": "Le Luc (83)",
+      "year": 2025,
+      "description": "Création d'assises et corbeilles pour la nouvelle place de la Liberté",
+      "products": [
+        {
+          "collection": "",
+          "type": "assises",
+          "name": "Banc",
+          "quantity": 6
+        },
+        {
+          "collection": "thal-s",
+          "type": "corbeilles",
+          "name": "corbeille",
+          "quantity": 4
+        }
+      ],
+      "images": [
+        "assets/images/projets/leluc-2025/leluc-fauteuil-2.jpg",
+        "assets/images/projets/leluc-2025/leluc-fauteuil-1.jpg",
+        "assets/images/projets/leluc-2025/leluc-jardiniere-1.jpg",
+        "assets/images/projets/leluc-2025/leluc-banc-1.jpg",
+        "assets/images/projets/leluc-2025/leluc-macro-1.jpg",
+        "assets/images/projets/leluc-2025/leluc-jardiniere-2.jpg",
+        "assets/images/projets/leluc-2025/leluc-corbeille-1.jpg"
+      ]
+    },
     "villasimone": {
       "name": "Villa Simone Ensemble | Table pique-nique Mosaïque",
       "city": "Six-Fours-Les-Plages",
