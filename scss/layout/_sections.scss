@@ -376,6 +376,8 @@ main {
   opacity: 0;
   transition: all 1.6s cubic-bezier(0.22, 1, 0.36, 1);
   filter: drop-shadow(0 8px 12px rgba(167, 167, 167, 0.1));
+  height: auto; // ⭐ AJOUT IMPORTANT
+  object-fit: contain; // ⭐ AJOUT IMPORTANT
 
   @include mobile {
     transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1);
@@ -389,11 +391,9 @@ main {
   @include laptop {
     width: clamp(250px, 45vw, 500px);
   }
-
   @include tablet {
     width: clamp(200px, 48vw, 400px);
   }
-
   @include mobile {
     width: clamp(150px, 45vw, 300px);
   }
@@ -406,11 +406,9 @@ main {
   @include laptop {
     width: clamp(250px, 45vw, 500px);
   }
-
   @include tablet {
     width: clamp(200px, 48vw, 400px);
   }
-
   @include mobile {
     width: clamp(150px, 45vw, 300px);
   }
