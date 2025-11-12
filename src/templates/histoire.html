@@ -3,57 +3,149 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Histoire | Urban Tendances</title>
+
+    <!-- SEO: Title optimisé -->
+    <title>
+      Notre Histoire | Urban Tendances - Fabricant Mobilier Urbain Français
+    </title>
+
+    <!-- SEO: Meta description -->
+    <meta
+      name="description"
+      content="Découvrez l'histoire d'Urban Tendances et d'Alexandra Nicole Glemarec. Depuis 2020, nous concevons et fabriquons du mobilier urbain design 100% français dans notre atelier du Var."
+    />
+
+    <!-- SEO: Mots-clés -->
+    <meta
+      name="keywords"
+      content="Urban Tendances, Alexandra Nicole Glemarec, fabricant français, atelier Var, SR PLUS, mobilier urbain design, histoire entreprise"
+    />
+
+    <!-- SEO: Auteur et robots -->
+    <meta name="author" content="Urban Tendances" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- SEO: Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Notre Histoire | Urban Tendances" />
+    <meta
+      property="og:description"
+      content="L'histoire d'Urban Tendances : passion du design, fabrication française et expertise artisanale depuis 2020."
+    />
+    <meta
+      property="og:image"
+      content="{{basePath}}/assets/images/histoire/Photo-Profil-ANG_noir_blanc.png"
+    />
+    <meta property="og:url" content="https://votre-domaine.com/histoire.html" />
+    <meta property="og:locale" content="fr_FR" />
+
+    <!-- SEO: Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Notre Histoire | Urban Tendances" />
+    <meta
+      name="twitter:description"
+      content="L'histoire d'Urban Tendances : passion du design et fabrication française."
+    />
+    <meta
+      name="twitter:image"
+      content="{{basePath}}/assets/images/histoire/Photo-Profil-ANG_noir_blanc.png"
+    />
+
+    <!-- SEO: Canonical URL -->
+    <link rel="canonical" href="https://votre-domaine.com/histoire.html" />
+
+    <!-- Schema.org pour Organization -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Urban Tendances",
+        "foundingDate": "2020",
+        "founder": {
+          "@type": "Person",
+          "name": "Alexandra Nicole Glemarec"
+        },
+        "description": "Fabricant français de mobilier urbain design sur mesure",
+        "url": "https://votre-domaine.com",
+        "logo": "https://votre-domaine.com/assets/images/logo.png",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Var",
+          "addressCountry": "FR"
+        }
+      }
+    </script>
+
     <link rel="stylesheet" href="{{basePath}}/css/styles.css" />
   </head>
   <body>
     {{header}}
 
     <main>
-      <section class="section-histoire">
+      <!-- SEO: H1 principal -->
+      <h1 class="visually-hidden">
+        Notre Histoire - Urban Tendances et Alexandra Nicole Glemarec
+      </h1>
+
+      <article class="section-histoire">
         <div class="intro-section">
           <div class="intro-grid">
             <div class="intro-content">
               <h2 class="section-title">Urban Tendances, c'est quoi ?</h2>
-              <div class="quote">
-                « Passionnée de design, d'arts graphiques et du symbolisme, je
-                lance Urban Tendances en 2020. À la demande des clients, je
-                dessine, conçois les projets sur mesure jusqu'à leur
-                réalisation.<br /><br />
-                Je recherche l'harmonie entre le mobilier design que je crée et
-                la Nature.<br /><br />
-                Je m'inspire des paysages, des saisons, des formes végétales,
-                des matériaux naturels, du reflet de la lumière et des
-                émotions.<br /><br />
-                Je joue sur les espaces pour laisser passer la lumière et la
-                vie. Les courbes et les lignes prennent du sens dans leur
-                environnement.<br /><br />
-                Le mélange des matériaux et du végétal est le symbole d'une
-                symbiose entre l'esprit et la matière. »
-              </div>
+              <blockquote class="quote">
+                <p>
+                  « Passionnée de design, d'arts graphiques et du symbolisme, je
+                  lance Urban Tendances en 2020. À la demande des clients, je
+                  dessine, conçois les projets sur mesure jusqu'à leur
+                  réalisation.
+                </p>
+                <p>
+                  Je recherche l'harmonie entre le mobilier design que je crée
+                  et la Nature.
+                </p>
+                <p>
+                  Je m'inspire des paysages, des saisons, des formes végétales,
+                  des matériaux naturels, du reflet de la lumière et des
+                  émotions.
+                </p>
+                <p>
+                  Je joue sur les espaces pour laisser passer la lumière et la
+                  vie. Les courbes et les lignes prennent du sens dans leur
+                  environnement.
+                </p>
+                <p>
+                  Le mélange des matériaux et du végétal est le symbole d'une
+                  symbiose entre l'esprit et la matière. »
+                </p>
+                <cite>— Alexandra Nicole Glemarec, Fondatrice</cite>
+              </blockquote>
             </div>
             <div class="intro-image">
               <img
                 src="{{basePath}}/assets/images/histoire/Photo-Profil-ANG_noir_blanc.png"
-                alt="Alexandra Nicole Glemarec"
+                alt="Alexandra Nicole Glemarec, fondatrice d'Urban Tendances"
+                width="600"
+                height="800"
+                loading="eager"
               />
             </div>
           </div>
         </div>
-      </section>
+      </article>
 
       <!-- Section 2: Découvrez notre histoire -->
-      <section class="section-histoire">
+      <section class="section-histoire" aria-labelledby="decouvrez-histoire">
         <div class="histoire-section">
-          <h2 class="section-title">Découvrez notre histoire</h2>
+          <h2 id="decouvrez-histoire" class="section-title">
+            Découvrez notre histoire
+          </h2>
           <div class="histoire-content">
             <p>
-              <span class="highlight">Alexandra Nicole Glemarec</span> fait ses
-              armes dans le négoce de matériaux pour une grande enseigne de
-              travaux publics. Une expérience formatrice pour cette jeune femme
-              fraîchement diplômée en Gestion des entreprises et des
-              administrations, et surtout passionnée de design et d'arts
-              graphiques.
+              <strong>Alexandra Nicole Glemarec</strong> fait ses armes dans le
+              négoce de matériaux pour une grande enseigne de travaux publics.
+              Une expérience formatrice pour cette jeune femme fraîchement
+              diplômée en Gestion des entreprises et des administrations, et
+              surtout passionnée de design et d'arts graphiques.
             </p>
             <p>
               Rapidement, Alexandra s'impose dans un univers très technique et,
@@ -64,12 +156,11 @@
             <p>
               Soutenue par cette première réalisation applaudie, Alexandra
               quitte les travaux publics pour fonder
-              <span class="highlight">Urban Tendances</span>, agence de
-              conception de mobilier urbain. Son créneau : sortir des sentiers
-              battus en signant des collections design et élégantes, inspirées
-              des tendances de la haute-couture. Un pari audacieux mais
-              nécessaire pour insuffler de la nouveauté dans un paysage urbain
-              trop classique.
+              <strong>Urban Tendances</strong>, agence de conception de mobilier
+              urbain. Son créneau : sortir des sentiers battus en signant des
+              collections design et élégantes, inspirées des tendances de la
+              haute-couture. Un pari audacieux mais nécessaire pour insuffler de
+              la nouveauté dans un paysage urbain trop classique.
             </p>
             <p>
               Elle s'entoure d'une équipe experte, développe un bureau d'études
@@ -90,17 +181,22 @@
       </section>
 
       <!-- Section 3: La rencontre avec SR+ -->
-      <section class="section-histoire">
+      <section class="section-histoire" aria-labelledby="rencontre-sr">
         <div class="rencontre-section">
           <div class="rencontre-grid">
             <div class="rencontre-image">
               <img
                 src="{{basePath}}/assets/images/histoire/Bienvenue-SR-Plus.png"
-                alt="Atelier SR PLUS"
+                alt="Atelier SR PLUS - chaudronnerie dans le Var"
+                width="800"
+                height="600"
+                loading="lazy"
               />
             </div>
             <div class="rencontre-content">
-              <h2 class="section-title">La rencontre avec SR+</h2>
+              <h2 id="rencontre-sr" class="section-title">
+                La rencontre avec SR+
+              </h2>
               <h3>
                 À la rencontre de SR PLUS : Quand le destin trace son chemin
               </h3>
@@ -113,10 +209,9 @@
               <p>
                 Alors qu'elle peaufinait son business plan et rapatriait la
                 production dans le Var chez des sous-traitants, le destin lui
-                présenta <span class="highlight">Robert Rébujent</span>,
-                fondateur de SR PLUS, une chaudronnerie implantée depuis plus de
-                20 ans, recherchant un repreneur pour assurer la pérennité de
-                son expertise.
+                présenta <strong>Robert Rébujent</strong>, fondateur de SR PLUS,
+                une chaudronnerie implantée depuis plus de 20 ans, recherchant
+                un repreneur pour assurer la pérennité de son expertise.
               </p>
               <p>
                 À sa grande surprise, l'atelier SR PLUS répondait parfaitement à
@@ -142,97 +237,183 @@
           </div>
         </div>
       </section>
+
       <!-- Section 4: Notre équipe -->
-      <section class="section-histoire">
+      <section class="section-histoire" aria-labelledby="notre-equipe">
         <div class="equipe-section">
-          <h2 class="section-title">Notre équipe</h2>
+          <h2 id="notre-equipe" class="section-title">Notre équipe</h2>
           <div class="equipe-grid">
-            <div class="equipe-member">
+            <article
+              class="equipe-member"
+              itemscope
+              itemtype="https://schema.org/Person"
+            >
               <div class="equipe-photo">
                 <img
                   src="{{basePath}}/assets/images/histoire/Alexandra-directrice.jpg"
-                  alt="Alexandra-directrice"
+                  alt="Alexandra, directrice d'Urban Tendances"
+                  width="400"
+                  height="400"
+                  loading="lazy"
+                  itemprop="image"
                 />
               </div>
-              <h3 class="equipe-nom">Alexandra</h3>
-              <p class="equipe-poste">Directrice</p>
-            </div>
-            <div class="equipe-member">
+              <h3 class="equipe-nom" itemprop="name">Alexandra</h3>
+              <p class="equipe-poste" itemprop="jobTitle">Directrice</p>
+            </article>
+
+            <article
+              class="equipe-member"
+              itemscope
+              itemtype="https://schema.org/Person"
+            >
               <div class="equipe-photo">
                 <img
                   src="{{basePath}}/assets/images/histoire/Gabriel-chaudronnier.jpg"
-                  alt="gabriel-chaudronnier"
+                  alt="Gabriel, chaudronnier et responsable chantier"
+                  width="400"
+                  height="400"
+                  loading="lazy"
+                  itemprop="image"
                 />
               </div>
-              <h3 class="equipe-nom">Gabriel</h3>
-              <p class="equipe-poste">Chaudronnier - Responsable chantier</p>
-            </div>
-            <div class="equipe-member">
+              <h3 class="equipe-nom" itemprop="name">Gabriel</h3>
+              <p class="equipe-poste" itemprop="jobTitle">
+                Chaudronnier - Responsable chantier
+              </p>
+            </article>
+
+            <article
+              class="equipe-member"
+              itemscope
+              itemtype="https://schema.org/Person"
+            >
               <div class="equipe-photo">
                 <img
                   src="{{basePath}}/assets/images/histoire/Jessica-assistante-de-gestion.jpg"
-                  alt="jessica-assistante-de-gestion"
+                  alt="Jessica, assistante de gestion"
+                  width="400"
+                  height="400"
+                  loading="lazy"
+                  itemprop="image"
                 />
               </div>
-              <h3 class="equipe-nom">Jessica</h3>
-              <p class="equipe-poste">Assistante de gestion</p>
-            </div>
-            <div class="equipe-member">
+              <h3 class="equipe-nom" itemprop="name">Jessica</h3>
+              <p class="equipe-poste" itemprop="jobTitle">
+                Assistante de gestion
+              </p>
+            </article>
+
+            <article
+              class="equipe-member"
+              itemscope
+              itemtype="https://schema.org/Person"
+            >
               <div class="equipe-photo">
                 <img
                   src="{{basePath}}/assets/images/histoire/Malik-preparateur.jpg"
-                  alt="malik-metallier"
+                  alt="Malik, apprenti métallier"
+                  width="400"
+                  height="400"
+                  loading="lazy"
+                  itemprop="image"
                 />
               </div>
-              <h3 class="equipe-nom">Malik</h3>
-              <p class="equipe-poste">Apprenti Métallier</p>
-            </div>
-            <div class="equipe-member">
+              <h3 class="equipe-nom" itemprop="name">Malik</h3>
+              <p class="equipe-poste" itemprop="jobTitle">Apprenti Métallier</p>
+            </article>
+
+            <article
+              class="equipe-member"
+              itemscope
+              itemtype="https://schema.org/Person"
+            >
               <div class="equipe-photo">
                 <img
                   src="{{basePath}}/assets/images/histoire/Noemie-dessinatrice.jpg"
-                  alt="noemie-dessinatrice"
+                  alt="Noémie, dessinatrice"
+                  width="400"
+                  height="400"
+                  loading="lazy"
+                  itemprop="image"
                 />
               </div>
-              <h3 class="equipe-nom">Noémie</h3>
-              <p class="equipe-poste">Dessinatrice</p>
-            </div>
-            <div class="equipe-member">
+              <h3 class="equipe-nom" itemprop="name">Noémie</h3>
+              <p class="equipe-poste" itemprop="jobTitle">Dessinatrice</p>
+            </article>
+
+            <article
+              class="equipe-member"
+              itemscope
+              itemtype="https://schema.org/Person"
+            >
               <div class="equipe-photo">
                 <img
                   src="{{basePath}}/assets/images/histoire/Robert-Ingenieur.jpg"
-                  alt="robert-ingenieur"
+                  alt="Robert, ingénieur"
+                  width="400"
+                  height="400"
+                  loading="lazy"
+                  itemprop="image"
                 />
               </div>
-              <h3 class="equipe-nom">Robert</h3>
-              <p class="equipe-poste">Ingénieur</p>
-            </div>
-            <div class="equipe-member">
+              <h3 class="equipe-nom" itemprop="name">Robert</h3>
+              <p class="equipe-poste" itemprop="jobTitle">Ingénieur</p>
+            </article>
+
+            <article
+              class="equipe-member"
+              itemscope
+              itemtype="https://schema.org/Person"
+            >
               <div class="equipe-photo">
                 <img
                   src="{{basePath}}/assets/images/histoire/Stephane-chef-datelier-chaudronnerie.jpg"
-                  alt="stephane-chaudronnier"
+                  alt="Stephane, chef d'atelier chaudronnier"
+                  width="400"
+                  height="400"
+                  loading="lazy"
+                  itemprop="image"
                 />
               </div>
-              <h3 class="equipe-nom">Stephane</h3>
-              <p class="equipe-poste">Chef d'atelier - Chaudronnier</p>
-            </div>
-            <div class="equipe-member">
+              <h3 class="equipe-nom" itemprop="name">Stephane</h3>
+              <p class="equipe-poste" itemprop="jobTitle">
+                Chef d'atelier - Chaudronnier
+              </p>
+            </article>
+
+            <article
+              class="equipe-member"
+              itemscope
+              itemtype="https://schema.org/Person"
+            >
               <div class="equipe-photo">
                 <img
                   src="{{basePath}}/assets/images/histoire/ChatGPT-Image-31-juil.-2025-13_21_21.png"
-                  alt="guillaume-menuisier"
+                  alt="Guillaume, préparateur menuisier"
+                  width="400"
+                  height="400"
+                  loading="lazy"
+                  itemprop="image"
                 />
               </div>
-              <h3 class="equipe-nom">Guillaume</h3>
-              <p class="equipe-poste">Préparateur - menuisier</p>
-            </div>
+              <h3 class="equipe-nom" itemprop="name">Guillaume</h3>
+              <p class="equipe-poste" itemprop="jobTitle">
+                Préparateur - menuisier
+              </p>
+            </article>
           </div>
         </div>
       </section>
-      <div class="search-overlay">
+
+      <div
+        class="search-overlay"
+        role="dialog"
+        aria-label="Recherche de produits"
+        aria-hidden="true"
+      >
         <div class="search-overlay-content">
-          <button class="search-close" aria-label="Fermer">
+          <button class="search-close" aria-label="Fermer la recherche">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -241,6 +422,7 @@
               fill="none"
               stroke="currentColor"
               stroke-width="2"
+              aria-hidden="true"
             >
               <line x1="18" y1="6" x2="6" y2="18"></line>
               <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -248,15 +430,20 @@
           </button>
 
           <div class="search-box">
+            <label for="search-input" class="visually-hidden"
+              >Rechercher un produit</label
+            >
             <input
-              type="text"
+              type="search"
+              id="search-input"
               class="search-input"
               placeholder="Rechercher un produit, une collection..."
               autocomplete="off"
+              aria-label="Rechercher un produit"
             />
           </div>
 
-          <div class="search-results"></div>
+          <div class="search-results" role="region" aria-live="polite"></div>
         </div>
       </div>
     </main>

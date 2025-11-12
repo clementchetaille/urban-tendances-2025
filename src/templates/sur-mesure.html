@@ -3,25 +3,124 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sur-mesure | Urban Tendances</title>
+
+    <!-- SEO: Title optimisé -->
+    <title>
+      Mobilier Urbain Sur-Mesure | Bureau d'Études - Urban Tendances
+    </title>
+
+    <!-- SEO: Meta description -->
+    <meta
+      name="description"
+      content="Conception et fabrication de mobilier urbain sur-mesure 100% français. Bureau d'études, prototypage, modélisation 3D. De l'esquisse à la réalisation de votre projet."
+    />
+
+    <!-- SEO: Mots-clés -->
+    <meta
+      name="keywords"
+      content="mobilier urbain sur mesure, bureau d'études, fabrication sur mesure, prototypage, modélisation 3D, chaudronnerie, made in France, PME française"
+    />
+
+    <!-- SEO: Auteur et robots -->
+    <meta name="author" content="Urban Tendances" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- SEO: Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Mobilier Urbain Sur-Mesure | Urban Tendances"
+    />
+    <meta
+      property="og:description"
+      content="Conception et fabrication sur-mesure de mobilier urbain. Bureau d'études complet, du croquis à la réalisation 3D."
+    />
+    <meta
+      property="og:image"
+      content="{{basePath}}/assets/images/sur-mesure/sketch-1.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://votre-domaine.com/sur-mesure.html"
+    />
+    <meta property="og:locale" content="fr_FR" />
+    <meta
+      property="og:video"
+      content="{{basePath}}/assets/videos/Urban-tendances_AtelierV2_compressee.mp4"
+    />
+
+    <!-- SEO: Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Mobilier Urbain Sur-Mesure | Urban Tendances"
+    />
+    <meta
+      name="twitter:description"
+      content="Conception et fabrication sur-mesure de mobilier urbain."
+    />
+    <meta
+      name="twitter:image"
+      content="{{basePath}}/assets/images/sur-mesure/sketch-1.jpg"
+    />
+
+    <!-- SEO: Canonical URL -->
+    <link rel="canonical" href="https://votre-domaine.com/sur-mesure.html" />
+
+    <!-- Schema.org pour Service -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Conception et fabrication de mobilier urbain sur-mesure",
+        "provider": {
+          "@type": "Organization",
+          "name": "Urban Tendances"
+        },
+        "areaServed": "FR",
+        "description": "Bureau d'études complet pour la conception et fabrication sur-mesure de mobilier urbain. Étude de faisabilité, prototypage, modélisation 3D et fabrication.",
+        "offers": {
+          "@type": "Offer",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    </script>
+
     <link rel="stylesheet" href="{{basePath}}/css/styles.css" />
   </head>
   <body>
     {{header}}
     <main>
-      <section class="surmesure-hero">
-        <video id="surmesureHeroVideo" autoplay muted loop playsinline>
+      <!-- SEO: H1 principal -->
+      <h1 class="visually-hidden">
+        Mobilier Urbain Sur-Mesure - Bureau d'Études et Fabrication Française
+      </h1>
+
+      <section
+        class="surmesure-hero"
+        aria-label="Vidéo de présentation de l'atelier"
+      >
+        <video
+          id="surmesureHeroVideo"
+          autoplay
+          muted
+          loop
+          playsinline
+          aria-label="Vidéo de l'atelier Urban Tendances"
+          poster="{{basePath}}/assets/images/sur-mesure/poster-video.jpg"
+        >
           <source
             src="{{basePath}}/assets/videos/Urban-tendances_AtelierV2_compressee.mp4"
             type="video/mp4"
           />
           Votre navigateur ne supporte pas la lecture de vidéos.
         </video>
-        <div class="surmesure-hero__overlay"></div>
+        <div class="surmesure-hero__overlay" aria-hidden="true"></div>
         <button
           class="surmesure-hero__sound-toggle"
           id="surmesureSoundToggle"
-          aria-label="Activer/Désactiver le son"
+          aria-label="Activer ou désactiver le son de la vidéo"
+          aria-pressed="false"
         >
           <svg
             class="surmesure-hero__sound-icon surmesure-hero__sound-icon--muted"
@@ -29,6 +128,7 @@
             fill="none"
             stroke="currentColor"
             stroke-width="2"
+            aria-hidden="true"
           >
             <path d="M11 5L6 9H2v6h4l5 4V5z" />
             <line x1="23" y1="9" x2="17" y2="15" />
@@ -40,6 +140,7 @@
             fill="none"
             stroke="currentColor"
             stroke-width="2"
+            aria-hidden="true"
           >
             <path d="M11 5L6 9H2v6h4l5 4V5z" />
             <path
@@ -48,13 +149,17 @@
           </svg>
         </button>
       </section>
+
       <div class="surmesure-title-top">
         <h2 class="surmesure-title-top__heading">Sur-mesure</h2>
       </div>
+
       <!-- Bureau d'études Section -->
-      <section class="surmesure-bureau">
+      <section class="surmesure-bureau" aria-labelledby="bureau-etudes">
         <div class="surmesure-container">
-          <h2 class="surmesure-bureau__title">Bureau d'études</h2>
+          <h2 id="bureau-etudes" class="surmesure-bureau__title">
+            Bureau d'études
+          </h2>
           <p class="surmesure-bureau__text">
             Nous vous offrons bien plus qu'un simple service de fabrication.
             Chez nous, nous vous accompagnons dans vos projets de manière
@@ -62,180 +167,236 @@
             transparent, de la conception à la fabrication.
           </p>
           <p class="surmesure-bureau__text">
-            Nous réalisons l'étude de faisabilité, le prototypage et la
-            fabrication sur-mesure de vos produits. Pour tous les clients,
-            toutes les configurations. Sur la base d'un simple croquis, d'un
-            dessin à la demande, finalisé par des plans et une modélisation 3D
+            Nous réalisons l'<strong>étude de faisabilité</strong>, le
+            <strong>prototypage</strong> et la
+            <strong>fabrication sur-mesure</strong> de vos produits. Pour tous
+            les clients, toutes les configurations. Sur la base d'un simple
+            croquis, d'un dessin à la demande, finalisé par des plans et une
+            <strong>modélisation 3D</strong>
             ou une mise en scène pour l'aménagement de votre espace.
           </p>
         </div>
       </section>
 
       <!-- Image Grid -->
-      <section class="surmesure-gallery">
+      <section class="surmesure-gallery" aria-labelledby="galerie-croquis">
         <div class="surmesure-container">
+          <h2 id="galerie-croquis" class="visually-hidden">
+            Galerie de croquis et dessins techniques
+          </h2>
           <div class="surmesure-gallery__grid">
-            <div class="surmesure-gallery__item">
+            <figure class="surmesure-gallery__item">
               <img
                 src="{{basePath}}/assets/images/sur-mesure/sketch-1.jpg"
-                alt="sketch-urban-tendances-1"
+                alt="Croquis de conception mobilier urbain - étude préliminaire"
+                width="800"
+                height="600"
+                loading="lazy"
               />
-              <!-- Placeholder si pas d'image -->
-              <!-- <div class="surmesure-gallery__placeholder">Image 1<br>Remplacez par votre image</div> -->
-            </div>
-            <div class="surmesure-gallery__item item2">
+            </figure>
+            <figure class="surmesure-gallery__item item2">
               <img
                 src="{{basePath}}/assets/images/sur-mesure/sketch-2.png"
-                alt="sketch-urban-tendances-2"
+                alt="Plan technique mobilier urbain - dessin détaillé"
+                width="800"
+                height="600"
+                loading="lazy"
               />
-              <!-- <div class="surmesure-gallery__placeholder">Image 2<br>Remplacez par votre image</div> -->
-            </div>
-            <div class="surmesure-gallery__item">
+            </figure>
+            <figure class="surmesure-gallery__item">
               <img
                 src="{{basePath}}/assets/images/sur-mesure/sketch-3.png"
-                alt="sketch-urban-tendances-3"
+                alt="Modélisation 3D mobilier urbain sur-mesure"
+                width="800"
+                height="600"
+                loading="lazy"
               />
-              <!-- <div class="surmesure-gallery__placeholder">Image 3<br>Remplacez par votre image</div> -->
-            </div>
+            </figure>
           </div>
         </div>
       </section>
 
       <!-- Nos Forces Section -->
-      <section class="surmesure-forces">
+      <section class="surmesure-forces" aria-labelledby="nos-forces">
         <div class="surmesure-container">
-          <h2 class="surmesure-forces__title">Nos forces</h2>
+          <h2 id="nos-forces" class="surmesure-forces__title">Nos forces</h2>
           <div class="surmesure-forces__content">
             <p class="surmesure-forces__text">
-              Chez Urban Tendances, nous incarnons l'harmonie entre artisanat
-              raffiné et puissance industrielle. Notre fabrication est
-              entièrement Made in France, ancrée localement pour soutenir
-              l'économie locale. En tant que PME à taille humaine, nous
-              accordons une attention personnalisée à chaque projet, offrant un
-              service sur-mesure qui répond précisément à vos besoins.
+              Chez Urban Tendances, nous incarnons l'harmonie entre
+              <strong>artisanat raffiné</strong> et
+              <strong>puissance industrielle</strong>. Notre fabrication est
+              entièrement <strong>Made in France</strong>, ancrée localement
+              pour soutenir l'économie locale. En tant que PME à taille humaine,
+              nous accordons une attention personnalisée à chaque projet,
+              offrant un service sur-mesure qui répond précisément à vos
+              besoins.
             </p>
             <p class="surmesure-forces__text">
-              Notre parc machine complet nous permet de réaliser une gamme
-              étendue de projets, avec qualité et efficacité. De plus, en
-              combinant notre expertise en chaudronnerie et notre bureau
-              d'études, nous offrons une solution complète, tout sous le même
-              toit.
+              Notre <strong>parc machine complet</strong> nous permet de
+              réaliser une gamme étendue de projets, avec qualité et efficacité.
+              De plus, en combinant notre expertise en
+              <strong>chaudronnerie</strong> et notre
+              <strong>bureau d'études</strong>, nous offrons une solution
+              complète, tout sous le même toit.
             </p>
             <p class="surmesure-forces__text">
               Ce qui nous distingue également, c'est que notre designer et notre
-              dirigeante ne font qu'un, apportant une vision créative et une
-              direction stratégique cohérente à chaque projet. Chez Urban
-              Tendances, nous sommes fiers de notre capacité à allier
-              innovation, artisanat et savoir-faire industriel pour vous offrir
-              des solutions uniques et de haute qualité.
+              dirigeante ne font qu'un, apportant une
+              <strong>vision créative</strong> et une direction stratégique
+              cohérente à chaque projet. Chez Urban Tendances, nous sommes fiers
+              de notre capacité à allier innovation, artisanat et savoir-faire
+              industriel pour vous offrir des solutions uniques et de haute
+              qualité.
             </p>
           </div>
         </div>
       </section>
 
       <!-- Carousel Section -->
-      <section class="surmesure-carousel">
+      <section
+        class="surmesure-carousel"
+        aria-labelledby="realisations-surmesure"
+      >
         <div class="surmesure-container">
-          <div class="surmesure-carousel__wrapper">
+          <h2 id="realisations-surmesure" class="visually-hidden">
+            Nos réalisations sur-mesure
+          </h2>
+          <div
+            class="surmesure-carousel__wrapper"
+            role="region"
+            aria-label="Carrousel de réalisations sur-mesure"
+          >
             <div class="surmesure-carousel__track" id="surmesureCarouselTrack">
-              <div class="surmesure-carousel__slide">
+              <figure class="surmesure-carousel__slide">
                 <img
                   src="{{basePath}}/assets/images/savoir-faire/urban-tendances-surmesure1.jpg"
-                  alt="Réalisation 1"
+                  alt="Réalisation sur-mesure mobilier urbain - projet 1"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
                 />
-                <!-- <div class="surmesure-carousel__placeholder">Réalisation 1</div> -->
-              </div>
-              <div class="surmesure-carousel__slide">
+              </figure>
+              <figure class="surmesure-carousel__slide">
                 <img
                   src="{{basePath}}/assets/images/savoir-faire/urban-tendances-surmesure2.jpg"
-                  alt="Réalisation 2"
+                  alt="Fabrication sur-mesure mobilier urbain - projet 2"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
                 />
-                <!-- <div class="surmesure-carousel__placeholder">Réalisation 2</div> -->
-              </div>
-              <div class="surmesure-carousel__slide">
+              </figure>
+              <figure class="surmesure-carousel__slide">
                 <img
                   src="{{basePath}}/assets/images/savoir-faire/urban-tendances-surmesure3.jpg"
-                  alt="Réalisation 3"
+                  alt="Projet mobilier urbain sur-mesure - réalisation 3"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
                 />
-                <!-- <div class="surmesure-carousel__placeholder">Réalisation 3</div> -->
-              </div>
-              <div class="surmesure-carousel__slide">
+              </figure>
+              <figure class="surmesure-carousel__slide">
                 <img
                   src="{{basePath}}/assets/images/savoir-faire/urban-tendances-surmesure4.jpg"
-                  alt="Réalisation 4"
+                  alt="Conception sur-mesure mobilier urbain - projet 4"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
                 />
-                <!-- <div class="surmesure-carousel__placeholder">Réalisation 4</div> -->
-              </div>
-              <div class="surmesure-carousel__slide">
+              </figure>
+              <figure class="surmesure-carousel__slide">
                 <img
                   src="{{basePath}}/assets/images/savoir-faire/urban-tendances-surmesure5.jpg"
-                  alt="Réalisation 5"
+                  alt="Mobilier urbain personnalisé - réalisation 5"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
                 />
-                <!-- <div class="surmesure-carousel__placeholder">Réalisation 5</div> -->
-              </div>
-              <div class="surmesure-carousel__slide">
+              </figure>
+              <figure class="surmesure-carousel__slide">
                 <img
                   src="{{basePath}}/assets/images/savoir-faire/urban-tendances-surmesure6.jpg"
-                  alt="Réalisation 6"
+                  alt="Aménagement urbain sur-mesure - projet 6"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
                 />
-                <!-- <div class="surmesure-carousel__placeholder">Réalisation 6</div> -->
-              </div>
-              <div class="surmesure-carousel__slide">
+              </figure>
+              <figure class="surmesure-carousel__slide">
                 <img
                   src="{{basePath}}/assets/images/savoir-faire/urban-tendances-surmesure7.jpg"
-                  alt="Réalisation 7"
+                  alt="Fabrication artisanale mobilier urbain - projet 7"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
                 />
-                <!-- <div class="surmesure-carousel__placeholder">Réalisation 7</div> -->
-              </div>
-              <div class="surmesure-carousel__slide">
+              </figure>
+              <figure class="surmesure-carousel__slide">
                 <img
                   src="{{basePath}}/assets/images/savoir-faire/urban-tendances-surmesure8.jpg"
-                  alt="Réalisation 8"
+                  alt="Création sur-mesure mobilier urbain - réalisation 8"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
                 />
-                <!-- <div class="surmesure-carousel__placeholder">Réalisation 8</div> -->
-              </div>
-              <div class="surmesure-carousel__slide">
+              </figure>
+              <figure class="surmesure-carousel__slide">
                 <img
                   src="{{basePath}}/assets/images/savoir-faire/urban-tendances-surmesure9.jpg"
-                  alt="Réalisation 9"
+                  alt="Projet mobilier urbain design - réalisation 9"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
                 />
-                <!-- <div class="surmesure-carousel__placeholder">Réalisation 8</div> -->
-              </div>
-              <div class="surmesure-carousel__slide">
+              </figure>
+              <figure class="surmesure-carousel__slide">
                 <img
                   src="{{basePath}}/assets/images/savoir-faire/urban-tendances-surmesure10.jpg"
-                  alt="Réalisation 10"
+                  alt="Mobilier urbain sur-mesure acier - projet 10"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
                 />
-                <!-- <div class="surmesure-carousel__placeholder">Réalisation 8</div> -->
-              </div>
-              <div class="surmesure-carousel__slide">
+              </figure>
+              <figure class="surmesure-carousel__slide">
                 <img
                   src="{{basePath}}/assets/images/savoir-faire/urban-tendances-surmesure11.jpg"
-                  alt="Réalisation 11"
+                  alt="Chaudronnerie mobilier urbain - réalisation 11"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
                 />
-                <!-- <div class="surmesure-carousel__placeholder">Réalisation 8</div> -->
-              </div>
-              <div class="surmesure-carousel__slide">
+              </figure>
+              <figure class="surmesure-carousel__slide">
                 <img
                   src="{{basePath}}/assets/images/savoir-faire/urban-tendances-surmesure12.jpg"
-                  alt="Réalisation 12"
+                  alt="Fabrication française mobilier urbain - projet 12"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
                 />
-                <!-- <div class="surmesure-carousel__placeholder">Réalisation 8</div> -->
-              </div>
-              <div class="surmesure-carousel__slide">
+              </figure>
+              <figure class="surmesure-carousel__slide">
                 <img
                   src="{{basePath}}/assets/images/savoir-faire/urban-tendances-surmesure13.jpg"
-                  alt="Réalisation 13"
+                  alt="Projet sur-mesure mobilier urbain - réalisation 13"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
                 />
-                <!-- <div class="surmesure-carousel__placeholder">Réalisation 8</div> -->
-              </div>
+              </figure>
             </div>
           </div>
         </div>
       </section>
-      <div class="search-overlay">
+
+      <div
+        class="search-overlay"
+        role="dialog"
+        aria-label="Recherche de produits"
+        aria-hidden="true"
+      >
         <div class="search-overlay-content">
-          <button class="search-close" aria-label="Fermer">
+          <button class="search-close" aria-label="Fermer la recherche">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -244,6 +405,7 @@
               fill="none"
               stroke="currentColor"
               stroke-width="2"
+              aria-hidden="true"
             >
               <line x1="18" y1="6" x2="6" y2="18"></line>
               <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -251,15 +413,20 @@
           </button>
 
           <div class="search-box">
+            <label for="search-input" class="visually-hidden"
+              >Rechercher un produit</label
+            >
             <input
-              type="text"
+              type="search"
+              id="search-input"
               class="search-input"
               placeholder="Rechercher un produit, une collection..."
               autocomplete="off"
+              aria-label="Rechercher un produit"
             />
           </div>
 
-          <div class="search-results"></div>
+          <div class="search-results" role="region" aria-live="polite"></div>
         </div>
       </div>
     </main>

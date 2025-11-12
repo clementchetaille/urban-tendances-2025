@@ -3,29 +3,94 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{pageTitle}} | Urban Tendances</title>
+
+    <!-- SEO: Title dynamique optimisé -->
+    <title>{{pageTitle}} - Mobilier Urbain Design | Urban Tendances</title>
+
+    <!-- SEO: Meta description dynamique -->
+    <meta
+      name="description"
+      content="Découvrez notre gamme {{pageTitle}} en mobilier urbain design. Fabrication française 100% sur-mesure. Bancs, tables, corbeilles, jardinières et plus encore."
+    />
+
+    <!-- SEO: Mots-clés dynamiques -->
+    <meta
+      name="keywords"
+      content="{{pageTitle}}, mobilier urbain, fabricant français, design urbain, made in France, sur-mesure"
+    />
+
+    <!-- SEO: Auteur et robots -->
+    <meta name="author" content="Urban Tendances" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- SEO: Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="{{pageTitle}} - Mobilier Urbain | Urban Tendances"
+    />
+    <meta
+      property="og:description"
+      content="Découvrez notre gamme {{pageTitle}} en mobilier urbain design fabrication française."
+    />
+    <meta
+      property="og:url"
+      content="https://votre-domaine.com/produits/{{pageTitle}}.html"
+    />
+    <meta property="og:locale" content="fr_FR" />
+
+    <!-- SEO: Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{pageTitle}} - Mobilier Urbain" />
+    <meta
+      name="twitter:description"
+      content="Découvrez notre gamme {{pageTitle}} en mobilier urbain design."
+    />
+
+    <!-- SEO: Canonical URL -->
+    <link
+      rel="canonical"
+      href="https://votre-domaine.com/produits/{{pageTitle}}.html"
+    />
+
+    <!-- Schema.org pour ProductCollection -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "{{pageTitle}} - Urban Tendances",
+        "description": "Collection de {{pageTitle}} en mobilier urbain design",
+        "provider": {
+          "@type": "Organization",
+          "name": "Urban Tendances"
+        }
+      }
+    </script>
+
     <link rel="stylesheet" href="{{basePath}}/css/styles.css" />
     <link rel="stylesheet" href="{{basePath}}/components/mobile-menu.css" />
   </head>
   <body>
     {{header}}
-    <section class="products-bar">
+
+    <nav
+      class="products-bar"
+      aria-label="Navigation par catégories de produits"
+    >
       <div class="products-bar__container">
-        <a href="{{basePath}}/dist/produits/assises.html">
+        <a
+          href="{{basePath}}/dist/produits/assises.html"
+          aria-label="Voir les assises"
+        >
           <div class="productbar-item">
             <svg
               class="icon-productbar"
               version="1.1"
-              id="Layer_1"
               xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              width="60px"
-              height="60px"
+              width="60"
+              height="60"
               viewBox="0 0 50 60"
-              style="enable-background: new 0 0 50 50"
-              xml:space="preserve"
+              aria-hidden="true"
             >
               <style type="text/css">
                 .st0 {
@@ -48,24 +113,22 @@
             <div class="product_item_content">
               <h3>Assises</h3>
             </div>
-          </div></a
-        >
+          </div>
+        </a>
 
-        <a href="{{basePath}}/dist/produits/jardinieres.html">
+        <a
+          href="{{basePath}}/dist/produits/jardinieres.html"
+          aria-label="Voir les jardinières"
+        >
           <div class="productbar-item">
             <svg
               class="icon-productbar"
               version="1.1"
-              id="Layer_1"
               xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              width="60px"
-              height="60px"
+              width="60"
+              height="60"
               viewBox="0 0 50 60"
-              style="enable-background: new 0 0 50 50"
-              xml:space="preserve"
+              aria-hidden="true"
             >
               <style type="text/css">
                 .st0 {
@@ -103,23 +166,22 @@
             <div class="collection_item_content">
               <h3>Jardinières</h3>
             </div>
-          </div></a
+          </div>
+        </a>
+
+        <a
+          href="{{basePath}}/dist/produits/corbeilles.html"
+          aria-label="Voir les corbeilles"
         >
-        <a href="{{basePath}}/dist/produits/corbeilles.html">
           <div class="productbar-item">
             <svg
               class="icon-productbar"
               version="1.1"
-              id="Layer_1"
               xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              width="60px"
-              height="60px"
+              width="60"
+              height="60"
               viewBox="0 0 50 60"
-              style="enable-background: new 0 0 50 50"
-              xml:space="preserve"
+              aria-hidden="true"
             >
               <style type="text/css">
                 .st0 {
@@ -148,24 +210,22 @@
             <div class="product_item_content">
               <h3>Corbeilles</h3>
             </div>
-          </div></a
-        >
+          </div>
+        </a>
 
-        <a href="{{basePath}}/dist/produits/potelets.html">
+        <a
+          href="{{basePath}}/dist/produits/potelets.html"
+          aria-label="Voir les potelets"
+        >
           <div class="productbar-item">
             <svg
               class="icon-productbar"
               version="1.1"
-              id="Layer_1"
               xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              width="60px"
-              height="60px"
+              width="60"
+              height="60"
               viewBox="0 0 50 60"
-              style="enable-background: new 0 0 50 50"
-              xml:space="preserve"
+              aria-hidden="true"
             >
               <style type="text/css">
                 .st0 {
@@ -191,24 +251,22 @@
             <div class="product_item_content">
               <h3>Potelets</h3>
             </div>
-          </div></a
-        >
+          </div>
+        </a>
 
-        <a href="{{basePath}}/dist/produits/barrieres.html">
+        <a
+          href="{{basePath}}/dist/produits/barrieres.html"
+          aria-label="Voir les barrières"
+        >
           <div class="productbar-item">
             <svg
               class="icon-productbar"
               version="1.1"
-              id="Layer_1"
               xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              width="60px"
-              height="60px"
+              width="60"
+              height="60"
               viewBox="0 0 50 70"
-              style="enable-background: new 0 0 50 50"
-              xml:space="preserve"
+              aria-hidden="true"
             >
               <style type="text/css">
                 .st0 {
@@ -236,24 +294,22 @@
             <div class="product_item_content">
               <h3>Barrières</h3>
             </div>
-          </div></a
-        >
+          </div>
+        </a>
 
-        <a href="{{basePath}}/dist/produits/supportsvelos.html">
+        <a
+          href="{{basePath}}/dist/produits/supportsvelos.html"
+          aria-label="Voir les supports vélo"
+        >
           <div class="productbar-item">
             <svg
               class="icon-productbar"
               version="1.1"
-              id="Layer_1"
               xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              width="50px"
-              height="50px"
+              width="50"
+              height="50"
               viewBox="0 0 50 50"
-              style="enable-background: new 0 0 50 50"
-              xml:space="preserve"
+              aria-hidden="true"
             >
               <style type="text/css">
                 .st0 {
@@ -283,24 +339,22 @@
             <div class="product_item_content">
               <h3>Supports Vélo</h3>
             </div>
-          </div></a
-        >
+          </div>
+        </a>
 
-        <a href="{{basePath}}/dist/produits/cendriers.html">
+        <a
+          href="{{basePath}}/dist/produits/cendriers.html"
+          aria-label="Voir les cendriers"
+        >
           <div class="productbar-item">
             <svg
               class="icon-productbar"
               version="1.1"
-              id="Layer_1"
               xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              width="50px"
-              height="50px"
+              width="50"
+              height="50"
               viewBox="0 0 50 50"
-              style="enable-background: new 0 0 50 50"
-              xml:space="preserve"
+              aria-hidden="true"
             >
               <style type="text/css">
                 .st0 {
@@ -344,24 +398,22 @@
             <div class="product_item_content">
               <h3>Cendriers</h3>
             </div>
-          </div></a
-        >
+          </div>
+        </a>
 
-        <a href="{{basePath}}/dist/produits/paravents.html">
+        <a
+          href="{{basePath}}/dist/produits/paravents.html"
+          aria-label="Voir les paravents"
+        >
           <div class="productbar-item">
             <svg
               class="icon-productbar"
               version="1.1"
-              id="Layer_1"
               xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              width="60px"
-              height="60px"
+              width="60"
+              height="60"
               viewBox="0 0 50 60"
-              style="enable-background: new 0 0 50 50"
-              xml:space="preserve"
+              aria-hidden="true"
             >
               <style type="text/css">
                 .st0 {
@@ -387,24 +439,22 @@
             <div class="product_item_content">
               <h3>Paravents</h3>
             </div>
-          </div></a
-        >
+          </div>
+        </a>
 
-        <a href="{{basePath}}/dist/produits/transatsdivans.html">
+        <a
+          href="{{basePath}}/dist/produits/transatsdivans.html"
+          aria-label="Voir les transats et divans"
+        >
           <div class="productbar-item">
             <svg
               class="icon-productbar"
               version="1.1"
-              id="Layer_1"
               xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              width="60px"
-              height="60px"
+              width="60"
+              height="60"
               viewBox="0 0 50 60"
-              style="enable-background: new 0 0 50 50"
-              xml:space="preserve"
+              aria-hidden="true"
             >
               <style type="text/css">
                 .st0 {
@@ -427,24 +477,22 @@
             <div class="product_item_content">
               <h3>Transats - Divans</h3>
             </div>
-          </div></a
-        >
+          </div>
+        </a>
 
-        <a href="{{basePath}}/dist/produits/tables.html">
+        <a
+          href="{{basePath}}/dist/produits/tables.html"
+          aria-label="Voir les tables"
+        >
           <div class="productbar-item">
             <svg
               class="icon-productbar"
               version="1.1"
-              id="Layer_1"
               xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              width="60px"
-              height="60px"
+              width="60"
+              height="60"
               viewBox="0 0 50 60"
-              style="enable-background: new 0 0 50 50"
-              xml:space="preserve"
+              aria-hidden="true"
             >
               <style type="text/css">
                 .st0 {
@@ -462,24 +510,22 @@
             <div class="product_item_content">
               <h3>Tables</h3>
             </div>
-          </div></a
-        >
+          </div>
+        </a>
 
-        <a href="{{basePath}}/dist/produits/bornes.html">
+        <a
+          href="{{basePath}}/dist/produits/bornes.html"
+          aria-label="Voir les bornes"
+        >
           <div class="productbar-item">
             <svg
               class="icon-productbar"
               version="1.1"
-              id="Layer_1"
               xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              width="60px"
-              height="60px"
+              width="60"
+              height="60"
               viewBox="0 0 50 60"
-              style="enable-background: new 0 0 50 50"
-              xml:space="preserve"
+              aria-hidden="true"
             >
               <style type="text/css">
                 .st0 {
@@ -495,24 +541,22 @@
             <div class="product_item_content">
               <h3>Bornes</h3>
             </div>
-          </div></a
-        >
+          </div>
+        </a>
 
-        <a href="{{basePath}}/dist/produits/lampes.html">
+        <a
+          href="{{basePath}}/dist/produits/lampes.html"
+          aria-label="Voir les lampes"
+        >
           <div class="productbar-item">
             <svg
               class="icon-productbar"
               version="1.1"
-              id="Layer_1"
               xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              width="60px"
-              height="60px"
+              width="60"
+              height="60"
               viewBox="0 0 50 60"
-              style="enable-background: new 0 0 50 50"
-              xml:space="preserve"
+              aria-hidden="true"
             >
               <style type="text/css">
                 .st0 {
@@ -537,24 +581,22 @@
             <div class="product_item_content">
               <h3>Lampes</h3>
             </div>
-          </div></a
-        >
+          </div>
+        </a>
 
-        <a href="{{basePath}}/dist/produits/grillesdarbre.html">
+        <a
+          href="{{basePath}}/dist/produits/grillesdarbre.html"
+          aria-label="Voir les grilles d'arbre"
+        >
           <div class="productbar-item">
             <svg
               class="icon-productbar"
               version="1.1"
-              id="Layer_1"
               xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              width="60px"
-              height="60px"
+              width="60"
+              height="60"
               viewBox="0 0 50 60"
-              style="enable-background: new 0 0 50 50"
-              xml:space="preserve"
+              aria-hidden="true"
             >
               <style type="text/css">
                 .st0 {
@@ -582,24 +624,22 @@
             <div class="product_item_content">
               <h3>Grilles d'arbre</h3>
             </div>
-          </div></a
-        >
+          </div>
+        </a>
 
-        <a href="{{basePath}}/dist/produits/recuperateursdepiles.html">
+        <a
+          href="{{basePath}}/dist/produits/recuperateursdepiles.html"
+          aria-label="Voir les récupérateurs de piles"
+        >
           <div class="productbar-item">
             <svg
               class="icon-productbar"
               version="1.1"
-              id="Layer_1"
               xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              width="60px"
-              height="60px"
+              width="60"
+              height="60"
               viewBox="0 0 50 60"
-              style="enable-background: new 0 0 50 50"
-              xml:space="preserve"
+              aria-hidden="true"
             >
               <style type="text/css">
                 .st0 {
@@ -627,19 +667,31 @@
             <div class="product_item_content">
               <h3>Récupérateur piles</h3>
             </div>
-          </div></a
-        >
+          </div>
+        </a>
       </div>
-    </section>
+    </nav>
+
     <main class="type-main">
       <section class="type-container">
-        <h1 class="type-title">Produit : {{pageTitle}}</h1>
+        <h1 class="type-title">{{pageTitle}} - Mobilier Urbain Design</h1>
 
-        <section class="product-grid">{{productList}}</section>
+        <section
+          class="product-grid"
+          aria-label="Liste des produits {{pageTitle}}"
+        >
+          {{productList}}
+        </section>
       </section>
-      <div class="search-overlay">
+
+      <div
+        class="search-overlay"
+        role="dialog"
+        aria-label="Recherche de produits"
+        aria-hidden="true"
+      >
         <div class="search-overlay-content">
-          <button class="search-close" aria-label="Fermer">
+          <button class="search-close" aria-label="Fermer la recherche">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -648,6 +700,7 @@
               fill="none"
               stroke="currentColor"
               stroke-width="2"
+              aria-hidden="true"
             >
               <line x1="18" y1="6" x2="6" y2="18"></line>
               <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -655,15 +708,20 @@
           </button>
 
           <div class="search-box">
+            <label for="search-input" class="visually-hidden"
+              >Rechercher un produit</label
+            >
             <input
-              type="text"
+              type="search"
+              id="search-input"
               class="search-input"
               placeholder="Rechercher un produit, une collection..."
               autocomplete="off"
+              aria-label="Rechercher un produit"
             />
           </div>
 
-          <div class="search-results"></div>
+          <div class="search-results" role="region" aria-live="polite"></div>
         </div>
       </div>
     </main>

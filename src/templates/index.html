@@ -12,7 +12,64 @@
       }
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>URBAN TENDANCES</title>
+
+    <!-- SEO: Title optimisé (50-60 caractères) -->
+    <title>Urban Tendances - Mobilier Urbain Français sur Mesure</title>
+
+    <!-- SEO: Meta description (150-160 caractères) -->
+    <meta
+      name="description"
+      content="Fabricant français de mobilier urbain design et sur mesure. Bancs, tables, corbeilles, barrières 100% made in France. Design, conception et fabrication artisanale."
+    />
+
+    <!-- SEO: Mots-clés principaux -->
+    <meta
+      name="keywords"
+      content="mobilier urbain, fabricant français, mobilier design, banc urbain, table picnic, corbeille, barrière urbaine, made in France"
+    />
+
+    <!-- SEO: Auteur et robots -->
+    <meta name="author" content="Urban Tendances" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- SEO: Open Graph pour réseaux sociaux -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Urban Tendances - Mobilier Urbain Français"
+    />
+    <meta
+      property="og:description"
+      content="Fabricant français de mobilier urbain design et sur mesure. 100% made in France."
+    />
+    <meta
+      property="og:image"
+      content="{{basePath}}/assets/images/nos-creations/bulle/Bulle-banc-4-min.png"
+    />
+    <meta property="og:url" content="https://votre-domaine.com/" />
+    <meta property="og:locale" content="fr_FR" />
+
+    <!-- SEO: Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Urban Tendances - Mobilier Urbain Français"
+    />
+    <meta
+      name="twitter:description"
+      content="Fabricant français de mobilier urbain design et sur mesure."
+    />
+    <meta
+      name="twitter:image"
+      content="{{basePath}}/assets/images/nos-creations/bulle/Bulle-banc-4-min.png"
+    />
+
+    <!-- SEO: Canonical URL (évite le duplicate content) -->
+    <link rel="canonical" href="https://votre-domaine.com/" />
+
+    <!-- Preconnect pour améliorer les performances -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="{{basePath}}/components/mobile-menu.css" />
   </head>
@@ -20,9 +77,20 @@
     {{header}}
 
     <main>
-      <section class="hero">
+      <!-- SEO: Ajout d'un h1 principal pour la page -->
+      <h1 class="visually-hidden">
+        Urban Tendances - Fabricant de Mobilier Urbain Français
+      </h1>
+
+      <section class="hero" aria-label="Présentation du mobilier urbain">
         <div class="hero__col hero__col--left">
-          <img src="{{basePath}}/assets/images/projets/pas-du-cerf2.jpg" />
+          <img
+            src="{{basePath}}/assets/images/projets/pas-du-cerf2.jpg"
+            alt="Projet mobilier urbain au Pas du Cerf"
+            loading="eager"
+            width="800"
+            height="600"
+          />
         </div>
 
         <div class="hero__col hero__col--center">
@@ -30,7 +98,13 @@
             <h2>Mobilier</h2>
           </div>
           <div class="hero__block hero__block--mid">
-            <img src="{{basePath}}/assets/images/projets/villa-simone1.jpg" />
+            <img
+              src="{{basePath}}/assets/images/projets/villa-simone1.jpg"
+              alt="Projet Villa Simone - Mobilier urbain design"
+              loading="eager"
+              width="800"
+              height="600"
+            />
           </div>
           <div class="hero__block hero__block--bot">
             <h2>Urbain</h2>
@@ -40,13 +114,19 @@
         <div class="hero__col hero__col--right">
           <img
             src="{{basePath}}/assets/images/nos-creations/silva/silva-tablepicnic1.jpg"
+            alt="Table picnic Silva - Mobilier urbain en bois"
+            loading="eager"
+            width="800"
+            height="600"
           />
         </div>
       </section>
 
-      <div class="separator"></div>
+      <div class="separator" role="presentation"></div>
 
-      <section class="sketch-main-container">
+      <section class="sketch-main-container" aria-labelledby="notre-approche">
+        <h2 id="notre-approche" class="visually-hidden">Notre approche</h2>
+
         <!-- Texte -->
         <div class="content">
           <p>
@@ -62,11 +142,15 @@
           src="{{basePath}}/assets/images/accueil/bas.feuilles-noires-empreintes-min-nobg.png"
           class="bg-decoration bg-left"
           alt=""
+          role="presentation"
+          loading="lazy"
         />
         <img
           src="{{basePath}}/assets/images/accueil/feuilles-noires-empreintes_min-nobg.png"
           class="bg-decoration bg-right"
           alt=""
+          role="presentation"
+          loading="lazy"
         />
 
         <!-- Sketchs en dessous -->
@@ -75,28 +159,41 @@
             <img
               src="{{basePath}}/assets/images/savoir-faire/Ecole-Mandelieu-_pdf-page-1.png"
               class="sketch sketch-left"
-              alt=""
+              alt="Plan technique école Mandelieu"
+              loading="lazy"
+              width="600"
+              height="400"
             />
             <img
               src="{{basePath}}/assets/images/savoir-faire/WhatsApp-Image-2024-04-02-a-21.25.59_203ad352-min.jpg"
               class="sketch sketch-right"
-              alt=""
+              alt="Atelier fabrication mobilier urbain"
+              loading="lazy"
+              width="600"
+              height="400"
             />
           </div>
         </div>
       </section>
+
       <!-- CARROUSEL ICI -->
-      <section class="featured-products">
+      <section class="featured-products" aria-labelledby="nos-creations">
         <div class="featured-products__inner">
-          <!-- <h2 class="featured-products__title">Nos créations</h2>
+          <h2 id="nos-creations" class="featured-products__title">
+            Nos créations
+          </h2>
           <p class="featured-products__subtitle">
             Découvrez une sélection de notre mobilier urbain
-          </p> -->
+          </p>
 
-          <div class="products-carousel">
+          <div
+            class="products-carousel"
+            role="region"
+            aria-label="Carrousel de produits"
+          >
             <button
               class="carousel-btn carousel-btn--prev"
-              aria-label="Précédent"
+              aria-label="Produit précédent"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -106,6 +203,7 @@
                 fill="none"
                 stroke="currentColor"
                 stroke-width="2"
+                aria-hidden="true"
               >
                 <path d="m15 18-6-6 6-6" />
               </svg>
@@ -113,12 +211,18 @@
 
             <div class="carousel-container">
               <div class="carousel-track">
-                <div class="product-carousel-card">
-                  <a href="{{basePath}}/dist/produits/assises/Bulle.html">
+                <article class="product-carousel-card">
+                  <a
+                    href="{{basePath}}/dist/produits/assises/Bulle.html"
+                    aria-label="Découvrir le banc Bulle"
+                  >
                     <div class="product-carousel-image">
                       <img
                         src="{{basePath}}/assets/images/nos-creations/bulle/Bulle-banc-4-min.png"
-                        alt="Banc Bulle"
+                        alt="Banc Bulle - Assise urbaine design en acier"
+                        loading="lazy"
+                        width="400"
+                        height="300"
                       />
                     </div>
                     <div class="product-carousel-content">
@@ -126,14 +230,20 @@
                       <p class="product-type">Assises</p>
                     </div>
                   </a>
-                </div>
+                </article>
 
-                <div class="product-carousel-card">
-                  <a href="{{basePath}}/dist/produits/corbeilles/enjoy.html">
+                <article class="product-carousel-card">
+                  <a
+                    href="{{basePath}}/dist/produits/corbeilles/enjoy.html"
+                    aria-label="Découvrir la corbeille Enjoy"
+                  >
                     <div class="product-carousel-image">
                       <img
                         src="{{basePath}}/assets/images/nos-creations/enjoy/enjoy-12-min.jpg"
-                        alt="Table Silva"
+                        alt="Corbeille Enjoy - Poubelle urbaine design"
+                        loading="lazy"
+                        width="400"
+                        height="300"
                       />
                     </div>
                     <div class="product-carousel-content">
@@ -141,14 +251,20 @@
                       <p class="product-type">Corbeilles</p>
                     </div>
                   </a>
-                </div>
+                </article>
 
-                <div class="product-carousel-card">
-                  <a href="{{basePath}}/dist/produits/barrieres/thal-s.html">
+                <article class="product-carousel-card">
+                  <a
+                    href="{{basePath}}/dist/produits/barrieres/thal-s.html"
+                    aria-label="Découvrir la barrière Thal S"
+                  >
                     <div class="product-carousel-image">
                       <img
                         src="{{basePath}}/assets/images/nos-creations/thals/thals-barriere-3-min.png"
-                        alt="Barrière Thal S"
+                        alt="Barrière Thal S - Barrière urbaine en acier"
+                        loading="lazy"
+                        width="400"
+                        height="300"
                       />
                     </div>
                     <div class="product-carousel-content">
@@ -156,14 +272,20 @@
                       <p class="product-type">Barrières</p>
                     </div>
                   </a>
-                </div>
+                </article>
 
-                <div class="product-carousel-card">
-                  <a href="{{basePath}}/dist/produits/tables/printemps.html">
+                <article class="product-carousel-card">
+                  <a
+                    href="{{basePath}}/dist/produits/tables/printemps.html"
+                    aria-label="Découvrir la table Printemps"
+                  >
                     <div class="product-carousel-image">
                       <img
                         src="{{basePath}}/assets/images/nos-creations/printemps/Printemps-Table-min.png"
-                        alt="Table Printemps"
+                        alt="Table Printemps - Table picnic urbaine"
+                        loading="lazy"
+                        width="400"
+                        height="300"
                       />
                     </div>
                     <div class="product-carousel-content">
@@ -171,14 +293,20 @@
                       <p class="product-type">Tables</p>
                     </div>
                   </a>
-                </div>
+                </article>
 
-                <div class="product-carousel-card">
-                  <a href="{{basePath}}/dist/produits/cendriers/silva.html">
+                <article class="product-carousel-card">
+                  <a
+                    href="{{basePath}}/dist/produits/cendriers/silva.html"
+                    aria-label="Découvrir le cendrier Printemps"
+                  >
                     <div class="product-carousel-image">
                       <img
                         src="{{basePath}}/assets/images/nos-creations/printemps/Printemps-Cendrier-min.png"
-                        alt="Cendrier Printemps"
+                        alt="Cendrier Printemps - Cendrier urbain design"
+                        loading="lazy"
+                        width="400"
+                        height="300"
                       />
                     </div>
                     <div class="product-carousel-content">
@@ -186,19 +314,40 @@
                       <p class="product-type">Cendriers</p>
                     </div>
                   </a>
-                </div>
+                </article>
               </div>
             </div>
+
+            <button
+              class="carousel-btn carousel-btn--next"
+              aria-label="Produit suivant"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </button>
           </div>
         </div>
       </section>
+
       <!-- FIN DU CARROUSEL ICI -->
-      <section class="commitments">
+      <section class="commitments" aria-labelledby="nos-engagements">
         <div class="commitments__inner">
-          <h2 class="commitments__title">Nos engagements</h2>
+          <h2 id="nos-engagements" class="commitments__title">
+            Nos engagements
+          </h2>
           <div class="commitments__grid">
             <article class="commitment-card">
-              <div class="commitment-card__icon">
+              <div class="commitment-card__icon" aria-hidden="true">
                 <img src="{{basePath}}/assets/svg/truck.svg" alt="" />
               </div>
               <h3 class="commitment-card__title">Circuits courts</h3>
@@ -210,7 +359,7 @@
             </article>
 
             <article class="commitment-card">
-              <div class="commitment-card__icon">
+              <div class="commitment-card__icon" aria-hidden="true">
                 <img src="{{basePath}}/assets/svg/thumbs-up.svg" alt="" />
               </div>
               <h3 class="commitment-card__title">Fabrication 100% Française</h3>
@@ -222,7 +371,7 @@
             </article>
 
             <article class="commitment-card">
-              <div class="commitment-card__icon">
+              <div class="commitment-card__icon" aria-hidden="true">
                 <img src="{{basePath}}/assets/svg/wand-sparkles.svg" alt="" />
               </div>
               <h3 class="commitment-card__title">
@@ -237,7 +386,7 @@
             </article>
 
             <article class="commitment-card">
-              <div class="commitment-card__icon">
+              <div class="commitment-card__icon" aria-hidden="true">
                 <img src="{{basePath}}/assets/svg/brain.svg" alt="" />
               </div>
               <h3 class="commitment-card__title">Esprit créatif</h3>
@@ -251,9 +400,15 @@
           </div>
         </div>
       </section>
-      <div class="search-overlay">
+
+      <div
+        class="search-overlay"
+        role="dialog"
+        aria-label="Recherche de produits"
+        aria-hidden="true"
+      >
         <div class="search-overlay-content">
-          <button class="search-close" aria-label="Fermer">
+          <button class="search-close" aria-label="Fermer la recherche">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -262,6 +417,7 @@
               fill="none"
               stroke="currentColor"
               stroke-width="2"
+              aria-hidden="true"
             >
               <line x1="18" y1="6" x2="6" y2="18"></line>
               <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -269,15 +425,20 @@
           </button>
 
           <div class="search-box">
+            <label for="search-input" class="visually-hidden"
+              >Rechercher un produit</label
+            >
             <input
-              type="text"
+              type="search"
+              id="search-input"
               class="search-input"
               placeholder="Rechercher un produit, une collection..."
               autocomplete="off"
+              aria-label="Rechercher un produit"
             />
           </div>
 
-          <div class="search-results"></div>
+          <div class="search-results" role="region" aria-live="polite"></div>
         </div>
       </div>
     </main>
