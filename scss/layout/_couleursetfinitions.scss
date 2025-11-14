@@ -1,0 +1,1852 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+@use "../base/functions" as *;
+
+// ============================================
+// COULEURS & FINITIONS - PAGES MATÉRIAUX
+// ============================================
+
+// ============================================
+// PAGE BOIS
+// ============================================
+
+// === HERO BOIS ===
+.wood-hero {
+  position: relative;
+  height: clamp(150px, 50vh, 300px);
+  background: linear-gradient(
+      135deg,
+      rgba(139, 87, 42, 0.9),
+      rgba(101, 67, 33, 0.8)
+    ),
+    url("../images/wood-hero.jpg") center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+      circle at 30% 50%,
+      rgba(212, 165, 116, 0.2),
+      transparent 70%
+    );
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 0 2rem;
+
+    h1 {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+// === SECTION ESSENCES DE BOIS ===
+.wood-essences {
+  padding: clamp(4rem, 8vw, 8rem) 2rem;
+  background: linear-gradient(to bottom, #fafafa 0%, #ffffff 100%);
+
+  .section-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: #2c2c2c;
+      margin-bottom: 1rem;
+      position: relative;
+      display: inline-block;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 3px;
+        background: linear-gradient(90deg, #d4a574, #8b5728);
+        border-radius: 2px;
+      }
+    }
+
+    .section-description {
+      font-size: clamp(1rem, 1.5vw, 1.2rem);
+      color: #666;
+      line-height: 1.6;
+      margin-top: 2rem;
+    }
+
+    .note {
+      font-size: 0.9rem;
+      color: #999;
+      font-style: italic;
+      margin-top: 1rem;
+    }
+  }
+
+  .wood-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    @include tablet {
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+
+  .wood-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .wood-sample {
+      height: 200px;
+      position: relative;
+      overflow: hidden;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+          to bottom,
+          transparent 0%,
+          rgba(0, 0, 0, 0.1) 100%
+        );
+        z-index: 1;
+      }
+
+      // Textures de bois
+      &.chene {
+        background: linear-gradient(180deg, #c8a882 0%, #b89968 100%);
+        background-image: repeating-linear-gradient(
+            90deg,
+            rgba(139, 87, 42, 0.1) 0px,
+            transparent 2px,
+            transparent 8px
+          ),
+          repeating-linear-gradient(
+            0deg,
+            rgba(139, 87, 42, 0.05) 0px,
+            transparent 1px,
+            transparent 4px
+          );
+      }
+
+      &.iroko {
+        background: linear-gradient(180deg, #d4a574 0%, #c89554 100%);
+        background-image: repeating-linear-gradient(
+          90deg,
+          rgba(139, 87, 42, 0.15) 0px,
+          transparent 2px,
+          transparent 10px
+        );
+      }
+
+      &.teck {
+        background: linear-gradient(180deg, #c8915f 0%, #b87e4a 100%);
+        background-image: repeating-linear-gradient(
+            90deg,
+            rgba(101, 67, 33, 0.2) 0px,
+            transparent 2px,
+            transparent 12px
+          ),
+          repeating-linear-gradient(
+            45deg,
+            rgba(101, 67, 33, 0.1) 0px,
+            transparent 1px,
+            transparent 6px
+          );
+      }
+
+      &.padouk {
+        background: linear-gradient(180deg, #c85a54 0%, #b54842 100%);
+        background-image: repeating-linear-gradient(
+          90deg,
+          rgba(139, 42, 42, 0.2) 0px,
+          transparent 2px,
+          transparent 8px
+        );
+      }
+
+      &.sipo {
+        background: linear-gradient(180deg, #8b4a42 0%, #6f3830 100%);
+        background-image: repeating-linear-gradient(
+          90deg,
+          rgba(60, 30, 25, 0.2) 0px,
+          transparent 2px,
+          transparent 10px
+        );
+      }
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      color: #2c2c2c;
+      padding: 1.5rem 1.5rem 1rem;
+      margin: 0;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #666;
+      line-height: 1.6;
+      padding: 0 1.5rem 1.5rem;
+      margin: 0;
+    }
+  }
+}
+
+// === SECTION TRAITEMENTS BOIS ===
+.wood-treatments {
+  padding: clamp(4rem, 8vw, 8rem) 2rem;
+  background: linear-gradient(135deg, #f5f1ed 0%, #faf8f5 100%);
+
+  .treatments-title {
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #2c2c2c;
+    margin-bottom: 4rem;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, #d4a574, #8b5728);
+      border-radius: 2px;
+    }
+  }
+
+  .treatments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @include tablet {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .treatment-card {
+    background: white;
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, #d4a574, #8b5728);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+
+      &::before {
+        transform: scaleX(1);
+      }
+    }
+
+    .treatment-icon {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, #f5f1ed, #faf8f5);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2rem;
+      color: #8b5728;
+      transition: all 0.3s ease;
+
+      svg {
+        stroke-width: 1.5px;
+      }
+    }
+
+    &:hover .treatment-icon {
+      background: linear-gradient(135deg, #d4a574, #c89554);
+      color: white;
+      transform: scale(1.05);
+    }
+
+    h3 {
+      font-size: 1.8rem;
+      color: #2c2c2c;
+      margin-bottom: 0.5rem;
+    }
+
+    .treatment-subtitle {
+      font-size: 1rem;
+      color: #8b5728;
+      font-weight: 500;
+      margin-bottom: 2rem;
+    }
+
+    .treatment-features {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 0.8rem 0;
+        color: #555;
+        line-height: 1.6;
+        border-bottom: 1px solid #f0f0f0;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        svg {
+          flex-shrink: 0;
+          margin-top: 2px;
+          stroke: #8b5728;
+          stroke-width: 2.5px;
+        }
+      }
+    }
+
+    .natural-visual {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 2px dashed #e0e0e0;
+      text-align: center;
+
+      svg {
+        opacity: 0.6;
+      }
+    }
+  }
+}
+
+// ============================================
+// PAGE ACIERS
+// ============================================
+// === HERO ACIERS ===
+.steel-hero {
+  position: relative;
+  height: clamp(150px, 50vh, 300px);
+  background: linear-gradient(
+      135deg,
+      rgba(70, 80, 90, 0.9),
+      rgba(50, 60, 70, 0.85)
+    ),
+    url("../images/steel-hero.jpg") center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+      circle at 30% 50%,
+      rgba(184, 190, 196, 0.15),
+      transparent 70%
+    );
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 0 2rem;
+
+    h1 {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+// === SECTION ACIER ZINGUÉ ===
+.zinc-process {
+  padding: clamp(4rem, 8vw, 8rem) 2rem;
+  background: linear-gradient(135deg, #f5f5f5 0%, #fafafa 100%);
+
+  h2 {
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #2c2c2c;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, #b8bec4, #6b7278);
+      border-radius: 2px;
+    }
+  }
+
+  .intro {
+    text-align: center;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    color: #666;
+    margin: 2rem auto 4rem;
+    max-width: 700px;
+  }
+
+  .process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @include tablet {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+
+  .process-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    .process-icon {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, #f5f5f5, #fafafa);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 2rem;
+      color: #6b7278;
+      transition: all 0.3s ease;
+
+      svg {
+        stroke-width: 1.5px;
+      }
+    }
+
+    &:hover .process-icon {
+      background: linear-gradient(135deg, #b8bec4, #9ba1a7);
+      color: white;
+      transform: scale(1.05);
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      color: #2c2c2c;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #666;
+      line-height: 1.6;
+    }
+  }
+}
+
+// === SECTION PROCESSUS THERMOLAQUAGE ===
+.thermolaquage-process {
+  padding: clamp(4rem, 8vw, 8rem) 2rem;
+  background: white;
+
+  h2 {
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #2c2c2c;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, #b8bec4, #6b7278);
+      border-radius: 2px;
+    }
+  }
+
+  .intro {
+    text-align: center;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    color: #666;
+    margin: 2rem auto 4rem;
+    max-width: 700px;
+  }
+
+  .steps-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    @include tablet {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.5rem;
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  }
+
+  .step {
+    background: linear-gradient(135deg, #f5f5f5 0%, #fafafa 100%);
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+
+    &:hover {
+      border-color: #b8bec4;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-number {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #6b7278;
+      margin-bottom: 1rem;
+      background: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+      border: 2px solid #b8bec4;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      color: #2c2c2c;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: #666;
+      margin: 0;
+    }
+  }
+}
+
+// === SECTION COULEURS RAL ===
+.ral-colors {
+  padding: clamp(4rem, 8vw, 8rem) 2rem;
+  background: linear-gradient(135deg, #f5f5f5 0%, #fafafa 100%);
+
+  h2 {
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #2c2c2c;
+    margin-bottom: 0.5rem;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, #b8bec4, #6b7278);
+      border-radius: 2px;
+    }
+  }
+
+  .subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    margin: 2rem 0 4rem;
+  }
+
+  .example-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+
+  .example-img {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    img {
+      width: 100%;
+      height: 190px; // 👈 Ajoute ça pour tes vraies images
+      object-fit: cover;
+      display: block;
+    }
+
+    // Variantes pour les placeholders acier
+    &.img-1 .placeholder-img {
+      background: linear-gradient(135deg, #d0d5db 0%, #b8bec4 100%);
+    }
+
+    &.img-2 .placeholder-img {
+      background: linear-gradient(135deg, #9ba1a7 0%, #6b7278 100%);
+    }
+
+    &.img-3 .placeholder-img {
+      background: linear-gradient(135deg, #c8cdd2 0%, #a8adb2 100%);
+    }
+
+    &.img-4 .placeholder-img {
+      background: linear-gradient(135deg, #6b7278 0%, #4a4f54 100%);
+    }
+  }
+
+  .note {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #999;
+    font-style: italic;
+    margin-top: 2rem;
+  }
+}
+
+// ============================================
+// PAGE BÉTONS
+// ============================================
+// === HERO BÉTONS ===
+.concrete-hero {
+  position: relative;
+  height: clamp(150px, 50vh, 300px);
+  background: linear-gradient(
+      135deg,
+      rgba(90, 90, 90, 0.9),
+      rgba(70, 70, 70, 0.85)
+    ),
+    url("../images/concrete-hero.jpg") center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+      circle at 30% 50%,
+      rgba(168, 168, 160, 0.2),
+      transparent 70%
+    );
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 0 2rem;
+
+    h1 {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+// === SECTION COULEURS BÉTONS ===
+.concrete-colors {
+  padding: clamp(2rem, 8vw, 4rem) 2rem;
+  background: linear-gradient(to bottom, #fafafa 0%, #ffffff 100%);
+
+  h2 {
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #2c2c2c;
+    margin-bottom: 0.5rem;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, #a8a8a0, #5a5a5a);
+      border-radius: 2px;
+    }
+  }
+
+  .subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    margin: 2rem 0 4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+  }
+}
+
+// === CAROUSEL COULEURS BÉTONS ===
+.colors-carousel-wrapper {
+  position: relative;
+  max-width: 1200px;
+  margin: 5rem auto;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.colors-carousel__track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.colors-carousel__slide {
+  min-width: 100%;
+  flex-shrink: 0; // 👈 AJOUTE CETTE LIGNE
+  margin: 0;
+  position: relative; // 👈 AJOUTE CETTE LIGNE aussi
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    max-height: 850px;
+
+    @include mobile {
+      max-height: 300px;
+    }
+  }
+}
+
+.colors-carousel__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    background: white;
+    transform: translateY(-50%) scale(1.1);
+  }
+
+  svg {
+    stroke: #5a5a5a;
+    stroke-width: 2.5px;
+  }
+
+  &--prev {
+    left: 1rem;
+  }
+
+  &--next {
+    right: 1rem;
+  }
+
+  @include mobile {
+    width: 40px;
+    height: 40px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.colors-carousel__indicators {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 2rem;
+
+  button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #5a5a5a;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &.active {
+      background: #5a5a5a;
+      transform: scale(1.2);
+    }
+
+    &:hover {
+      background: #a8a8a0;
+    }
+  }
+}
+
+// === SECTION TEXTURES ===
+.concrete-textures {
+  padding: clamp(2rem, 8vw, 4rem) 2rem;
+  background: white;
+
+  h2 {
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #2c2c2c;
+    margin-bottom: 4rem;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, #a8a8a0, #5a5a5a);
+      border-radius: 2px;
+    }
+  }
+
+  .textures-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    @include tablet {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .texture-card {
+    background: linear-gradient(135deg, #f5f5f5 0%, #fafafa 100%);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      color: #2c2c2c;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #666;
+      line-height: 1.6;
+      margin: 0;
+    }
+  }
+}
+
+// === SECTION INFORMATIONS COMPLÉMENTAIRES ===
+.concrete-info {
+  padding: clamp(4rem, 8vw, 8rem) 2rem;
+  background: linear-gradient(135deg, #f5f5f5 0%, #fafafa 100%);
+
+  h2 {
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #2c2c2c;
+    margin-bottom: 4rem;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, #a8a8a0, #5a5a5a);
+      border-radius: 2px;
+    }
+  }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    @include tablet {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+
+  .info-card {
+    background: white;
+    border-radius: 16px;
+    padding: 3rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    .info-icon {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, #f5f5f5, #fafafa);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 2rem;
+      color: #5a5a5a;
+      transition: all 0.3s ease;
+
+      svg {
+        stroke-width: 1.5px;
+      }
+    }
+
+    &:hover .info-icon {
+      background: linear-gradient(135deg, #a8a8a0, #8c8c84);
+      color: white;
+      transform: scale(1.05);
+    }
+
+    h3 {
+      font-size: 1.8rem;
+      color: #2c2c2c;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .treatments-list {
+      text-align: left;
+
+      .treatment-item {
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 8px;
+        font-size: 0.95rem;
+        line-height: 1.6;
+
+        &.standard {
+          background: #e8f5e9;
+          border-left: 4px solid #4caf50;
+          color: #2e7d32;
+        }
+
+        &.optional {
+          background: #e3f2fd;
+          border-left: 4px solid #2196f3;
+          color: #1565c0;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        strong {
+          display: block;
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+// === SECTION AVANTAGES ===
+.concrete-benefits {
+  padding: clamp(4rem, 8vw, 8rem) 2rem;
+  background: white;
+
+  h2 {
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #2c2c2c;
+    margin-bottom: 4rem;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, #a8a8a0, #5a5a5a);
+      border-radius: 2px;
+    }
+  }
+
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    @include tablet {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .benefit-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #f5f5f5 0%, #fafafa 100%);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: linear-gradient(135deg, #a8a8a0 0%, #8c8c84 100%);
+      transform: translateX(5px);
+
+      svg {
+        stroke: white;
+      }
+
+      p {
+        color: white;
+      }
+    }
+
+    svg {
+      flex-shrink: 0;
+      stroke: #5a5a5a;
+      stroke-width: 2.5px;
+      margin-top: 2px;
+      transition: all 0.3s ease;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.6;
+      margin: 0;
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+// ============================================
+// PAGE CORTEN
+// ============================================
+// === HERO CORTEN ===
+.corten-hero {
+  position: relative;
+  height: clamp(150px, 50vh, 300px);
+  background: linear-gradient(
+      135deg,
+      rgba(139, 74, 60, 0.9),
+      rgba(111, 58, 46, 0.85)
+    ),
+    url("../images/corten-hero.jpg") center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+      circle at 30% 50%,
+      rgba(212, 117, 60, 0.2),
+      transparent 70%
+    );
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 0 2rem;
+
+    h1 {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+// === SECTION INTRO CORTEN ===
+.corten-intro {
+  padding: clamp(4rem, 8vw, 8rem) 2rem;
+  background: linear-gradient(to bottom, #fafafa 0%, #ffffff 100%);
+
+  .intro-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: #2c2c2c;
+      margin-bottom: 2rem;
+      position: relative;
+      display: inline-block;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 3px;
+        background: linear-gradient(90deg, #d4753c, #8b4a3c);
+        border-radius: 2px;
+      }
+    }
+
+    .lead {
+      font-size: clamp(1.1rem, 1.8vw, 1.3rem);
+      color: #555;
+      line-height: 1.8;
+      margin-top: 3rem;
+    }
+  }
+}
+
+// === SECTION PROTECTION CORTEN ===
+.corten-protection {
+  padding: clamp(4rem, 8vw, 8rem) 2rem;
+  background: linear-gradient(135deg, #f5f1ed 0%, #faf8f5 100%);
+
+  h2 {
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #2c2c2c;
+    margin-bottom: 4rem;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, #d4753c, #8b4a3c);
+      border-radius: 2px;
+    }
+  }
+
+  .protection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @include tablet {
+      gap: 2rem;
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .protection-card {
+    background: white;
+    border-radius: 16px;
+    padding: 3rem 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    .element-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 2rem;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: white;
+      transition: all 0.3s ease;
+
+      &.copper {
+        background: linear-gradient(135deg, #d4753c, #b8613a);
+      }
+
+      &.phosphore {
+        background: linear-gradient(135deg, #a0643c, #84502e);
+      }
+
+      &.chrome {
+        background: linear-gradient(135deg, #8b4a3c, #6f3a2e);
+      }
+    }
+
+    &:hover .element-icon {
+      transform: scale(1.1) rotate(5deg);
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      color: #2c2c2c;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #666;
+      line-height: 1.6;
+    }
+  }
+}
+
+// === SECTION PROCESSUS CORTEN ===
+.corten-process {
+  padding: clamp(4rem, 8vw, 8rem) 2rem;
+  background: white;
+
+  h2 {
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #2c2c2c;
+    margin-bottom: 4rem;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, #d4753c, #8b4a3c);
+      border-radius: 2px;
+    }
+  }
+
+  .process-timeline {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 30px;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: linear-gradient(to bottom, #d4753c, #8b4a3c);
+
+      @include mobile {
+        left: 20px;
+      }
+    }
+  }
+
+  .timeline-item {
+    position: relative;
+    padding-left: 100px;
+    margin-bottom: 3rem;
+
+    @include mobile {
+      padding-left: 70px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-marker {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 4px solid white;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+      z-index: 2;
+
+      @include mobile {
+        width: 40px;
+        height: 40px;
+      }
+
+      &.phase1 {
+        background: linear-gradient(135deg, #e8914f, #d4753c);
+      }
+
+      &.phase2 {
+        background: linear-gradient(135deg, #c86940, #b8613a);
+      }
+
+      &.phase3 {
+        background: linear-gradient(135deg, #a0643c, #8b4a3c);
+      }
+    }
+
+    .timeline-content {
+      background: linear-gradient(135deg, #f5f1ed 0%, #faf8f5 100%);
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+      h3 {
+        font-size: 1.5rem;
+        color: #8b4a3c;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+        color: #555;
+        line-height: 1.7;
+        margin: 0;
+      }
+    }
+  }
+}
+
+// === SECTION CORTEN BRUT ===
+.corten-brut {
+  padding: clamp(4rem, 8vw, 6rem) 2rem;
+  background: linear-gradient(135deg, #f5f5f5 0%, #fafafa 100%);
+
+  .brut-content {
+    max-width: 900px;
+    margin: 0 auto;
+
+    h2 {
+      text-align: center;
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: #2c2c2c;
+      margin-bottom: 3rem;
+      position: relative;
+      display: inline-block;
+      width: 100%;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 3px;
+        background: linear-gradient(90deg, #d4753c, #8b4a3c);
+        border-radius: 2px;
+      }
+    }
+
+    .info-box {
+      background: white;
+      border-left: 5px solid #d4753c;
+      border-radius: 8px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-start;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+      svg {
+        flex-shrink: 0;
+        stroke: #d4753c;
+        stroke-width: 2px;
+        margin-top: 2px;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #555;
+        line-height: 1.7;
+        margin: 0;
+      }
+    }
+
+    > p {
+      font-size: 1rem;
+      color: #666;
+      line-height: 1.7;
+      text-align: center;
+    }
+  }
+}
+
+// === SECTION ÉVOLUTION CORTEN ===
+.corten-evolution {
+  padding: clamp(4rem, 8vw, 8rem) 2rem;
+  background: white;
+
+  h2 {
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #2c2c2c;
+    margin-bottom: 0.5rem;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, #d4753c, #8b4a3c);
+      border-radius: 2px;
+    }
+  }
+
+  .subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    margin: 2rem 0 4rem;
+  }
+
+  .evolution-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+
+    @include tablet {
+      gap: 2rem;
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .evolution-card {
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      border-radius: 12px 12px 0 0;
+      display: block;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      color: #8b4a3c;
+      padding: 1.5rem 1.5rem 0.5rem;
+      margin: 0;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #666;
+      line-height: 1.6;
+      padding: 0 1.5rem 1.5rem;
+      margin: 0;
+    }
+  }
+
+  .evolution-info {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+
+    p {
+      font-size: 1rem;
+      color: #666;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+    }
+
+    .highlight {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #8b4a3c;
+    }
+  }
+}
+
+// === SECTION CICATRISATION ===
+.corten-cicatrisation {
+  padding: clamp(4rem, 8vw, 6rem) 2rem;
+  background: linear-gradient(135deg, #8b4a3c 0%, #6f3a2e 100%);
+  color: white;
+
+  .cicatrisation-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+
+    .icon-wrapper {
+      width: 100px;
+      height: 100px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 2rem;
+      backdrop-filter: blur(10px);
+
+      svg {
+        stroke-width: 2px;
+      }
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      color: $light;
+      font-size: clamp(1rem, 1.5vw, 1.2rem);
+      line-height: 1.8;
+      opacity: 0.95;
+
+      strong {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+// === SECTION PRÉCAUTIONS ===
+.corten-precautions {
+  padding: clamp(4rem, 8vw, 8rem) 2rem;
+  background: linear-gradient(to bottom, #fafafa 0%, #ffffff 100%);
+
+  h2 {
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #2c2c2c;
+    margin-bottom: 4rem;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, #d4753c, #8b4a3c);
+      border-radius: 2px;
+    }
+  }
+
+  .precautions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @include tablet {
+      gap: 2rem;
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .precaution-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    &.warning-card {
+      border: 2px solid #ffa366;
+    }
+
+    .card-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 2rem;
+      transition: all 0.3s ease;
+
+      svg {
+        stroke-width: 1.5px;
+      }
+
+      &.reception {
+        background: linear-gradient(135deg, #f5f1ed, #faf8f5);
+        color: #8b4a3c;
+      }
+
+      &.maintenance {
+        background: linear-gradient(135deg, #f5f1ed, #faf8f5);
+        color: #8b4a3c;
+      }
+
+      &.warning {
+        background: linear-gradient(135deg, #ffa366, #ff8c42);
+        color: white;
+      }
+    }
+
+    &:hover .card-icon {
+      &.reception,
+      &.maintenance {
+        background: linear-gradient(135deg, #d4753c, #b8613a);
+        color: white;
+      }
+
+      transform: scale(1.05);
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      color: #2c2c2c;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #666;
+      line-height: 1.6;
+    }
+  }
+}
+
+// === SECTION CTA CORTEN ===
+.corten-cta {
+  padding: clamp(4rem, 8vw, 6rem) 2rem;
+  background: linear-gradient(135deg, #8b4a3c 0%, #6f3a2e 100%);
+  color: white;
+  text-align: center;
+
+  .cta-content {
+    max-width: 700px;
+    margin: 0 auto;
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: clamp(1rem, 1.5vw, 1.2rem);
+      line-height: 1.7;
+      opacity: 0.95;
+      margin-bottom: 2.5rem;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 1.2rem 3rem;
+      background: white;
+      color: #8b4a3c;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        background: #d4753c;
+        color: white;
+      }
+    }
+  }
+}

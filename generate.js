@@ -342,9 +342,6 @@ const projectsListTemplate = fs.readFileSync(
 );
 
 // 🏗️ Étape 4 : Générer les pages projets individuelles
-// 🏗️ Étape 4 : Générer les pages projets individuelles
-// 🏗️ Étape 4 : Générer les pages projets individuelles
-// 🏗️ Étape 4 : Générer les pages projets individuelles
 const projectsDir = path.join(distDir, "projets");
 fs.mkdirSync(projectsDir, { recursive: true });
 
@@ -410,7 +407,6 @@ for (const [projectSlug, project] of Object.entries(data.projects || {})) {
   fs.writeFileSync(projectPath, projectHTML);
   console.log(`🏗️ Projet généré : ${project.name}`);
 }
-// ETAPE OTHER COLLECTIONS :
 
 // 🏗️ Étape 5 : Générer la page liste des projets
 const projectsListHTML = Object.entries(data.projects || {})
@@ -508,6 +504,37 @@ console.log("\n🏠 Génération des pages racines...");
 const rootPages = ["index", "histoire", "sur-mesure"];
 
 rootPages.forEach((pageName) => {
+  const pageTemplate = fs.readFileSync(
+    path.join(__dirname, `src/templates/${pageName}.html`),
+    "utf8"
+  );
+
+  const pageHTML = pageTemplate
+    .replace(/{{basePath}}/g, BASE_PATH || ".")
+    .replace(
+      /{{footer}}/g,
+      footerTemplate.replace(/{{basePath}}/g, BASE_PATH || ".")
+    )
+    .replace(
+      /{{header}}/g,
+      headerTemplate.replace(/{{basePath}}/g, BASE_PATH || ".")
+    );
+
+  fs.writeFileSync(`${pageName}.html`, pageHTML);
+  console.log(`✅ ${pageName}.html généré`);
+});
+
+// 🎨 Générer les pages couleurs-finitions
+console.log("\n🎨 Génération des pages couleurs-finitions...");
+
+const couleursFinitionsPages = [
+  "lesbois",
+  "lesaciers",
+  "lecorten",
+  "lesbetons",
+];
+
+couleursFinitionsPages.forEach((pageName) => {
   const pageTemplate = fs.readFileSync(
     path.join(__dirname, `src/templates/${pageName}.html`),
     "utf8"

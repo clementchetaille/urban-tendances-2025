@@ -765,27 +765,102 @@
         </section>
 
         <section class="materieaux-description">
-          <h2>Matériaux</h2>
-          <ul itemprop="material">
-            {{materials}}
-          </ul>
+          <details>
+            <summary>
+              <h2>Matériaux</h2>
+              <svg
+                class="accordion-icon"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  d="M5 7.5L10 12.5L15 7.5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </summary>
+            <ul itemprop="material">
+              {{materials}}
+            </ul>
+          </details>
         </section>
 
         <section class="finition-description">
-          <h2>Finitions</h2>
-          <ul>
-            {{finitions}}
-          </ul>
+          <details>
+            <summary>
+              <h2>Finitions</h2>
+              <svg
+                class="accordion-icon"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  d="M5 7.5L10 12.5L15 7.5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </summary>
+            <ul>
+              {{finitions}}
+            </ul>
+          </details>
         </section>
 
         <section class="dimensions-description">
-          <h2>Dimensions</h2>
-          <ul>
-            {{dimensions}}
-          </ul>
+          <details>
+            <summary>
+              <h2>Dimensions</h2>
+              <svg
+                class="accordion-icon"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  d="M5 7.5L10 12.5L15 7.5"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </summary>
+            <ul>
+              {{dimensions}}
+            </ul>
+          </details>
         </section>
       </article>
+      <!-- Nouveau : Menu Couleurs & Finitions -->
+      <section class="couleurs-finitions-menu">
+        <div class="container">
+          <h3>Couleurs & Finitions</h3>
+          <ul class="finitions-list">
+            <li>
+              <a href="{{basePath}}/lesbois.html">Pour le bois</a>
+            </li>
+            <li>
+              <a href="{{basePath}}/lesaciers.html">Pour les aciers</a>
+            </li>
+            <li>
+              <a href="{{basePath}}/lecorten.html">Pour le corten</a>
+            </li>
+            <li>
+              <a href="{{basePath}}/lesbetons.html">Pour les bétons</a>
+            </li>
+          </ul>
+        </div>
+      </section>
 
+      <!-- OVERLAY RECHERCHES -->
       <div
         class="search-overlay"
         role="dialog"

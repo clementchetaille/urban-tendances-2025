@@ -1,17 +1,19 @@
 /* _fonts.scss */
 
 @font-face {
-  font-family: "Ease";
-  src: url("../assets/fonts/EaseVariable.woff2") format("woff2");
-  font-weight: 500;
+  font-family: "SourceCodePro";
+  src: url("../assets/fonts/SourceCodePro-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Noi";
-  src: url("../assets/fonts/NoiVariableFlexTrialGX.ttf") format("truetype");
-  font-weight: 500;
+  font-family: "InterTight";
+  src: url("../assets/fonts/InterTight-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }

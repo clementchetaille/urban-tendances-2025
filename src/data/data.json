@@ -1169,16 +1169,16 @@
       "description": "Création d'assises et corbeilles pour la nouvelle place de la Liberté",
       "products": [
         {
-          "collection": "",
+          "collection": "thal-s",
           "type": "assises",
-          "name": "Banc",
-          "quantity": 6
+          "name": "Fauteuil en acier",
+          "quantity": 0
         },
         {
           "collection": "thal-s",
           "type": "corbeilles",
           "name": "corbeille",
-          "quantity": 4
+          "quantity": 0
         }
       ],
       "images": [

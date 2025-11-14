@@ -108,14 +108,13 @@ const modal = document.getElementById("image-modal");
 const modalImg = document.getElementById("modal-image");
 const closeModal = document.querySelector(".close-modal");
 
-// Cibler à la fois les images de projets ET de produits
+// Cibler les images de projets, produits ET les images d'exemples
 const clickableImages = document.querySelectorAll(
-  ".project-images img, .product-images img"
+  ".project-images img, .product-images img, .example-images img" // 👈 Ajoute ça
 );
 
 // Ajouter un écouteur de clic sur chaque image
 clickableImages.forEach((img) => {
-  // ⭐ CHANGÉ ICI
   img.addEventListener("click", function () {
     modal.style.display = "block";
     modalImg.src = this.src;
@@ -123,20 +122,26 @@ clickableImages.forEach((img) => {
 });
 
 // Fermer la modale au clic sur la croix
-closeModal.addEventListener("click", function () {
-  modal.style.display = "none";
-});
+if (closeModal) {
+  // 👈 Ajoute cette vérification pour éviter l'erreur
+  closeModal.addEventListener("click", function () {
+    modal.style.display = "none";
+  });
+}
 
 // Fermer la modale au clic en dehors de l'image
-modal.addEventListener("click", function (e) {
-  if (e.target === modal) {
-    modal.style.display = "none";
-  }
-});
+if (modal) {
+  // 👈 Et celle-là aussi
+  modal.addEventListener("click", function (e) {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+}
 
 // Fermer avec la touche Échap
 document.addEventListener("keydown", function (e) {
-  if (e.key === "Escape" && modal.style.display === "block") {
+  if (e.key === "Escape" && modal && modal.style.display === "block") {
     modal.style.display = "none";
   }
 });
