@@ -115,3 +115,31 @@ if (heroVideo && soundToggle) {
   });
   */
 })();
+
+// CAROUSEL 2 //
+///////////////////////
+
+// Navigation du carousel avec les flèches
+document.addEventListener("DOMContentLoaded", function () {
+  const galerieGrid = document.querySelector(".galerie-processus__grid");
+  const arrowLeft = document.querySelector(".galerie-processus__arrow--left");
+  const arrowRight = document.querySelector(".galerie-processus__arrow--right");
+
+  if (galerieGrid && arrowLeft && arrowRight) {
+    const scrollAmount = 350; // Ajustez selon la largeur de vos images
+
+    arrowLeft.addEventListener("click", () => {
+      galerieGrid.scrollBy({
+        left: -scrollAmount,
+        behavior: "smooth",
+      });
+    });
+
+    arrowRight.addEventListener("click", () => {
+      galerieGrid.scrollBy({
+        left: scrollAmount,
+        behavior: "smooth",
+      });
+    });
+  }
+});

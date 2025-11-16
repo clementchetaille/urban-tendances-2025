@@ -1439,61 +1439,166 @@
       <!-- Bureau d'études Section -->
       <section class="surmesure-bureau" aria-labelledby="bureau-etudes">
         <div class="surmesure-container">
-          <h2 id="bureau-etudes" class="surmesure-bureau__title">
-            Bureau d'études
-          </h2>
-          <p class="surmesure-bureau__text">
-            Nous vous offrons bien plus qu'un simple service de fabrication.
-            Chez nous, nous vous accompagnons dans vos projets de manière
-            personnalisée, en vous proposant un processus complet et
-            transparent, de la conception à la fabrication.
-          </p>
-          <p class="surmesure-bureau__text">
-            Nous réalisons l'<strong>étude de faisabilité</strong>, le
-            <strong>prototypage</strong> et la
-            <strong>fabrication sur-mesure</strong> de vos produits. Pour tous
-            les clients, toutes les configurations. Sur la base d'un simple
-            croquis, d'un dessin à la demande, finalisé par des plans et une
-            <strong>modélisation 3D</strong>
-            ou une mise en scène pour l'aménagement de votre espace.
-          </p>
+          <div class="surmesure-bureau__wrapper">
+            <!-- Colonne de gauche : Texte -->
+            <div class="surmesure-bureau__content">
+              <h2 id="bureau-etudes" class="surmesure-bureau__title">
+                Bureau d'études
+              </h2>
+              <p class="surmesure-bureau__text">
+                Nous vous offrons bien plus qu'un simple service de fabrication.
+                Chez nous, nous vous accompagnons dans vos projets de manière
+                personnalisée, en vous proposant un processus complet et
+                transparent, de la conception à la fabrication.
+              </p>
+              <p class="surmesure-bureau__text">
+                Nous réalisons l'<strong>étude de faisabilité</strong>, le
+                <strong>prototypage</strong> et la
+                <strong>fabrication sur-mesure</strong> de vos produits. Pour
+                tous les clients, toutes les configurations. Sur la base d'un
+                simple croquis, d'un dessin à la demande, finalisé par des plans
+                et une
+                <strong>modélisation 3D</strong>
+                ou une mise en scène pour l'aménagement de votre espace.
+              </p>
+            </div>
+
+            <!-- Colonne de droite : Comparateur d'images -->
+            <div class="surmesure-bureau__image">
+              <div class="image-comparator">
+                <div class="image-comparator__container">
+                  <!-- Image de fond (celle qui apparaît à droite) -->
+                  <img
+                    src="/urban-tendances-2025/assets/images/sur-mesure/recup-piles-2.webp"
+                    alt="Rendu 3D"
+                    class="image-comparator__after"
+                  />
+
+                  <!-- Image du dessus (celle qui apparaît à gauche) -->
+                  <div
+                    class="image-comparator__before-wrapper"
+                    style="width: 50%"
+                  >
+                    <img
+                      src="/urban-tendances-2025/assets/images/sur-mesure/croquis-piles.webp"
+                      alt="Croquis"
+                      class="image-comparator__before"
+                    />
+                  </div>
+
+                  <!-- Slider (la barre verticale) -->
+                  <div class="image-comparator__slider" style="left: 50%">
+                    <div class="image-comparator__handle">
+                      <svg width="40" height="40" viewBox="0 0 40 40">
+                        <circle
+                          cx="20"
+                          cy="20"
+                          r="18"
+                          fill="white"
+                          stroke="#333"
+                          stroke-width="2"
+                        />
+                        <path d="M15 20 L20 15 L20 25 Z" fill="#333" />
+                        <path
+                          d="M25 20 L20 15 L20 25 Z"
+                          fill="#333"
+                          transform="rotate(180 20 20)"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- Image Grid -->
-      <section class="surmesure-gallery" aria-labelledby="galerie-croquis">
+      <!-- Section avec 5 images -->
+      <section class="galerie-processus" aria-labelledby="processus-title">
         <div class="surmesure-container">
-          <h2 id="galerie-croquis" class="visually-hidden">
-            Galerie de croquis et dessins techniques
-          </h2>
-          <div class="surmesure-gallery__grid">
-            <figure class="surmesure-gallery__item">
-              <img
-                src="/urban-tendances-2025/assets/images/sur-mesure/sketch-1.jpg"
-                alt="Croquis de conception mobilier urbain - étude préliminaire"
-                width="800"
-                height="600"
-                loading="lazy"
-              />
-            </figure>
-            <figure class="surmesure-gallery__item item2">
-              <img
-                src="/urban-tendances-2025/assets/images/sur-mesure/sketch-2.png"
-                alt="Plan technique mobilier urbain - dessin détaillé"
-                width="800"
-                height="600"
-                loading="lazy"
-              />
-            </figure>
-            <figure class="surmesure-gallery__item">
-              <img
-                src="/urban-tendances-2025/assets/images/sur-mesure/sketch-3.png"
-                alt="Modélisation 3D mobilier urbain sur-mesure"
-                width="800"
-                height="600"
-                loading="lazy"
-              />
-            </figure>
+          <div class="galerie-processus__wrapper">
+            <!-- Flèche gauche -->
+            <button
+              class="galerie-processus__arrow galerie-processus__arrow--left"
+              aria-label="Image précédente"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M15 18l-6-6 6-6" />
+              </svg>
+            </button>
+
+            <div class="galerie-processus__grid">
+              <div class="galerie-processus__item">
+                <div class="galerie-processus__image">
+                  <img
+                    src="/urban-tendances-2025/assets/images/sur-mesure/croquis-piles.webp"
+                    alt="Description image 1"
+                  />
+                </div>
+                <p class="galerie-processus__text">croquis</p>
+              </div>
+              <div class="galerie-processus__item">
+                <div class="galerie-processus__image">
+                  <img
+                    src="/urban-tendances-2025/assets/images/sur-mesure/recupdepiles-img2.png"
+                    alt="Description image 2"
+                  />
+                </div>
+                <p class="galerie-processus__text">plan de fabrication</p>
+              </div>
+              <div class="galerie-processus__item">
+                <div class="galerie-processus__image">
+                  <img
+                    src="/urban-tendances-2025/assets/images/sur-mesure/recupdepiles-img1.jpg"
+                    alt="Description image 3"
+                  />
+                </div>
+                <p class="galerie-processus__text">visuel 3D</p>
+              </div>
+              <div class="galerie-processus__item">
+                <div class="galerie-processus__image">
+                  <img
+                    src="/urban-tendances-2025/assets/images/sur-mesure/recupdepiles-img3.webp"
+                    alt="Description image 4"
+                  />
+                </div>
+                <p class="galerie-processus__text">mise en scène</p>
+              </div>
+              <div class="galerie-processus__item">
+                <div class="galerie-processus__image">
+                  <img
+                    src="/urban-tendances-2025/assets/images/sur-mesure/recup-piles-2.webp"
+                    alt="Description image 5"
+                  />
+                </div>
+                <p class="galerie-processus__text">produit fabriqué</p>
+              </div>
+            </div>
+
+            <!-- Flèche droite -->
+            <button
+              class="galerie-processus__arrow galerie-processus__arrow--right"
+              aria-label="Image suivante"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M9 18l6-6-6-6" />
+              </svg>
+            </button>
           </div>
         </div>
       </section>
@@ -1918,9 +2023,15 @@
 </footer>
 
 
+    <div id="image-modal" class="image-modal">
+      <span class="close-modal">&times;</span>
+      <img class="modal-content" id="modal-image" />
+    </div>
+
     <script src="/urban-tendances-2025/js/main.js"></script>
     <script src="/urban-tendances-2025/js/mobile-menu.js"></script>
     <script src="/urban-tendances-2025/js/surmesure.js"></script>
+    <script src="/urban-tendances-2025/js/sliderinteractif.js"></script>
     <script src="/urban-tendances-2025/js/search-data.js"></script>
     <script src="/urban-tendances-2025/js/search.js"></script>
   </body>

@@ -481,7 +481,7 @@ a {
     grid-template-columns: repeat(2, 1fr);
   }
   .footer-brand img {
-    width: 360px;
+    width: 200px;
   }
 }
 @media (max-width: 640px) {
@@ -493,7 +493,7 @@ a {
     gap: 35px;
   }
   .footer-brand img {
-    width: 200px;
+    width: 140px;
     margin-bottom: 10px;
   }
   .footer-bottom {
@@ -793,7 +793,7 @@ main {
 }
 .hero__text {
   font-family: "InterTight", sans-serif;
-  font-size: clamp(5rem, 8vw, 6rem);
+  font-size: clamp(5rem, 8vw, 5rem);
   font-weight: 400;
   line-height: 1;
   margin: 0;
@@ -2054,45 +2054,225 @@ main {
 }
 
 /* Image Gallery */
-.surmesure-gallery {
-  padding: 80px 20px;
-}
-@media (max-width: 768px) {
-  .surmesure-gallery {
-    padding: 60px 15px;
-  }
-}
-@media (max-width: 480px) {
-  .surmesure-gallery {
-    padding: 40px 15px;
-  }
-}
-
-.surmesure-gallery__grid {
+.surmesure-bureau__wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-@media (max-width: 1024px) {
-  .surmesure-gallery__grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-}
-@media (max-width: 768px) {
-  .surmesure-gallery__grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
 }
 
-.surmesure-gallery__item.item2 img {
-  transform: rotate(90deg) scale(1.4);
+.image-comparator {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  height: auto;
+}
+
+.image-comparator__container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1/1; /* Ajustez selon vos images */
+  overflow: hidden;
+}
+
+.image-comparator__after,
+.image-comparator__before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.image-comparator__before-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+  transition: width 0.05s ease-out;
+}
+
+.image-comparator__before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Utilisez la largeur du conteneur parent */
+  max-width: none;
+  height: 100%;
   object-fit: cover;
 }
 
+.image-comparator__slider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  height: auto;
+  background: white;
+  cursor: ew-resize;
+  transition: left 0.05s ease-out;
+  z-index: 10;
+  height: 100%; /* 👈 Ajoutez cette ligne */
+  max-height: 100%; /* 👈 Et celle-ci pour être sûr */
+}
+
+.image-comparator__slider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 44px;
+}
+
+.image-comparator__handle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: ew-resize;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.surmesure-bureau__image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px; /* Optionnel : pour arrondir les coins */
+}
+
+/* Responsive : sur mobile, les colonnes se superposent */
+@media (max-width: 768px) {
+  .surmesure-bureau__wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+.galerie-processus {
+  padding: 4rem 0;
+}
+
+.galerie-processus__grid {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 1rem; /* Espace pour la scrollbar */
+  overflow-x: auto; /* Force l'apparition de la scrollbar horizontale */
+}
+
+.galerie-processus__grid::-webkit-scrollbar {
+  height: 8px;
+}
+
+.galerie-processus__grid::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.galerie-processus__grid::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.galerie-processus__grid::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.galerie-processus__item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.galerie-processus__image {
+  width: 400px;
+  height: 300px; /* Ajustez la hauteur selon vos besoins */
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.galerie-processus__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Affiche l'image entière sans la couper */
+  display: block;
+  background-color: #f5f5f5; /* Optionnel: fond gris si l'image ne remplit pas tout l'espace */
+}
+
+.galerie-processus__text {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #333;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.galerie-processus__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+}
+
+.galerie-processus__arrow {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.galerie-processus__arrow:hover {
+  background-color: #555;
+  transform: scale(1.1);
+}
+
+.galerie-processus__arrow:active {
+  transform: scale(0.95);
+}
+
+.galerie-processus__arrow svg {
+  pointer-events: none;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .galerie-processus__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .galerie-processus__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .galerie-processus__arrow {
+    display: none;
+  }
+  .galerie-processus__wrapper {
+    gap: 0;
+  }
+}
+@media (max-width: 480px) {
+  .galerie-processus__grid {
+    grid-template-columns: 1fr;
+  }
+}
 /* Nos Forces Section */
 .surmesure-forces {
   padding: 80px 20px;
@@ -4882,7 +5062,7 @@ main {
 .studio-button {
   position: absolute;
   bottom: 16px;
-  right: 30px;
+  right: 34px;
   display: flex;
   align-items: center;
   background: #bf8821;
