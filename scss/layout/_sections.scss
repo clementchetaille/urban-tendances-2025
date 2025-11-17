@@ -127,8 +127,8 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: clamp(800px, 70vh, 850px);
-  padding: clamp(0.5rem, 1vw, 1rem);
+  height: clamp(720px, 70vh, 850px);
+  padding: clamp(0.5rem, 1vw, 0.6rem);
 
   @include tablet {
     height: 60vh;
