@@ -2007,7 +2007,7 @@ main {
   }
 }
 
-/* Image Gallery */
+/* IMAGE COMPARATOR SLIDER*/
 .surmesure-bureau__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -2018,16 +2018,38 @@ main {
 .image-comparator {
   position: relative;
   width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
   overflow: hidden;
-  border-radius: 8px;
-  height: auto;
+  border-radius: clamp(8px, 1.5vw, 16px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+@media (max-width: 1024px) {
+  .image-comparator {
+    max-width: 600px;
+  }
+}
+@media (max-width: 768px) {
+  .image-comparator {
+    max-width: 100%;
+  }
 }
 
 .image-comparator__container {
   position: relative;
   width: 100%;
-  aspect-ratio: 1/1; /* Ajustez selon vos images */
+  aspect-ratio: 16/9;
   overflow: hidden;
+  line-height: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .image-comparator__container {
+    aspect-ratio: 4/3;
+  }
 }
 
 .image-comparator__after,
@@ -2055,8 +2077,7 @@ main {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw; /* Utilisez la largeur du conteneur parent */
-  max-width: none;
+  width: 200%;
   height: 100%;
   object-fit: cover;
 }
@@ -2065,16 +2086,14 @@ main {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 5px;
-  height: auto;
+  left: 50%;
+  width: 4px;
   background: white;
   cursor: ew-resize;
   transition: left 0.05s ease-out;
   z-index: 10;
-  height: 100%; /* 👈 Ajoutez cette ligne */
-  max-height: 100%; /* 👈 Et celle-ci pour être sûr */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-
 .image-comparator__slider::before {
   content: "";
   position: absolute;
@@ -2090,8 +2109,32 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
   cursor: ew-resize;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-comparator__handle::before, .image-comparator__handle::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+.image-comparator__handle::before {
+  left: 10px;
+  border-width: 6px 8px 6px 0;
+  border-color: transparent #333 transparent transparent;
+}
+.image-comparator__handle::after {
+  right: 10px;
+  border-width: 6px 0 6px 8px;
+  border-color: transparent transparent transparent #333;
 }
 
 .surmesure-bureau__image img {
@@ -2289,128 +2332,62 @@ main {
   }
 }
 
-/* Styles du carousel */
-.surmesure-carousel {
-  position: relative;
-  padding: 40px 0;
+.surmesure-gallery {
+  padding: clamp(3rem, 8vw, 6rem) clamp(1rem, 3vw, 2rem);
+  background: #fff;
 }
 
-.surmesure-carousel__wrapper {
-  position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-  max-width: 800px; /* Largeur maximale du carousel */
-  margin: 0 auto; /* Centrer le carousel */
+.surmesure-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.surmesure-container h2 {
+  font-family: "InterTight", sans-serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  text-align: center;
+  margin-bottom: clamp(2rem, 5vw, 4rem);
+  color: #38404b;
 }
 
-.surmesure-carousel__track {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: clamp(1rem, 2vw, 2rem);
+}
+@media (max-width: 1024px) {
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: clamp(0.5rem, 1.5vw, 1rem);
+  }
 }
 
-.surmesure-carousel__slide {
-  min-width: 100%;
+.gallery-item {
   margin: 0;
-  height: 550px; /* Hauteur fixe pour les slides */
   overflow: hidden;
+  border-radius: clamp(8px, 1.5vw, 16px);
+  aspect-ratio: 4/3;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-.surmesure-carousel__slide img {
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+.gallery-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Couvre l'espace sans déformation */
-  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
-/* Boutons de navigation */
-.surmesure-carousel__btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  background: rgba(255, 255, 255, 0.9);
-  border: none;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-.surmesure-carousel__btn:hover {
-  background: rgb(255, 255, 255);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  transform: translateY(-50%) scale(1.1);
-}
-
-.surmesure-carousel__btn:active {
-  transform: translateY(-50%) scale(0.95);
-}
-
-.surmesure-carousel__btn--prev {
-  left: 20px;
-}
-
-.surmesure-carousel__btn--next {
-  right: 20px;
-}
-
-.surmesure-carousel__btn svg {
-  color: #333;
-}
-
-/* Indicateurs */
-.surmesure-carousel__indicators {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-.surmesure-carousel__indicator {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #ddd;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.surmesure-carousel__indicator.active {
-  background: #333;
-  width: 30px;
-  border-radius: 5px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .surmesure-carousel__wrapper {
-    max-width: 100%; /* Pleine largeur sur mobile */
-  }
-  .surmesure-carousel__slide {
-    height: 300px; /* Hauteur réduite sur mobile */
-  }
-  .surmesure-carousel__btn {
-    width: 40px;
-    height: 40px;
-  }
-  .surmesure-carousel__btn--prev {
-    left: 10px;
-  }
-  .surmesure-carousel__btn--next {
-    right: 10px;
-  }
-}
-@media (max-width: 480px) {
-  .surmesure-carousel__slide {
-    height: 250px; /* Encore plus petit sur très petits écrans */
-  }
-}
 /* Classe utilitaire pour l'accessibilité */
 .visually-hidden {
   position: absolute;

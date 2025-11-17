@@ -110,7 +110,7 @@ const closeModal = document.querySelector(".close-modal");
 
 // Cibler les images de projets, produits ET les images d'exemples
 const clickableImages = document.querySelectorAll(
-  ".project-images img, .product-images img, .example-images img, .galerie-processus__image img" // 👈 Ajoute ça
+  ".project-images img, .product-images img, .example-images img, .galerie-processus__image img, .gallery-item img" // 👈 Corrigé ici
 );
 
 // Ajouter un écouteur de clic sur chaque image
