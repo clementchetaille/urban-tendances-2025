@@ -145,3 +145,36 @@ document.addEventListener("keydown", function (e) {
     modal.style.display = "none";
   }
 });
+
+// DIAPO HERO INDEX //
+document.addEventListener("DOMContentLoaded", () => {
+  const images = document.querySelectorAll(".hero__image-wrapper .hero__image");
+  if (images.length < 2) return;
+
+  let index = 0;
+
+  // Tout mettre en "next" d'abord
+  images.forEach((img) => {
+    img.classList.add("hero__image--next");
+  });
+
+  // L'image de départ
+  images[0].classList.add("hero__image--current");
+  images[0].classList.remove("hero__image--next");
+
+  setInterval(() => {
+    const current = images[index];
+    const nextIndex = (index + 1) % images.length;
+    const next = images[nextIndex];
+
+    // L'ancienne devient "next" (opacity: 0)
+    current.classList.remove("hero__image--current");
+    current.classList.add("hero__image--next");
+
+    // La nouvelle devient "current" (opacity: 1)
+    next.classList.remove("hero__image--next");
+    next.classList.add("hero__image--current");
+
+    index = nextIndex;
+  }, 4000);
+});
