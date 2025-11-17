@@ -558,7 +558,7 @@ a {
   }
 }
 main {
-  padding: 2rem 0rem;
+  padding: 1.2rem 0rem;
 }
 
 .container {
@@ -670,7 +670,7 @@ main {
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   width: 100%;
-  height: clamp(500px, 70vh, 950px);
+  height: clamp(700px, 70vh, 950px);
   gap: clamp(2rem, 4vw, 4rem);
   padding: clamp(0.5rem, 1vw, 2rem);
   margin-top: clamp(0.5rem, 1vw, 1rem);
@@ -793,9 +793,9 @@ main {
 }
 .hero__text {
   font-family: "InterTight", sans-serif;
-  font-size: clamp(5rem, 8vw, 5rem);
+  font-size: clamp(8rem, 8vw, 6.5rem);
   font-weight: 400;
-  line-height: 1;
+  line-height: 0.8;
   margin: 0;
   letter-spacing: 0.05em;
   color: #38404b;
@@ -808,7 +808,7 @@ main {
 }
 @media (max-width: 768px) {
   .hero__text {
-    font-size: clamp(5rem, 10vw, 5rem);
+    font-size: clamp(3rem, 8vw, 4rem);
   }
 }
 .hero__text {
@@ -822,7 +822,7 @@ main {
 }
 @media (max-width: 768px) {
   .hero__text--top {
-    align-self: center;
+    align-self: right;
   }
 }
 .hero__text--bottom {
@@ -833,7 +833,7 @@ main {
 }
 @media (max-width: 768px) {
   .hero__text--bottom {
-    align-self: center;
+    align-self: left;
   }
 }
 .hero__text::before {
@@ -851,6 +851,53 @@ main {
   width: 100%;
 }
 
+.hero__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s ease, background 0.3s ease;
+  z-index: 10;
+  color: #333;
+}
+
+.hero__arrow:hover {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.hero__arrow--left {
+  left: 20px;
+}
+
+.hero__arrow--right {
+  right: 20px;
+}
+
+/* Responsive : centrage corrigé sur mobile */
+@media (max-width: 768px) {
+  .hero__arrow {
+    width: 40px;
+    height: 40px;
+    display: none;
+    transform: translateY(-50%); /* Centre exactement au milieu */
+  }
+  .hero__arrow--left {
+    left: 10px;
+  }
+  .hero__arrow--right {
+    right: 10px;
+  }
+}
 @keyframes slideInLeft {
   from {
     opacity: 0;
@@ -3434,10 +3481,11 @@ main {
 }
 .wood-essences .wood-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
   max-width: 1400px;
   margin: 0 auto;
+  justify-items: center;
 }
 @media (max-width: 1024px) {
   .wood-essences .wood-grid {
@@ -3452,22 +3500,23 @@ main {
   }
 }
 .wood-essences .wood-card {
+  width: 150px;
   background: white;
-  border-radius: 16px;
+  border-radius: 12px; /* Réduit de 16px à 12px */
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08); /* Ombre réduite */
   transition: all 0.3s ease;
 }
 .wood-essences .wood-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px); /* Réduit de -8px à -4px */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* Ombre réduite */
 }
-.wood-essences .wood-card .wood-sample {
-  height: 200px;
+.wood-essences .wood-sample {
+  height: 120px; /* Réduit de 200px à 120px */
   position: relative;
   overflow: hidden;
 }
-.wood-essences .wood-card .wood-sample::before {
+.wood-essences .wood-sample::before {
   content: "";
   position: absolute;
   top: 0;
@@ -3477,33 +3526,17 @@ main {
   background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
   z-index: 1;
 }
-.wood-essences .wood-card .wood-sample.chene {
-  background: linear-gradient(180deg, #c8a882 0%, #b89968 100%);
-  background-image: repeating-linear-gradient(90deg, rgba(139, 87, 42, 0.1) 0px, transparent 2px, transparent 8px), repeating-linear-gradient(0deg, rgba(139, 87, 42, 0.05) 0px, transparent 1px, transparent 4px);
-}
-.wood-essences .wood-card .wood-sample.iroko {
-  background: linear-gradient(180deg, #d4a574 0%, #c89554 100%);
-  background-image: repeating-linear-gradient(90deg, rgba(139, 87, 42, 0.15) 0px, transparent 2px, transparent 10px);
-}
-.wood-essences .wood-card .wood-sample.teck {
-  background: linear-gradient(180deg, #c8915f 0%, #b87e4a 100%);
-  background-image: repeating-linear-gradient(90deg, rgba(101, 67, 33, 0.2) 0px, transparent 2px, transparent 12px), repeating-linear-gradient(45deg, rgba(101, 67, 33, 0.1) 0px, transparent 1px, transparent 6px);
-}
-.wood-essences .wood-card .wood-sample.padouk {
-  background: linear-gradient(180deg, #c85a54 0%, #b54842 100%);
-  background-image: repeating-linear-gradient(90deg, rgba(139, 42, 42, 0.2) 0px, transparent 2px, transparent 8px);
-}
-.wood-essences .wood-card .wood-sample.sipo {
-  background: linear-gradient(180deg, #8b4a42 0%, #6f3830 100%);
-  background-image: repeating-linear-gradient(90deg, rgba(60, 30, 25, 0.2) 0px, transparent 2px, transparent 10px);
+.wood-essences .wood-sample img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .wood-essences .wood-card h3 {
-  font-size: 1.5rem;
-  color: #2c2c2c;
-  padding: 1.5rem 1.5rem 1rem;
+  padding: 12px; /* Ajustez selon vos besoins */
+  font-size: 14px; /* Réduisez la taille du texte si nécessaire */
   margin: 0;
 }
-.wood-essences .wood-card p {
+.wood-essences .wood-card h3 p {
   font-size: 0.95rem;
   color: #666;
   line-height: 1.6;
@@ -5061,18 +5094,19 @@ main {
 
 .studio-button {
   position: absolute;
-  bottom: 16px;
-  right: 34px;
+  bottom: 12px; /* Réduit de 16px à 12px */
+  right: 12px; /* Réduit de 34px à 12px */
   display: flex;
   align-items: center;
   background: #bf8821;
   color: white;
-  padding: 8px 10px;
+  padding: 6px 8px; /* Réduit de 8px 10px à 6px 8px */
   border-radius: 50px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Ombre réduite */
   transition: 0.35s ease all;
   overflow: hidden;
-  max-width: 40px;
+  max-width: 32px; /* Réduit de 40px à 32px */
+  font-size: 12px; /* Ajout pour réduire le texte */
 }
 @media (max-width: 768px) {
   .studio-button {
@@ -5083,15 +5117,17 @@ main {
 .studio-button-icon {
   position: relative;
   top: 1px;
+  font-size: 14px; /* Ajout pour réduire l'icône */
 }
 
 .studio-button-label {
   text-transform: uppercase;
   white-space: nowrap;
-  padding: 0 8px;
+  padding: 0 6px; /* Réduit de 8px à 6px */
   opacity: 0;
   transform: translateX(10px);
   transition: 0.25s ease all;
+  font-size: 11px; /* Ajout pour réduire le texte du label */
 }
 
 @media (hover: hover) and (min-width: 769px) {

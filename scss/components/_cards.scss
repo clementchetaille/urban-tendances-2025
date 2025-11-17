@@ -126,36 +126,39 @@
 
 .studio-button {
   position: absolute;
-  bottom: 16px;
-  right: 34px;
+  bottom: 12px; /* Réduit de 16px à 12px */
+  right: 12px; /* Réduit de 34px à 12px */
   display: flex;
   align-items: center;
   background: $secondary;
   color: white;
-  padding: 8px 10px;
+  padding: 6px 8px; /* Réduit de 8px 10px à 6px 8px */
   border-radius: 50px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Ombre réduite */
   transition: 0.35s ease all;
   overflow: hidden;
-  max-width: 40px;
+  max-width: 32px; /* Réduit de 40px à 32px */
+  font-size: 12px; /* Ajout pour réduire le texte */
 
   @media (max-width: 768px) {
-    display: none; // 👈 Masqué sur tablette et mobile
+    display: none;
   }
 }
 
 .studio-button-icon {
   position: relative;
   top: 1px;
+  font-size: 14px; /* Ajout pour réduire l'icône */
 }
 
 .studio-button-label {
   text-transform: uppercase;
   white-space: nowrap;
-  padding: 0 8px;
+  padding: 0 6px; /* Réduit de 8px à 6px */
   opacity: 0;
   transform: translateX(10px);
   transition: 0.25s ease all;
+  font-size: 11px; /* Ajout pour réduire le texte du label */
 }
 
 // Hover uniquement sur desktop
@@ -164,7 +167,6 @@
     .studio-button {
       max-width: 100%;
     }
-
     .studio-button-label {
       opacity: 1;
       transform: translateX(0);
@@ -180,7 +182,6 @@
     .studio-button {
       max-width: 100%;
     }
-
     .studio-button-label {
       opacity: 1;
       transform: translateX(0);
@@ -195,7 +196,6 @@
   .studio-button {
     max-width: 100%;
   }
-
   .studio-button-label {
     opacity: 1;
     transform: translateX(0);

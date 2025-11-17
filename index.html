@@ -70,6 +70,7 @@
     <!-- Preconnect pour améliorer les performances -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 
+    <link rel="icon" href="/urban-tendances-2025/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="/urban-tendances-2025/components/mobile-menu.css" />
   </head>
@@ -1368,6 +1369,28 @@
         aria-label="Présentation du mobilier urbain"
         id="heroSection"
       >
+        <!-- Flèche gauche -->
+        <button
+          class="hero__arrow hero__arrow--left"
+          aria-label="Image précédente"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M15 18L9 12L15 6"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+
         <!-- Colonne gauche en 1er dans le HTML -->
         <div class="hero__col hero__col--left">
           <img
@@ -1383,7 +1406,6 @@
         <div class="hero__col hero__col--center">
           <div class="hero__content">
             <h2 class="hero__text hero__text--top">Mobilier</h2>
-
             <div class="hero__image-wrapper">
               <img
                 src="/urban-tendances-2025/assets/images/projets/villa-simone1.webp"
@@ -1393,7 +1415,6 @@
                 height="600"
               />
             </div>
-
             <h2 class="hero__text hero__text--bottom">Urbain</h2>
           </div>
         </div>
@@ -1408,6 +1429,28 @@
             height="600"
           />
         </div>
+
+        <!-- Flèche droite -->
+        <button
+          class="hero__arrow hero__arrow--right"
+          aria-label="Image suivante"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9 18L15 12L9 6"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
       </section>
 
       <div class="separator" role="presentation"></div>
@@ -1893,6 +1936,7 @@
     <script src="/urban-tendances-2025/js/main.js"></script>
     <script src="/urban-tendances-2025/js/mobile-menu.js"></script>
     <script src="/urban-tendances-2025/js/hero-center.js"></script>
+    <script src="/urban-tendances-2025/js/fleches-index.js"></script>
     <script src="/urban-tendances-2025/js/animations.js"></script>
     <script src="/urban-tendances-2025/js/carousel.js"></script>
     <script src="/urban-tendances-2025/js/search-data.js"></script>
