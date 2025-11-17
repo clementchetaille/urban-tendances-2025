@@ -399,7 +399,9 @@
 }
 
 .product-carousel-card {
-  min-width: 200px;
+  // Utiliser clamp() pour des largeurs fluides mais contrôlées
+  min-width: clamp(280px, 350px, 400px);
+  max-width: 400px;
   background: white;
   border-radius: 16px;
   overflow: hidden;
@@ -420,23 +422,28 @@
   }
 
   @include desktop-large {
-    min-width: calc(25% - 18px);
+    min-width: 350px;
+    max-width: 400px;
   }
 
   @include laptop {
-    min-width: calc(33.333% - 16px);
+    min-width: 320px;
+    max-width: 380px;
   }
 
   @include tablet {
-    min-width: calc(50% - 12px);
+    min-width: 300px;
+    max-width: 350px;
   }
 
   @include mobile {
-    min-width: calc(80% - 10px);
+    min-width: 280px;
+    max-width: 320px;
   }
 
   @include mobile-small {
-    min-width: calc(85% - 10px);
+    min-width: 260px;
+    max-width: 300px;
   }
 }
 
