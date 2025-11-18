@@ -2746,6 +2746,16 @@ main {
   color: #666;
   font-size: 0.85rem;
 }
+.project-card-meta .project-city {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.75rem;
+}
+.project-card-meta .project-city::before {
+  content: "📍";
+  font-size: 0.9em;
+}
 @media (max-width: 480px) {
   .project-card-meta {
     font-size: 0.8rem;

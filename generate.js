@@ -420,6 +420,7 @@ const projectsListHTML = Object.entries(data.projects || {})
         <div class="project-card-content">
           <h2>${project.name}</h2>
           <div class="project-card-meta">
+            <span class="project-city">${project.city}</span>
           </div>
         </div>
       </a>

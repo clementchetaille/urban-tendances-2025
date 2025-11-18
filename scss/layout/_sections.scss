@@ -2212,6 +2212,18 @@ main {
   color: #666;
   font-size: 0.85rem;
 
+  .project-city {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.75rem;
+
+    &::before {
+      content: "📍";
+      font-size: 0.9em;
+    }
+  }
+
   @media (max-width: 480px) {
     font-size: 0.8rem;
     gap: 10px;
