@@ -502,7 +502,13 @@ console.log("✅ contact.html généré");
 // 🏠 Générer toutes les pages racines
 console.log("\n🏠 Génération des pages racines...");
 
-const rootPages = ["index", "histoire", "sur-mesure"];
+const rootPages = [
+  "index",
+  "histoire",
+  "sur-mesure",
+  "mentions-legales",
+  "confidentialite",
+];
 
 rootPages.forEach((pageName) => {
   const pageTemplate = fs.readFileSync(

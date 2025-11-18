@@ -3303,6 +3303,55 @@ main {
   color: #fff;
 }
 
+.legal-page {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  min-height: 60vh;
+}
+
+.legal-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.legal-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #222;
+}
+.legal-container h2 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #333;
+}
+.legal-container section {
+  margin-bottom: 30px;
+}
+.legal-container p,
+.legal-container li {
+  line-height: 1.8;
+  color: #555;
+}
+.legal-container a {
+  color: #dfaf4f;
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .legal-container {
+    padding: 30px 20px;
+  }
+  .legal-container h1 {
+    font-size: 2rem;
+  }
+  .legal-container h2 {
+    font-size: 1.3rem;
+  }
+}
+
 .wood-hero {
   position: relative;
   height: clamp(150px, 50vh, 300px);

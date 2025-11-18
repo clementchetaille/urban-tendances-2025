@@ -2814,3 +2814,60 @@ main {
     }
   }
 }
+
+// MENTIONS LEGALES ETC //
+
+.legal-page {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  min-height: 60vh;
+}
+
+.legal-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #222;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+
+  section {
+    margin-bottom: 30px;
+  }
+
+  p,
+  li {
+    line-height: 1.8;
+    color: #555;
+  }
+
+  a {
+    color: $primary;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    padding: 30px 20px;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+    }
+  }
+}
