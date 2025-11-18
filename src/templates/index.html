@@ -74,7 +74,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="{{basePath}}/components/mobile-menu.css" />
   </head>
-  <body class="home-page">
+  <body>
     {{header}}
 
     <main>
@@ -87,33 +87,26 @@
         aria-label="Présentation du mobilier urbain"
         id="heroSection"
       >
-        <div class="hero__image-wrapper">
-          <img
-            class="hero__image hero__image--current hero-image-leluc"
-            src="{{basePath}}/assets/images/projets/leluc-2025/fauteuil-leluc-1.webp"
-            alt=""
-          />
-          <img
-            class="hero__image hero__image--next hero-image-jo"
-            src="{{basePath}}/assets/images/projets/villagejo-assises.webp"
-            alt=""
-          />
-          <img
-            class="hero__image hero__image--next hero-image-villasimone"
-            src="{{basePath}}/assets/images/projets/villa-simone1.webp"
-            alt=""
-          />
-
-          <!-- Overlay sombre -->
-          <div class="hero__overlay"></div>
-        </div>
-
-        <!-- Texte en haut en ligne -->
         <div class="hero__content">
-          <h2 class="hero__text">
-            <span class="hero__text-word hero__text-word--1">MOBILIER</span>
-            <span class="hero__text-word hero__text-word--2">URBAIN</span>
-          </h2>
+          <h2 class="hero__text hero__text--top">MOBILIER</h2>
+          <div class="hero__image-wrapper">
+            <img
+              class="hero__image"
+              src="{{basePath}}/assets/images/projets/villa-simone1.webp"
+              alt=""
+            />
+            <img
+              class="hero__image"
+              src="{{basePath}}/assets/images/projets/villagejo-assises.webp"
+              alt=""
+            />
+            <img
+              class="hero__image hero-image-leluc"
+              src="{{basePath}}/assets/images/projets/leluc-2025/fauteuil-leluc-1.webp"
+              alt=""
+            />
+          </div>
+          <h2 class="hero__text hero__text--bottom">URBAIN</h2>
         </div>
       </section>
 
