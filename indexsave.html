@@ -74,7 +74,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="{{basePath}}/components/mobile-menu.css" />
   </head>
-  <body class="home-page">
+  <body>
     {{header}}
 
     <main>
@@ -87,33 +87,26 @@
         aria-label="Présentation du mobilier urbain"
         id="heroSection"
       >
-        <div class="hero__image-wrapper">
-          <img
-            class="hero__image hero__image--current hero-image-leluc"
-            src="{{basePath}}/assets/images/projets/leluc-2025/fauteuil-leluc-1.webp"
-            alt=""
-          />
-          <img
-            class="hero__image hero__image--next hero-image-jo"
-            src="{{basePath}}/assets/images/projets/villagejo-assises.webp"
-            alt=""
-          />
-          <img
-            class="hero__image hero__image--next hero-image-villasimone"
-            src="{{basePath}}/assets/images/projets/villa-simone1.webp"
-            alt=""
-          />
-
-          <!-- Overlay sombre -->
-          <div class="hero__overlay"></div>
-        </div>
-
-        <!-- Texte en haut en ligne -->
         <div class="hero__content">
-          <h2 class="hero__text">
-            <span class="hero__text-word hero__text-word--1">MOBILIER</span>
-            <span class="hero__text-word hero__text-word--2">URBAIN</span>
-          </h2>
+          <h2 class="hero__text hero__text--top">MOBILIER</h2>
+          <div class="hero__image-wrapper">
+            <img
+              class="hero__image"
+              src="{{basePath}}/assets/images/projets/villa-simone1.webp"
+              alt=""
+            />
+            <img
+              class="hero__image"
+              src="{{basePath}}/assets/images/projets/villagejo-assises.webp"
+              alt=""
+            />
+            <img
+              class="hero__image hero-image-leluc"
+              src="{{basePath}}/assets/images/projets/leluc-2025/fauteuil-leluc-1.webp"
+              alt=""
+            />
+          </div>
+          <h2 class="hero__text hero__text--bottom">URBAIN</h2>
         </div>
       </section>
 
@@ -450,3 +443,194 @@
     <script src="{{basePath}}/js/search.js"></script>
   </body>
 </html>
+
+<!-- 
+// ============================ //
+// ===== HERO INDEX ========== //
+// ========================== //
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: clamp(720px, 70vh, 850px);
+  padding: clamp(0.5rem, 1vw, 0.6rem);
+
+  @include tablet {
+    height: 60vh;
+    padding: clamp(0.5rem, 2vw, 1rem);
+  }
+
+  @include mobile {
+    height: 55vh;
+    padding: 0.5rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(1rem, 2vw, 1.5rem);
+    max-width: 1200px;
+    width: 100%;
+
+    @include mobile {
+      gap: clamp(0.8rem, 1.5vw, 1rem);
+    }
+  }
+
+  &__image-wrapper {
+    width: clamp(500px, 60vw, 900px);
+    height: clamp(350px, 40vh, 500px);
+    border-radius: clamp(20px, 3vw, 40px);
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    transform: scale(0.8);
+    animation: imageZoomIn 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    animation-delay: 0.3s;
+
+    @include tablet {
+      width: clamp(400px, 70vw, 700px);
+      height: clamp(300px, 35vh, 450px);
+    }
+
+    @include mobile {
+      width: clamp(280px, 85vw, 500px);
+      height: clamp(250px, 30vh, 350px);
+    }
+
+    // Effet de brillance au survol
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+      );
+      transition: left 0.6s ease;
+      z-index: 3;
+    }
+
+    &:hover::before {
+      left: 100%;
+    }
+
+    &:hover .hero__image {
+      transform: scale(1.05);
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 80%;
+    transition: transform 0.6s ease, opacity 1s ease;
+
+    &--current {
+      z-index: 2;
+      opacity: 1;
+    }
+
+    &--next {
+      z-index: 1;
+      opacity: 0;
+    }
+  }
+
+  .hero-image-leluc {
+    object-position: center 60%;
+  }
+
+  &__text {
+    font-family: $font-title;
+    font-size: clamp(8rem, 8vw, 6.5rem);
+    font-weight: 400;
+    line-height: 0.8;
+    margin: 0;
+    letter-spacing: 0.05em;
+    color: $color-text;
+    position: relative;
+    opacity: 0;
+
+    @include tablet {
+      font-size: clamp(3.5rem, 7vw, 7rem);
+    }
+
+    @include mobile {
+      font-size: clamp(3rem, 8vw, 4rem);
+    }
+
+    &--top {
+      align-self: flex-start;
+      transform: translateX(-100px);
+      animation: slideInLeft 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+      animation-delay: 0.1s;
+
+      @include mobile {
+        align-self: flex-end;
+        margin-right: 1.5rem;
+      }
+    }
+
+    &--bottom {
+      align-self: flex-end;
+      transform: translateX(100px);
+      animation: slideInRight 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+      animation-delay: 0.5s;
+
+      @include mobile {
+        align-self: flex-start;
+        margin-left: 1.5rem;
+      }
+    }
+  }
+}
+
+// ===== ANIMATIONS ========== //
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes imageZoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+-->
