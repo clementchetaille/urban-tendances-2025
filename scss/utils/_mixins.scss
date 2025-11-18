@@ -20,7 +20,8 @@
 }
 
 @mixin desktop-large {
-  @media (min-width: 1440px) {
+  @media (min-width: 1920px) {
+    //1440
     @content;
   }
 }

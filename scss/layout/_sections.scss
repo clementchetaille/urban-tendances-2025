@@ -140,6 +140,10 @@ main {
     padding: 0.5rem;
   }
 
+  @include desktop-large {
+    margin: 6rem 0;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -155,8 +159,8 @@ main {
   }
 
   &__image-wrapper {
-    width: clamp(600px, 70vw, 1000px); // ← Agrandi (était 500px, 60vw, 900px)
-    height: clamp(450px, 50vh, 600px); // ← Agrandi (était 350px, 40vh, 500px)
+    width: clamp(600px, 70vw, 1200px); // ← Agrandi (était 500px, 60vw, 900px)
+    height: clamp(450px, 50vh, 800px); // ← Agrandi (était 350px, 40vh, 500px)
     border-radius: clamp(20px, 3vw, 40px);
     overflow: hidden;
     position: relative;
@@ -245,6 +249,10 @@ main {
 
     @include mobile {
       font-size: clamp(3rem, 8vw, 4rem);
+    }
+
+    @include desktop-large {
+      font-size: clamp(6rem, 9vw, 9rem);
     }
 
     &--top {

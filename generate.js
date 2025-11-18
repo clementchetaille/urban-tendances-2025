@@ -4,8 +4,10 @@ const path = require("path");
 // 🎯 Variable d'environnement pour gérer les chemins
 // En local: BASE_PATH = ''
 // En production (GitHub Pages): BASE_PATH = '/urban-tendances-2025'
+
 const BASE_PATH =
   process.env.NODE_ENV === "production" ? "/urban-tendances-2025" : "";
+//const BASE_PATH = ""; // Vide pour Netlify
 
 console.log(`🔧 Mode: ${process.env.NODE_ENV || "development"}`);
 console.log(`📁 Base path: "${BASE_PATH}"\n`);
